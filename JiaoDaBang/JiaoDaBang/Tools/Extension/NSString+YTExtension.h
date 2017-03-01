@@ -200,6 +200,30 @@
 - (NSString *)fileSHA512Hash;
 @end
 
+@interface NSString (Cryptor)
+
+
+/**
+ AES128ECBEncrypt
+
+ @param plainText plainText
+ @param key key
+ @return AES128ECB加密之后的Base64编码
+ */
++ (NSString *)AES128ECBEncrypt:(NSString *)plainText key:(NSString *)key;
+
+
+/**
+ AES128ECBDecrypt
+ 
+ @param encryptText encryptText
+ @param key key
+ @return AES128ECB解密之后的Base64编码
+ */
++ (NSString *)AES128ECBDecrypt:(NSString *)encryptText key:(NSString *)key;
+
+@end
+
 @interface NSString (Regular)
 
 - (BOOL)isMobileNumber;

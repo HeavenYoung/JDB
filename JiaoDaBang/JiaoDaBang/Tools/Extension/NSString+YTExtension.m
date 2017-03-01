@@ -288,6 +288,78 @@
 }
 @end
 
+@implementation NSString (Cryptor)
+
++ (NSString *)AES128ECBEncrypt:(NSString *)plainText key:(NSString *)key {
+
+    char keyPtr[kCCKeySizeAES128+1];
+    memset(keyPtr, 0, sizeof(keyPtr));
+    [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+    
+    NSData* data = [plainText dataUsingEncoding:NSUTF8StringEncoding];
+    NSUInteger dataLength = [data length];
+    
+    size_t bufferSize = dataLength + kCCBlockSizeAES128;
+    void *buffer = malloc(bufferSize);
+    size_t numBytesEncrypted = 0;
+    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
+                                          kCCAlgorithmAES128,
+                                          kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                          keyPtr,
+                                          kCCBlockSizeAES128,
+                                          NULL,
+                                          [data bytes],
+                                          dataLength,
+                                          buffer,
+                                          bufferSize,
+                                          &numBytesEncrypted);
+    if (cryptStatus == kCCSuccess) {
+        NSData *resultData = [NSData dataWithBytesNoCopy:buffer length:numBytesEncrypted];
+
+        NSString *encrytString  = [resultData base64EncodedStringWithOptions:0];
+        
+        return encrytString;
+        
+    }
+    free(buffer);
+    return nil;
+    
+}
+
++ (NSString *)AES128ECBDecrypt:(NSString *)encryptText key:(NSString *)key{
+
+    char keyPtr[kCCKeySizeAES128 + 1];
+    memset(keyPtr, 0, sizeof(keyPtr));
+    [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+    
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:encryptText options:0];
+    
+    NSUInteger dataLength = [data length];
+    size_t bufferSize = dataLength + kCCBlockSizeAES128;
+    void *buffer = malloc(bufferSize);
+    
+    size_t numBytesCrypted = 0;
+    CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
+                                          kCCAlgorithmAES128,
+                                          kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                          keyPtr,
+                                          kCCBlockSizeAES128,
+                                          NULL,
+                                          [data bytes],
+                                          dataLength,
+                                          buffer,
+                                          bufferSize,
+                                          &numBytesCrypted);
+    if (cryptStatus == kCCSuccess) {
+        NSData *resultData = [NSData dataWithBytesNoCopy:buffer length:numBytesCrypted];
+        return [[NSString alloc] initWithData:resultData encoding:NSUTF8StringEncoding];
+    }
+    free(buffer);
+    return nil;
+}
+
+@end
+
 @implementation NSString (Regular)
 
 - (BOOL)isMobileNumber {
