@@ -9,6 +9,17 @@
 #ifndef MacroInfo_h
 #define MacroInfo_h
 
+
+#import "WXApi.h"
+#import "WXApiRequestHandler.h"
+#import <AlipaySDK/AlipaySDK.h>
+#import "MBProgressHUD.h"
+#import "PayManager.h"
+#import "YTNavigationController.h"
+#import "ShareUtil.h"
+#import "WXApiManager.h"
+
+
 /** 屏幕判断参数 */
 #define SCREEN_HEIGHT_ORIGINAL [UIScreen mainScreen].bounds.size.height
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
@@ -42,11 +53,29 @@
 #define kUserPassword       @"userpassword"
 
 
+/********* 微信 BEGIN *********/
+
+#define WXAppId @"wx6f6d78031f9f2ed4"
+#define WXMchId @"1311358901"
+
+/********* 微信 END   *********/
+
+/********* 支付宝 BEGIN *********/
+
+#define AlipayScheme @"mitangAlipay2088021871280216"
+
+/********* 支付宝 END   *********/
+
 /********* NOTIFICATION BEGIN *********/
 
 #define NOTIFCATION_USER_STATUSCHANGE           @"userStatusChange"        //用户登录状态发生
 #define NOTIFCATION_USERHEAD_INFOCHANGE         @"userInfoChange"
 #define NOTIFCATION_USER_LOGOUT                 @"userLogout"
+
+#define kPayResponseNotification @"kPayResponseNotification"
+#define kPayMessageNotification @"kPayMessageNotification"
+#define kMessageToOrderNotification @"kMessageToOrderNotification"
+#define kCallPayResultHandleNotification @"kCallPayResultHandleNotification"
 
 /********* NOTIFICATION END   *********/
 

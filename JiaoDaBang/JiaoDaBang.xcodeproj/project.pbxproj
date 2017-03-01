@@ -35,6 +35,36 @@
 		57403FD41E1B9192007CF092 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 57403FC91E1B9192007CF092 /* AFURLRequestSerialization.m */; };
 		57403FD51E1B9192007CF092 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 57403FCB1E1B9192007CF092 /* AFURLResponseSerialization.m */; };
 		57403FD61E1B9192007CF092 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57403FCD1E1B9192007CF092 /* AFURLSessionManager.m */; };
+		574077F11E66A9330008DFA4 /* AliPayRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077D31E66A9330008DFA4 /* AliPayRequestHandler.m */; };
+		574077F21E66A9330008DFA4 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 574077D51E66A9330008DFA4 /* AlipaySDK.bundle */; };
+		574077F31E66A9330008DFA4 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574077D61E66A9330008DFA4 /* AlipaySDK.framework */; };
+		574077F41E66A9330008DFA4 /* PayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077D81E66A9330008DFA4 /* PayManager.m */; };
+		574077F51E66A9330008DFA4 /* PayObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077DA1E66A9330008DFA4 /* PayObjc.m */; };
+		574077F61E66A9330008DFA4 /* PayResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077DC1E66A9330008DFA4 /* PayResultView.m */; };
+		574077F71E66A9330008DFA4 /* PayResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077DE1E66A9330008DFA4 /* PayResultViewController.m */; };
+		574077F81E66A9330008DFA4 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077E11E66A9330008DFA4 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
+		574077F91E66A9330008DFA4 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 574077E31E66A9330008DFA4 /* libWeChatSDK.a */; };
+		574077FA1E66A9330008DFA4 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077E81E66A9330008DFA4 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
+		574077FB1E66A9330008DFA4 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077EA1E66A9330008DFA4 /* WXApiManager.m */; };
+		574077FC1E66A9330008DFA4 /* WXApiRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077EC1E66A9330008DFA4 /* WXApiRequestHandler.m */; };
+		574077FD1E66A9330008DFA4 /* WXApiResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077EE1E66A9330008DFA4 /* WXApiResponseHandler.m */; };
+		574077FE1E66A9330008DFA4 /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 574077F01E66A9330008DFA4 /* WXMediaMessage+messageConstruct.m */; };
+		574078041E66AA1E0008DFA4 /* AliOrderPayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 574078011E66AA1E0008DFA4 /* AliOrderPayData.m */; };
+		574078051E66AA1E0008DFA4 /* WXOrderPayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 574078031E66AA1E0008DFA4 /* WXOrderPayData.m */; };
+		5740780F1E66AA820008DFA4 /* AliOrderPayResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 574078081E66AA820008DFA4 /* AliOrderPayResponse.m */; };
+		574078101E66AA820008DFA4 /* OrderPayResResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5740780A1E66AA820008DFA4 /* OrderPayResResponse.m */; };
+		574078111E66AA820008DFA4 /* ServiceOrderPayResResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5740780C1E66AA820008DFA4 /* ServiceOrderPayResResponse.m */; };
+		574078121E66AA820008DFA4 /* WXOrderPayResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5740780E1E66AA820008DFA4 /* WXOrderPayResponse.m */; };
+		5740781C1E66AA8D0008DFA4 /* AliOrderPayRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 574078151E66AA8D0008DFA4 /* AliOrderPayRequest.m */; };
+		5740781D1E66AA8D0008DFA4 /* OrderPayResRequst.m in Sources */ = {isa = PBXBuildFile; fileRef = 574078171E66AA8D0008DFA4 /* OrderPayResRequst.m */; };
+		5740781E1E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 574078191E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m */; };
+		5740781F1E66AA8D0008DFA4 /* WXOrderPayRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5740781B1E66AA8D0008DFA4 /* WXOrderPayRequest.m */; };
+		574078211E66AB560008DFA4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574078201E66AB560008DFA4 /* CoreTelephony.framework */; };
+		574078231E66AB640008DFA4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574078221E66AB640008DFA4 /* CoreText.framework */; };
+		574078251E66AB6F0008DFA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574078241E66AB6F0008DFA4 /* CoreGraphics.framework */; };
+		574078271E66AB7C0008DFA4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574078261E66AB7C0008DFA4 /* CFNetwork.framework */; };
+		5740782B1E66AC630008DFA4 /* ShareUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5740782A1E66AC630008DFA4 /* ShareUtil.m */; };
+		5740782D1E66AE8B0008DFA4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5740782C1E66AE8B0008DFA4 /* CoreMotion.framework */; };
 		574AD4661E49894A00BF099E /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 574AD1C91E49894A00BF099E /* MessageViewController.m */; };
 		574AD4671E49894A00BF099E /* AppDelegate+EaseMob.m in Sources */ = {isa = PBXBuildFile; fileRef = 574AD1CC1E49894A00BF099E /* AppDelegate+EaseMob.m */; };
 		574AD4681E49894A00BF099E /* EaseUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 574AD1D01E49894A00BF099E /* EaseUI.m */; };
@@ -586,6 +616,61 @@
 		57403FCB1E1B9192007CF092 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		57403FCC1E1B9192007CF092 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		57403FCD1E1B9192007CF092 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		574077D21E66A9330008DFA4 /* AliPayRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPayRequestHandler.h; sourceTree = "<group>"; };
+		574077D31E66A9330008DFA4 /* AliPayRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPayRequestHandler.m; sourceTree = "<group>"; };
+		574077D51E66A9330008DFA4 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		574077D61E66A9330008DFA4 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		574077D71E66A9330008DFA4 /* PayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayManager.h; sourceTree = "<group>"; };
+		574077D81E66A9330008DFA4 /* PayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayManager.m; sourceTree = "<group>"; };
+		574077D91E66A9330008DFA4 /* PayObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayObjc.h; sourceTree = "<group>"; };
+		574077DA1E66A9330008DFA4 /* PayObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayObjc.m; sourceTree = "<group>"; };
+		574077DB1E66A9330008DFA4 /* PayResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayResultView.h; sourceTree = "<group>"; };
+		574077DC1E66A9330008DFA4 /* PayResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayResultView.m; sourceTree = "<group>"; };
+		574077DD1E66A9330008DFA4 /* PayResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayResultViewController.h; sourceTree = "<group>"; };
+		574077DE1E66A9330008DFA4 /* PayResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayResultViewController.m; sourceTree = "<group>"; };
+		574077E01E66A9330008DFA4 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		574077E11E66A9330008DFA4 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		574077E31E66A9330008DFA4 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		574077E41E66A9330008DFA4 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		574077E51E66A9330008DFA4 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		574077E61E66A9330008DFA4 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		574077E71E66A9330008DFA4 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		574077E81E66A9330008DFA4 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		574077E91E66A9330008DFA4 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		574077EA1E66A9330008DFA4 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		574077EB1E66A9330008DFA4 /* WXApiRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiRequestHandler.h; sourceTree = "<group>"; };
+		574077EC1E66A9330008DFA4 /* WXApiRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiRequestHandler.m; sourceTree = "<group>"; };
+		574077ED1E66A9330008DFA4 /* WXApiResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiResponseHandler.h; sourceTree = "<group>"; };
+		574077EE1E66A9330008DFA4 /* WXApiResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiResponseHandler.m; sourceTree = "<group>"; };
+		574077EF1E66A9330008DFA4 /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		574077F01E66A9330008DFA4 /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		574078001E66AA1E0008DFA4 /* AliOrderPayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOrderPayData.h; sourceTree = "<group>"; };
+		574078011E66AA1E0008DFA4 /* AliOrderPayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOrderPayData.m; sourceTree = "<group>"; };
+		574078021E66AA1E0008DFA4 /* WXOrderPayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXOrderPayData.h; sourceTree = "<group>"; };
+		574078031E66AA1E0008DFA4 /* WXOrderPayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXOrderPayData.m; sourceTree = "<group>"; };
+		574078071E66AA820008DFA4 /* AliOrderPayResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOrderPayResponse.h; sourceTree = "<group>"; };
+		574078081E66AA820008DFA4 /* AliOrderPayResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOrderPayResponse.m; sourceTree = "<group>"; };
+		574078091E66AA820008DFA4 /* OrderPayResResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderPayResResponse.h; sourceTree = "<group>"; };
+		5740780A1E66AA820008DFA4 /* OrderPayResResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderPayResResponse.m; sourceTree = "<group>"; };
+		5740780B1E66AA820008DFA4 /* ServiceOrderPayResResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceOrderPayResResponse.h; sourceTree = "<group>"; };
+		5740780C1E66AA820008DFA4 /* ServiceOrderPayResResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceOrderPayResResponse.m; sourceTree = "<group>"; };
+		5740780D1E66AA820008DFA4 /* WXOrderPayResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXOrderPayResponse.h; sourceTree = "<group>"; };
+		5740780E1E66AA820008DFA4 /* WXOrderPayResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXOrderPayResponse.m; sourceTree = "<group>"; };
+		574078141E66AA8D0008DFA4 /* AliOrderPayRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOrderPayRequest.h; sourceTree = "<group>"; };
+		574078151E66AA8D0008DFA4 /* AliOrderPayRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOrderPayRequest.m; sourceTree = "<group>"; };
+		574078161E66AA8D0008DFA4 /* OrderPayResRequst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderPayResRequst.h; sourceTree = "<group>"; };
+		574078171E66AA8D0008DFA4 /* OrderPayResRequst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderPayResRequst.m; sourceTree = "<group>"; };
+		574078181E66AA8D0008DFA4 /* ServiceOrderPayResRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceOrderPayResRequest.h; sourceTree = "<group>"; };
+		574078191E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceOrderPayResRequest.m; sourceTree = "<group>"; };
+		5740781A1E66AA8D0008DFA4 /* WXOrderPayRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXOrderPayRequest.h; sourceTree = "<group>"; };
+		5740781B1E66AA8D0008DFA4 /* WXOrderPayRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXOrderPayRequest.m; sourceTree = "<group>"; };
+		574078201E66AB560008DFA4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		574078221E66AB640008DFA4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		574078241E66AB6F0008DFA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		574078261E66AB7C0008DFA4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		574078291E66AC630008DFA4 /* ShareUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareUtil.h; sourceTree = "<group>"; };
+		5740782A1E66AC630008DFA4 /* ShareUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareUtil.m; sourceTree = "<group>"; };
+		5740782C1E66AE8B0008DFA4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		574AD1C81E49894A00BF099E /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		574AD1C91E49894A00BF099E /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		574AD1CB1E49894A00BF099E /* AppDelegate+EaseMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+EaseMob.h"; sourceTree = "<group>"; };
@@ -1413,6 +1498,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5740782D1E66AE8B0008DFA4 /* CoreMotion.framework in Frameworks */,
+				574078271E66AB7C0008DFA4 /* CFNetwork.framework in Frameworks */,
+				574078251E66AB6F0008DFA4 /* CoreGraphics.framework in Frameworks */,
+				574078231E66AB640008DFA4 /* CoreText.framework in Frameworks */,
+				574078211E66AB560008DFA4 /* CoreTelephony.framework in Frameworks */,
 				574AD4741E49894A00BF099E /* libopencore-amrnb.a in Frameworks */,
 				5732EBA11E238639003C56B5 /* libsqlite3.tbd in Frameworks */,
 				5732EB9F1E23862C003C56B5 /* libiconv.tbd in Frameworks */,
@@ -1420,12 +1510,14 @@
 				5732EB991E238602003C56B5 /* libz.tbd in Frameworks */,
 				5732EB971E2385F1003C56B5 /* libc++.tbd in Frameworks */,
 				5732EB951E2385DC003C56B5 /* ImageIO.framework in Frameworks */,
+				574077F31E66A9330008DFA4 /* AlipaySDK.framework in Frameworks */,
 				574AD5C11E49894B00BF099E /* libHyphenateFullSDK.a in Frameworks */,
 				5732EB931E2385C7003C56B5 /* MobileCoreServices.framework in Frameworks */,
 				5732EB911E2385B8003C56B5 /* AVFoundation.framework in Frameworks */,
 				5732EB8F1E2385AC003C56B5 /* AudioToolbox.framework in Frameworks */,
 				574AD4751E49894A00BF099E /* libopencore-amrwb.a in Frameworks */,
 				5732EB8D1E238589003C56B5 /* CoreMedia.framework in Frameworks */,
+				574077F91E66A9330008DFA4 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1458,6 +1550,7 @@
 		5704621B1E4813D2003961EB /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				574078131E66AA8D0008DFA4 /* Pay */,
 				57F44E5A1E4CAEEB00F62B16 /* Common */,
 				570462241E4813F2003961EB /* User */,
 				5704621C1E4813D2003961EB /* BaseRequest.h */,
@@ -1469,6 +1562,7 @@
 		5704621E1E4813D2003961EB /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				574078061E66AA820008DFA4 /* Pay */,
 				57F44E5B1E4CAEF700F62B16 /* Common */,
 				570462231E4813EA003961EB /* User */,
 				5704621F1E4813D2003961EB /* BaseResponse.h */,
@@ -1507,6 +1601,7 @@
 			isa = PBXGroup;
 			children = (
 				57D0AD3E1E496EB600889005 /* DataModel.h */,
+				574077FF1E66AA1E0008DFA4 /* Pay */,
 				57BFC79F1E4B4CE6001690E4 /* Common */,
 				57BFC79B1E4B4C2A001690E4 /* Profile */,
 				57BFC7911E4B4808001690E4 /* Publish */,
@@ -1537,6 +1632,11 @@
 		5732EB8B1E238588003C56B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5740782C1E66AE8B0008DFA4 /* CoreMotion.framework */,
+				574078261E66AB7C0008DFA4 /* CFNetwork.framework */,
+				574078241E66AB6F0008DFA4 /* CoreGraphics.framework */,
+				574078221E66AB640008DFA4 /* CoreText.framework */,
+				574078201E66AB560008DFA4 /* CoreTelephony.framework */,
 				5732EBA01E238639003C56B5 /* libsqlite3.tbd */,
 				5732EB9E1E23862C003C56B5 /* libiconv.tbd */,
 				5732EB9C1E23861F003C56B5 /* libsqlite3.0.tbd */,
@@ -1607,6 +1707,123 @@
 				57403FCD1E1B9192007CF092 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		574077D01E66A9330008DFA4 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				574077D11E66A9330008DFA4 /* AliPay */,
+				574077D71E66A9330008DFA4 /* PayManager.h */,
+				574077D81E66A9330008DFA4 /* PayManager.m */,
+				574077D91E66A9330008DFA4 /* PayObjc.h */,
+				574077DA1E66A9330008DFA4 /* PayObjc.m */,
+				574077DB1E66A9330008DFA4 /* PayResultView.h */,
+				574077DC1E66A9330008DFA4 /* PayResultView.m */,
+				574077DD1E66A9330008DFA4 /* PayResultViewController.h */,
+				574077DE1E66A9330008DFA4 /* PayResultViewController.m */,
+				574077DF1E66A9330008DFA4 /* WechatPay */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		574077D11E66A9330008DFA4 /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				574077D21E66A9330008DFA4 /* AliPayRequestHandler.h */,
+				574077D31E66A9330008DFA4 /* AliPayRequestHandler.m */,
+				574077D41E66A9330008DFA4 /* alipaySdk */,
+			);
+			path = AliPay;
+			sourceTree = "<group>";
+		};
+		574077D41E66A9330008DFA4 /* alipaySdk */ = {
+			isa = PBXGroup;
+			children = (
+				574077D51E66A9330008DFA4 /* AlipaySDK.bundle */,
+				574077D61E66A9330008DFA4 /* AlipaySDK.framework */,
+			);
+			path = alipaySdk;
+			sourceTree = "<group>";
+		};
+		574077DF1E66A9330008DFA4 /* WechatPay */ = {
+			isa = PBXGroup;
+			children = (
+				574077E01E66A9330008DFA4 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				574077E11E66A9330008DFA4 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+				574077E21E66A9330008DFA4 /* SDKExport */,
+				574077E71E66A9330008DFA4 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+				574077E81E66A9330008DFA4 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				574077E91E66A9330008DFA4 /* WXApiManager.h */,
+				574077EA1E66A9330008DFA4 /* WXApiManager.m */,
+				574077EB1E66A9330008DFA4 /* WXApiRequestHandler.h */,
+				574077EC1E66A9330008DFA4 /* WXApiRequestHandler.m */,
+				574077ED1E66A9330008DFA4 /* WXApiResponseHandler.h */,
+				574077EE1E66A9330008DFA4 /* WXApiResponseHandler.m */,
+				574077EF1E66A9330008DFA4 /* WXMediaMessage+messageConstruct.h */,
+				574077F01E66A9330008DFA4 /* WXMediaMessage+messageConstruct.m */,
+			);
+			path = WechatPay;
+			sourceTree = "<group>";
+		};
+		574077E21E66A9330008DFA4 /* SDKExport */ = {
+			isa = PBXGroup;
+			children = (
+				574077E31E66A9330008DFA4 /* libWeChatSDK.a */,
+				574077E41E66A9330008DFA4 /* WechatAuthSDK.h */,
+				574077E51E66A9330008DFA4 /* WXApi.h */,
+				574077E61E66A9330008DFA4 /* WXApiObject.h */,
+			);
+			path = SDKExport;
+			sourceTree = "<group>";
+		};
+		574077FF1E66AA1E0008DFA4 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				574078001E66AA1E0008DFA4 /* AliOrderPayData.h */,
+				574078011E66AA1E0008DFA4 /* AliOrderPayData.m */,
+				574078021E66AA1E0008DFA4 /* WXOrderPayData.h */,
+				574078031E66AA1E0008DFA4 /* WXOrderPayData.m */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		574078061E66AA820008DFA4 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				574078071E66AA820008DFA4 /* AliOrderPayResponse.h */,
+				574078081E66AA820008DFA4 /* AliOrderPayResponse.m */,
+				574078091E66AA820008DFA4 /* OrderPayResResponse.h */,
+				5740780A1E66AA820008DFA4 /* OrderPayResResponse.m */,
+				5740780B1E66AA820008DFA4 /* ServiceOrderPayResResponse.h */,
+				5740780C1E66AA820008DFA4 /* ServiceOrderPayResResponse.m */,
+				5740780D1E66AA820008DFA4 /* WXOrderPayResponse.h */,
+				5740780E1E66AA820008DFA4 /* WXOrderPayResponse.m */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		574078131E66AA8D0008DFA4 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				574078141E66AA8D0008DFA4 /* AliOrderPayRequest.h */,
+				574078151E66AA8D0008DFA4 /* AliOrderPayRequest.m */,
+				574078161E66AA8D0008DFA4 /* OrderPayResRequst.h */,
+				574078171E66AA8D0008DFA4 /* OrderPayResRequst.m */,
+				574078181E66AA8D0008DFA4 /* ServiceOrderPayResRequest.h */,
+				574078191E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m */,
+				5740781A1E66AA8D0008DFA4 /* WXOrderPayRequest.h */,
+				5740781B1E66AA8D0008DFA4 /* WXOrderPayRequest.m */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		574078281E66AC630008DFA4 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				574078291E66AC630008DFA4 /* ShareUtil.h */,
+				5740782A1E66AC630008DFA4 /* ShareUtil.m */,
+			);
+			path = Share;
 			sourceTree = "<group>";
 		};
 		574AD1C61E49894A00BF099E /* Message */ = {
@@ -3066,6 +3283,8 @@
 				57CAC2301E02E85A005A3F7E /* GlobalManager.m */,
 				57CAC2341E02E85A005A3F7E /* LanguageManager.h */,
 				57CAC2351E02E85A005A3F7E /* LanguageManager.m */,
+				574078281E66AC630008DFA4 /* Share */,
+				574077D01E66A9330008DFA4 /* Pay */,
 				574AD1C61E49894A00BF099E /* Message */,
 				57CAC21B1E02E85A005A3F7E /* Extension */,
 				57CAC2311E02E85A005A3F7E /* LAContextManager */,
@@ -3685,6 +3904,7 @@
 				574AD5B41E49894B00BF099E /* tabbarSelectBg.png in Resources */,
 				574AD4E91E49894A00BF099E /* chatBar_colorMore_location@2x.png in Resources */,
 				574AD5021E49894A00BF099E /* VoiceSearchFeedback001@2x.png in Resources */,
+				574077F21E66A9330008DFA4 /* AlipaySDK.bundle in Resources */,
 				574AD58D1E49894B00BF099E /* icon_030_cover.png in Resources */,
 				574AD57F1E49894B00BF099E /* icon_019_cover.png in Resources */,
 				574AD4EC1E49894A00BF099E /* chatBar_colorMore_photoSelected@2x.png in Resources */,
@@ -3716,6 +3936,7 @@
 				57CAC2711E02E85A005A3F7E /* UIButton+YTExtension.m in Sources */,
 				574AD4D61E49894A00BF099E /* EaseImageView.m in Sources */,
 				57EE76001E272CA0004573F1 /* SDImageCache.m in Sources */,
+				574077FD1E66A9330008DFA4 /* WXApiResponseHandler.m in Sources */,
 				57CAC2901E02E920005A3F7E /* MainViewController.m in Sources */,
 				574AD4A71E49894A00BF099E /* PSTCollectionViewFlowLayout.m in Sources */,
 				574AD5281E49894B00BF099E /* ContactView.m in Sources */,
@@ -3742,6 +3963,7 @@
 				574AD5211E49894A00BF099E /* UIImageView+HeadImage.m in Sources */,
 				574AD5371E49894B00BF099E /* ApplyFriendCell.m in Sources */,
 				574AD4911E49894A00BF099E /* DACircularProgressView.m in Sources */,
+				574077FB1E66A9330008DFA4 /* WXApiManager.m in Sources */,
 				574AD4A11E49894A00BF099E /* UIView+EMWebCacheOperation.m in Sources */,
 				574AD53D1E49894B00BF099E /* EMSearchBar.m in Sources */,
 				574AD4701E49894A00BF099E /* EMCDDeviceManagerBase.m in Sources */,
@@ -3750,6 +3972,7 @@
 				57EE75F01E272CA0004573F1 /* RefreshAutoFooter.m in Sources */,
 				574AD4C41E49894A00BF099E /* EaseRefreshTableViewController.m in Sources */,
 				574AD47B1E49894A00BF099E /* MJRefreshAutoGifFooter.m in Sources */,
+				574077F41E66A9330008DFA4 /* PayManager.m in Sources */,
 				574AD52F1E49894B00BF099E /* PublicGroupListViewController.m in Sources */,
 				574AD52C1E49894B00BF099E /* GroupSettingViewController.m in Sources */,
 				574AD5C01E49894B00BF099E /* UserProfileEditViewController.m in Sources */,
@@ -3779,6 +4002,7 @@
 				57CAC2801E02E85A005A3F7E /* NSArray+MASAdditions.m in Sources */,
 				574AD5231E49894B00BF099E /* UIViewController+HUD.m in Sources */,
 				574AD4B01E49894A00BF099E /* EaseSDKHelper.m in Sources */,
+				574077F61E66A9330008DFA4 /* PayResultView.m in Sources */,
 				57CAC2861E02E85A005A3F7E /* MJProperty.m in Sources */,
 				574AD5B91E49894B00BF099E /* RobotListViewController.m in Sources */,
 				574AD5441E49894B00BF099E /* XHMessageTextView.m in Sources */,
@@ -3790,6 +4014,7 @@
 				574AD4CD1E49894A00BF099E /* EaseBubbleView+Gif.m in Sources */,
 				57EE75F31E272CA0004573F1 /* RefreshHeader.m in Sources */,
 				57BFC7971E4B4902001690E4 /* OrderListData.m in Sources */,
+				574078041E66AA1E0008DFA4 /* AliOrderPayData.m in Sources */,
 				574AD4951E49894A00BF099E /* EMSDWebImageDownloader.m in Sources */,
 				574AD4BB1E49894A00BF099E /* EaseMessageReadManager.m in Sources */,
 				57CAC27A1E02E85A005A3F7E /* MASCompositeConstraint.m in Sources */,
@@ -3802,6 +4027,7 @@
 				574AD48B1E49894A00BF099E /* MWGridViewController.m in Sources */,
 				574AD48A1E49894A00BF099E /* MWGridCell.m in Sources */,
 				57CAC2931E02E937005A3F7E /* YTNavigationController.m in Sources */,
+				574078101E66AA820008DFA4 /* OrderPayResResponse.m in Sources */,
 				574AD46E1E49894A00BF099E /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				574AD4971E49894A00BF099E /* EMSDWebImageManager.m in Sources */,
 				574AD51D1E49894A00BF099E /* SRSlimeView.m in Sources */,
@@ -3811,6 +4037,7 @@
 				574AD5B71E49894B00BF099E /* EMRotbotChatViewCell.m in Sources */,
 				57CAC27B1E02E85A005A3F7E /* MASConstraint.m in Sources */,
 				574AD4AA1E49894A00BF099E /* PSTCollectionViewUpdateItem.m in Sources */,
+				5740782B1E66AC630008DFA4 /* ShareUtil.m in Sources */,
 				57F44E671E4CB2EF00F62B16 /* OrderTypeResponse.m in Sources */,
 				57A63B5A1E49743F0053D692 /* MBProgressHUD.m in Sources */,
 				57403FD51E1B9192007CF092 /* AFURLResponseSerialization.m in Sources */,
@@ -3851,6 +4078,8 @@
 				574AD47C1E49894A00BF099E /* MJRefreshAutoNormalFooter.m in Sources */,
 				574AD4891E49894A00BF099E /* MWCaptionView.m in Sources */,
 				574AD51C1E49894A00BF099E /* SRRefreshView.m in Sources */,
+				574077F51E66A9330008DFA4 /* PayObjc.m in Sources */,
+				574077F71E66A9330008DFA4 /* PayResultViewController.m in Sources */,
 				574AD4AD1E49894A00BF099E /* PSTGridLayoutRow.m in Sources */,
 				57CAC28C1E02E85A005A3F7E /* NSObject+MJProperty.m in Sources */,
 				574AD52D1E49894B00BF099E /* GroupSubjectChangingViewController.m in Sources */,
@@ -3858,6 +4087,7 @@
 				57CAC2881E02E85A005A3F7E /* MJPropertyType.m in Sources */,
 				574AD49A1E49894A00BF099E /* NSData+EMImageContentType.m in Sources */,
 				57A63B591E49743F0053D692 /* MBProgressHUD+Add.m in Sources */,
+				5740781F1E66AA8D0008DFA4 /* WXOrderPayRequest.m in Sources */,
 				574AD49D1E49894A00BF099E /* UIImage+EMMultiFormat.m in Sources */,
 				574AD5381E49894B00BF099E /* ApplyViewController.m in Sources */,
 				574AD4A91E49894A00BF099E /* PSTCollectionViewLayout.m in Sources */,
@@ -3869,7 +4099,10 @@
 				574AD51F1E49894A00BF099E /* TTGlobalUICommon.m in Sources */,
 				57C5B7071E4AB89C0006618F /* Tools.m in Sources */,
 				574AD52E1E49894B00BF099E /* PublicGroupDetailViewController.m in Sources */,
+				574077FA1E66A9330008DFA4 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
+				5740781D1E66AA8D0008DFA4 /* OrderPayResRequst.m in Sources */,
 				574AD47F1E49894A00BF099E /* MJRefreshBackNormalFooter.m in Sources */,
+				574078051E66AA1E0008DFA4 /* WXOrderPayData.m in Sources */,
 				574AD4981E49894A00BF099E /* EMSDWebImagePrefetcher.m in Sources */,
 				574AD49C1E49894A00BF099E /* UIImage+EMGIF.m in Sources */,
 				574AD4D31E49894A00BF099E /* EaseBubbleView.m in Sources */,
@@ -3908,6 +4141,7 @@
 				577029F41E02E7C300FA9E95 /* main.m in Sources */,
 				57EE75F41E272CA0004573F1 /* RefreshAutoStateFooter.m in Sources */,
 				57EE75EC1E272CA0004573F1 /* FMDatabasePool.m in Sources */,
+				574077FC1E66A9330008DFA4 /* WXApiRequestHandler.m in Sources */,
 				57CAC2721E02E85A005A3F7E /* UIColor+YTExtension.m in Sources */,
 				574AD5BB1E49894B00BF099E /* BlackListViewController.m in Sources */,
 				57EE75F51E272CA0004573F1 /* RefreshAutoStateNormalFooter.m in Sources */,
@@ -3920,10 +4154,12 @@
 				57EE76041E272CA0004573F1 /* SDWebImageDownloaderOperation.m in Sources */,
 				574AD4991E49894A00BF099E /* MKAnnotationView+EMWebCache.m in Sources */,
 				57EE758C1E272B05004573F1 /* LoginViewController.m in Sources */,
+				574078121E66AA820008DFA4 /* WXOrderPayResponse.m in Sources */,
 				574AD4B41E49894A00BF099E /* NSDate+Category.m in Sources */,
 				573829311E4B449800166F3A /* BannerInfoData.m in Sources */,
 				57BFC7941E4B4849001690E4 /* PublishData.m in Sources */,
 				574AD4A21E49894A00BF099E /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
+				5740781E1E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m in Sources */,
 				574AD5BF1E49894B00BF099E /* SettingsViewController.m in Sources */,
 				57EE75F21E272CA0004573F1 /* RefreshFooter.m in Sources */,
 				57EE76031E272CA0004573F1 /* SDWebImageDownloader.m in Sources */,
@@ -3937,6 +4173,7 @@
 				574AD53F1E49894B00BF099E /* EMRemarkImageView.m in Sources */,
 				574AD5C41E49894B00BF099E /* MessageUserProfileUtil.m in Sources */,
 				574AD4BF1E49894A00BF099E /* EaseEmotionManager.m in Sources */,
+				5740780F1E66AA820008DFA4 /* AliOrderPayResponse.m in Sources */,
 				57F44E4D1E4CA14F00F62B16 /* UserMessageCodeRequest.m in Sources */,
 				57F44E611E4CAFA500F62B16 /* LocalPointResponse.m in Sources */,
 				574AD48E1E49894A00BF099E /* MWTapDetectingImageView.m in Sources */,
@@ -3959,6 +4196,7 @@
 				574AD5361E49894B00BF099E /* AddFriendViewController.m in Sources */,
 				574AD4721E49894A00BF099E /* wav.mm in Sources */,
 				574AD5321E49894B00BF099E /* MyChatroomListViewController.m in Sources */,
+				574077FE1E66A9330008DFA4 /* WXMediaMessage+messageConstruct.m in Sources */,
 				574AD4A51E49894A00BF099E /* PSTCollectionViewController.m in Sources */,
 				574AD5401E49894B00BF099E /* BaseViewController.m in Sources */,
 				57CAC2741E02E85A005A3F7E /* UIImage+ScreenShot.m in Sources */,
@@ -3966,6 +4204,7 @@
 				574AD4DC1E49894A00BF099E /* EaseConversationCell.m in Sources */,
 				574AD4711E49894A00BF099E /* amrFileCodec.mm in Sources */,
 				57CAC2701E02E85A005A3F7E /* UIBarButtonItem+YTExtension.m in Sources */,
+				574078111E66AA820008DFA4 /* ServiceOrderPayResResponse.m in Sources */,
 				574AD53C1E49894B00BF099E /* BaseTableViewCell.m in Sources */,
 				57EE760C1E272CA0004573F1 /* UIImageView+WebCache.m in Sources */,
 				574AD4D51E49894A00BF099E /* EaseChatToolbarItem.m in Sources */,
@@ -3988,9 +4227,11 @@
 				57CAC2831E02E85A005A3F7E /* ViewController+MASAdditions.m in Sources */,
 				57CAC28A1E02E85A005A3F7E /* NSObject+MJCoding.m in Sources */,
 				574AD4CC1E49894A00BF099E /* EaseBubbleView+File.m in Sources */,
+				574077F11E66A9330008DFA4 /* AliPayRequestHandler.m in Sources */,
 				574AD4791E49894A00BF099E /* MJRefreshFooter.m in Sources */,
 				57CAC26E1E02E85A005A3F7E /* NSDictionary+YTExtension.m in Sources */,
 				57CAC2891E02E85A005A3F7E /* NSObject+MJClass.m in Sources */,
+				574077F81E66A9330008DFA4 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
 				574AD46D1E49894A00BF099E /* EMCDDeviceManager+Microphone.m in Sources */,
 				57CAC2781E02E85A005A3F7E /* LanguageManager.m in Sources */,
 				574AD4801E49894A00BF099E /* MJRefreshBackStateFooter.m in Sources */,
@@ -3999,6 +4240,7 @@
 				574AD4A41E49894A00BF099E /* PSTCollectionViewCell.m in Sources */,
 				574AD46B1E49894A00BF099E /* EMAudioRecorderUtil.m in Sources */,
 				574AD5BD1E49894B00BF099E /* EditNicknameViewController.m in Sources */,
+				5740781C1E66AA8D0008DFA4 /* AliOrderPayRequest.m in Sources */,
 				57F44E5E1E4CAF5300F62B16 /* LocalPointRequest.m in Sources */,
 				57CAC2961E02EA88005A3F7E /* HomeViewController.m in Sources */,
 			);
@@ -4162,6 +4404,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/HyphenateFullSDK",
+					"$(PROJECT_DIR)/JiaoDaBang/Tools/Pay/AliPay/alipaySdk",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JiaoDaBang/PrefixHeader.pch";
 				INFOPLIST_FILE = JiaoDaBang/Info.plist;
@@ -4172,6 +4415,7 @@
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/MessageUtil/ChatUI/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/MessageUtil/ChatUI/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/MessageUtil/HyphenateSDK/lib",
+					"$(PROJECT_DIR)/JiaoDaBang/Tools/Pay/WechatPay/SDKExport",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.heaven.www.JiaoDaBang;
@@ -4189,6 +4433,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/HyphenateFullSDK",
+					"$(PROJECT_DIR)/JiaoDaBang/Tools/Pay/AliPay/alipaySdk",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JiaoDaBang/PrefixHeader.pch";
 				INFOPLIST_FILE = JiaoDaBang/Info.plist;
@@ -4199,6 +4444,7 @@
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/MessageUtil/ChatUI/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/MessageUtil/ChatUI/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/MessageUtil/HyphenateSDK/lib",
+					"$(PROJECT_DIR)/JiaoDaBang/Tools/Pay/WechatPay/SDKExport",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.heaven.www.JiaoDaBang;

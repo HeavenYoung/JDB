@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WXApiManager.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,41 @@
 
 }
 
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return  [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    NSString *urlString = [url absoluteString];
+    
+    if ([urlString hasPrefix:WXAppId]) {
+        [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
+    }
+    else if([urlString hasPrefix:AlipayScheme]) {
+        //如果极简开发包不可用，会跳转支付宝钱包进行支付，需要将支付宝钱包的支付结果回传给开发包
+        if ([url.host isEqualToString:@"safepay"]) {
+            [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+                DLog(@"result = %@",resultDic);
+                NSInteger resultCode = [[resultDic objectForKey:@"resultStatus"] integerValue];
+                BOOL isSuccess = NO;
+                if (9000 == resultCode) {
+                    isSuccess = YES;
+                }
+                [self.MTMainViewController payResultHandler:isSuccess];
+            }];
+        }
+        else if ([url.host isEqualToString:@"platformapi"]){
+            //支付宝钱包快登授权返回authCode
+            [[AlipaySDK defaultService] processAuthResult:url standbyCallback:^(NSDictionary *resultDic) {
+                DLog(@"result = %@",resultDic);
+            }];
+        }
+    }
+    
+    return YES;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
