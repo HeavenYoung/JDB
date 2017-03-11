@@ -37,7 +37,10 @@
 - (void)parametersWithProperties {
     
     NSMutableDictionary *mDic = [NSMutableDictionary dictionaryWithCapacity:10];
-    [mDic setObject:self.userName forKey:@"username"];
+    
+    NSString *userName = [NSString AES128ECBEncrypt:self.userName key:@"123"];
+    
+    [mDic setObject:self.userName forKey:@"phone_num"];
     [mDic setObject:self.passWord forKey:@"password"];
     
     self.parameters = mDic;
