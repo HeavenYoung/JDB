@@ -7,6 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187257941E750DF4007085C1 /* AccountSecurityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257621E750DF4007085C1 /* AccountSecurityTableViewCell.m */; };
+		187257951E750DF4007085C1 /* AccountSecurityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257641E750DF4007085C1 /* AccountSecurityTableViewController.m */; };
+		187257961E750DF4007085C1 /* ModifyNicknameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257671E750DF4007085C1 /* ModifyNicknameViewController.m */; };
+		187257971E750DF4007085C1 /* ModifyPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257691E750DF4007085C1 /* ModifyPhoneNumberViewController.m */; };
+		187257981E750DF4007085C1 /* NewPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872576B1E750DF4007085C1 /* NewPhoneNumberViewController.m */; };
+		187257991E750DF4007085C1 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872576D1E750DF4007085C1 /* ResetPasswordViewController.m */; };
+		1872579A1E750DF4007085C1 /* DeliveryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257701E750DF4007085C1 /* DeliveryTableViewController.m */; };
+		1872579B1E750DF4007085C1 /* WalletTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257731E750DF4007085C1 /* WalletTableViewCell.m */; };
+		1872579C1E750DF4007085C1 /* WalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257751E750DF4007085C1 /* WalletTableViewController.m */; };
+		1872579D1E750DF4007085C1 /* WithdrawalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257781E750DF4007085C1 /* WithdrawalViewController.m */; };
+		1872579E1E750DF4007085C1 /* WithdrawalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187257791E750DF4007085C1 /* WithdrawalViewController.xib */; };
+		1872579F1E750DF4007085C1 /* PayPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872577C1E750DF4007085C1 /* PayPageViewController.m */; };
+		187257A01E750DF4007085C1 /* PayPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1872577D1E750DF4007085C1 /* PayPageViewController.xib */; };
+		187257A11E750DF4007085C1 /* JumpToSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257811E750DF4007085C1 /* JumpToSettingViewController.m */; };
+		187257A21E750DF4007085C1 /* PersonalDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257831E750DF4007085C1 /* PersonalDataTableViewCell.m */; };
+		187257A31E750DF4007085C1 /* PersonalDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257851E750DF4007085C1 /* PersonalDataTableViewController.m */; };
+		187257A41E750DF4007085C1 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257881E750DF4007085C1 /* SettingTableViewCell.m */; };
+		187257A51E750DF4007085C1 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872578A1E750DF4007085C1 /* SettingTableViewController.m */; };
+		187257A61E750DF4007085C1 /* CertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872578D1E750DF4007085C1 /* CertificationViewController.m */; };
+		187257A71E750DF4007085C1 /* CertificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1872578E1E750DF4007085C1 /* CertificationViewController.xib */; };
+		187257A81E750DF4007085C1 /* EvaluateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257911E750DF4007085C1 /* EvaluateTableViewCell.m */; };
+		187257A91E750DF4007085C1 /* EvaluateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257931E750DF4007085C1 /* EvaluateTableViewController.m */; };
+		187257E11E750E2C007085C1 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257AD1E750E2C007085C1 /* IQNSArray+Sort.m */; };
+		187257E21E750E2C007085C1 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257AF1E750E2C007085C1 /* IQUIScrollView+Additions.m */; };
+		187257E31E750E2C007085C1 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257B11E750E2C007085C1 /* IQUITextFieldView+Additions.m */; };
+		187257E41E750E2C007085C1 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257B31E750E2C007085C1 /* IQUIView+Hierarchy.m */; };
+		187257E51E750E2C007085C1 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257B51E750E2C007085C1 /* IQUIViewController+Additions.m */; };
+		187257E61E750E2C007085C1 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257B71E750E2C007085C1 /* IQUIWindow+Hierarchy.m */; };
+		187257E71E750E2C007085C1 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257BC1E750E2C007085C1 /* IQKeyboardManager.m */; };
+		187257E81E750E2C007085C1 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257BE1E750E2C007085C1 /* IQKeyboardReturnKeyHandler.m */; };
+		187257E91E750E2C007085C1 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257C11E750E2C007085C1 /* IQTextView.m */; };
+		187257EA1E750E2C007085C1 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257C41E750E2C007085C1 /* IQBarButtonItem.m */; };
+		187257EB1E750E2C007085C1 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257C61E750E2C007085C1 /* IQPreviousNextView.m */; };
+		187257EC1E750E2C007085C1 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257C81E750E2C007085C1 /* IQTitleBarButtonItem.m */; };
+		187257ED1E750E2C007085C1 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257CA1E750E2C007085C1 /* IQToolbar.m */; };
+		187257EE1E750E2C007085C1 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257CC1E750E2C007085C1 /* IQUIView+IQKeyboardToolbar.m */; };
+		187257EF1E750E2C007085C1 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 187257CF1E750E2C007085C1 /* IQKeyboardManager.bundle */; };
+		187257F01E750E2C007085C1 /* JCAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 187257D11E750E2C007085C1 /* JCAlertView.bundle */; };
+		187257F11E750E2C007085C1 /* JCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257D31E750E2C007085C1 /* JCAlertView.m */; };
+		187257F21E750E2C007085C1 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257D61E750E2C007085C1 /* NSString+Helper.m */; };
+		187257F31E750E2C007085C1 /* UIButton+TimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257D81E750E2C007085C1 /* UIButton+TimerButton.m */; };
+		187257F41E750E2C007085C1 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257DC1E750E2C007085C1 /* UIColor+Hex.m */; };
+		187257F51E750E2C007085C1 /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257DE1E750E2C007085C1 /* YCXMenu.m */; };
+		187257F61E750E2C007085C1 /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257E01E750E2C007085C1 /* YCXMenuItem.m */; };
 		5704620B1E481198003961EB /* DownloadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5704620A1E481198003961EB /* DownloadUtil.m */; };
 		570462211E4813D2003961EB /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5704621D1E4813D2003961EB /* BaseRequest.m */; };
 		570462221E4813D2003961EB /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 570462201E4813D2003961EB /* BaseResponse.m */; };
@@ -567,6 +611,92 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		187257611E750DF4007085C1 /* AccountSecurityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSecurityTableViewCell.h; sourceTree = "<group>"; };
+		187257621E750DF4007085C1 /* AccountSecurityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSecurityTableViewCell.m; sourceTree = "<group>"; };
+		187257631E750DF4007085C1 /* AccountSecurityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSecurityTableViewController.h; sourceTree = "<group>"; };
+		187257641E750DF4007085C1 /* AccountSecurityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSecurityTableViewController.m; sourceTree = "<group>"; };
+		187257661E750DF4007085C1 /* ModifyNicknameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyNicknameViewController.h; sourceTree = "<group>"; };
+		187257671E750DF4007085C1 /* ModifyNicknameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyNicknameViewController.m; sourceTree = "<group>"; };
+		187257681E750DF4007085C1 /* ModifyPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModifyPhoneNumberViewController.h; sourceTree = "<group>"; };
+		187257691E750DF4007085C1 /* ModifyPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModifyPhoneNumberViewController.m; sourceTree = "<group>"; };
+		1872576A1E750DF4007085C1 /* NewPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPhoneNumberViewController.h; sourceTree = "<group>"; };
+		1872576B1E750DF4007085C1 /* NewPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPhoneNumberViewController.m; sourceTree = "<group>"; };
+		1872576C1E750DF4007085C1 /* ResetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPasswordViewController.h; sourceTree = "<group>"; };
+		1872576D1E750DF4007085C1 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordViewController.m; sourceTree = "<group>"; };
+		1872576F1E750DF4007085C1 /* DeliveryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryTableViewController.h; sourceTree = "<group>"; };
+		187257701E750DF4007085C1 /* DeliveryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryTableViewController.m; sourceTree = "<group>"; };
+		187257721E750DF4007085C1 /* WalletTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletTableViewCell.h; sourceTree = "<group>"; };
+		187257731E750DF4007085C1 /* WalletTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTableViewCell.m; sourceTree = "<group>"; };
+		187257741E750DF4007085C1 /* WalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletTableViewController.h; sourceTree = "<group>"; };
+		187257751E750DF4007085C1 /* WalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletTableViewController.m; sourceTree = "<group>"; };
+		187257771E750DF4007085C1 /* WithdrawalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawalViewController.h; sourceTree = "<group>"; };
+		187257781E750DF4007085C1 /* WithdrawalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawalViewController.m; sourceTree = "<group>"; };
+		187257791E750DF4007085C1 /* WithdrawalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WithdrawalViewController.xib; sourceTree = "<group>"; };
+		1872577B1E750DF4007085C1 /* PayPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPageViewController.h; sourceTree = "<group>"; };
+		1872577C1E750DF4007085C1 /* PayPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPageViewController.m; sourceTree = "<group>"; };
+		1872577D1E750DF4007085C1 /* PayPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PayPageViewController.xib; sourceTree = "<group>"; };
+		187257801E750DF4007085C1 /* JumpToSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpToSettingViewController.h; sourceTree = "<group>"; };
+		187257811E750DF4007085C1 /* JumpToSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpToSettingViewController.m; sourceTree = "<group>"; };
+		187257821E750DF4007085C1 /* PersonalDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalDataTableViewCell.h; sourceTree = "<group>"; };
+		187257831E750DF4007085C1 /* PersonalDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalDataTableViewCell.m; sourceTree = "<group>"; };
+		187257841E750DF4007085C1 /* PersonalDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalDataTableViewController.h; sourceTree = "<group>"; };
+		187257851E750DF4007085C1 /* PersonalDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalDataTableViewController.m; sourceTree = "<group>"; };
+		187257871E750DF4007085C1 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		187257881E750DF4007085C1 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		187257891E750DF4007085C1 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		1872578A1E750DF4007085C1 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		1872578C1E750DF4007085C1 /* CertificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CertificationViewController.h; sourceTree = "<group>"; };
+		1872578D1E750DF4007085C1 /* CertificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CertificationViewController.m; sourceTree = "<group>"; };
+		1872578E1E750DF4007085C1 /* CertificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CertificationViewController.xib; sourceTree = "<group>"; };
+		187257901E750DF4007085C1 /* EvaluateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluateTableViewCell.h; sourceTree = "<group>"; };
+		187257911E750DF4007085C1 /* EvaluateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluateTableViewCell.m; sourceTree = "<group>"; };
+		187257921E750DF4007085C1 /* EvaluateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluateTableViewController.h; sourceTree = "<group>"; };
+		187257931E750DF4007085C1 /* EvaluateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluateTableViewController.m; sourceTree = "<group>"; };
+		187257AC1E750E2C007085C1 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		187257AD1E750E2C007085C1 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		187257AE1E750E2C007085C1 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		187257AF1E750E2C007085C1 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		187257B01E750E2C007085C1 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		187257B11E750E2C007085C1 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		187257B21E750E2C007085C1 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		187257B31E750E2C007085C1 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		187257B41E750E2C007085C1 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		187257B51E750E2C007085C1 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		187257B61E750E2C007085C1 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		187257B71E750E2C007085C1 /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		187257B91E750E2C007085C1 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		187257BA1E750E2C007085C1 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		187257BB1E750E2C007085C1 /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		187257BC1E750E2C007085C1 /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		187257BD1E750E2C007085C1 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		187257BE1E750E2C007085C1 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		187257C01E750E2C007085C1 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		187257C11E750E2C007085C1 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		187257C31E750E2C007085C1 /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		187257C41E750E2C007085C1 /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		187257C51E750E2C007085C1 /* IQPreviousNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPreviousNextView.h; sourceTree = "<group>"; };
+		187257C61E750E2C007085C1 /* IQPreviousNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPreviousNextView.m; sourceTree = "<group>"; };
+		187257C71E750E2C007085C1 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		187257C81E750E2C007085C1 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		187257C91E750E2C007085C1 /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		187257CA1E750E2C007085C1 /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		187257CB1E750E2C007085C1 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		187257CC1E750E2C007085C1 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		187257CD1E750E2C007085C1 /* KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardManager.h; sourceTree = "<group>"; };
+		187257CF1E750E2C007085C1 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		187257D11E750E2C007085C1 /* JCAlertView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JCAlertView.bundle; sourceTree = "<group>"; };
+		187257D21E750E2C007085C1 /* JCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAlertView.h; sourceTree = "<group>"; };
+		187257D31E750E2C007085C1 /* JCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAlertView.m; sourceTree = "<group>"; };
+		187257D51E750E2C007085C1 /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
+		187257D61E750E2C007085C1 /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
+		187257D71E750E2C007085C1 /* UIButton+TimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TimerButton.h"; sourceTree = "<group>"; };
+		187257D81E750E2C007085C1 /* UIButton+TimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TimerButton.m"; sourceTree = "<group>"; };
+		187257DB1E750E2C007085C1 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		187257DC1E750E2C007085C1 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		187257DD1E750E2C007085C1 /* YCXMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenu.h; sourceTree = "<group>"; };
+		187257DE1E750E2C007085C1 /* YCXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenu.m; sourceTree = "<group>"; };
+		187257DF1E750E2C007085C1 /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenuItem.h; sourceTree = "<group>"; };
+		187257E01E750E2C007085C1 /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenuItem.m; sourceTree = "<group>"; };
 		570462091E481198003961EB /* DownloadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadUtil.h; sourceTree = "<group>"; };
 		5704620A1E481198003961EB /* DownloadUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadUtil.m; sourceTree = "<group>"; };
 		5704621C1E4813D2003961EB /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
@@ -1538,6 +1668,248 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187257601E750DF4007085C1 /* AccountSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				187257611E750DF4007085C1 /* AccountSecurityTableViewCell.h */,
+				187257621E750DF4007085C1 /* AccountSecurityTableViewCell.m */,
+				187257631E750DF4007085C1 /* AccountSecurityTableViewController.h */,
+				187257641E750DF4007085C1 /* AccountSecurityTableViewController.m */,
+				187257651E750DF4007085C1 /* Modify */,
+			);
+			path = AccountSecurity;
+			sourceTree = "<group>";
+		};
+		187257651E750DF4007085C1 /* Modify */ = {
+			isa = PBXGroup;
+			children = (
+				187257661E750DF4007085C1 /* ModifyNicknameViewController.h */,
+				187257671E750DF4007085C1 /* ModifyNicknameViewController.m */,
+				187257681E750DF4007085C1 /* ModifyPhoneNumberViewController.h */,
+				187257691E750DF4007085C1 /* ModifyPhoneNumberViewController.m */,
+				1872576A1E750DF4007085C1 /* NewPhoneNumberViewController.h */,
+				1872576B1E750DF4007085C1 /* NewPhoneNumberViewController.m */,
+				1872576C1E750DF4007085C1 /* ResetPasswordViewController.h */,
+				1872576D1E750DF4007085C1 /* ResetPasswordViewController.m */,
+			);
+			path = Modify;
+			sourceTree = "<group>";
+		};
+		1872576E1E750DF4007085C1 /* Delivery */ = {
+			isa = PBXGroup;
+			children = (
+				1872576F1E750DF4007085C1 /* DeliveryTableViewController.h */,
+				187257701E750DF4007085C1 /* DeliveryTableViewController.m */,
+			);
+			path = Delivery;
+			sourceTree = "<group>";
+		};
+		187257711E750DF4007085C1 /* MyWallet */ = {
+			isa = PBXGroup;
+			children = (
+				187257721E750DF4007085C1 /* WalletTableViewCell.h */,
+				187257731E750DF4007085C1 /* WalletTableViewCell.m */,
+				187257741E750DF4007085C1 /* WalletTableViewController.h */,
+				187257751E750DF4007085C1 /* WalletTableViewController.m */,
+				187257761E750DF4007085C1 /* Withdrawal */,
+			);
+			path = MyWallet;
+			sourceTree = "<group>";
+		};
+		187257761E750DF4007085C1 /* Withdrawal */ = {
+			isa = PBXGroup;
+			children = (
+				187257771E750DF4007085C1 /* WithdrawalViewController.h */,
+				187257781E750DF4007085C1 /* WithdrawalViewController.m */,
+				187257791E750DF4007085C1 /* WithdrawalViewController.xib */,
+			);
+			path = Withdrawal;
+			sourceTree = "<group>";
+		};
+		1872577A1E750DF4007085C1 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				1872577B1E750DF4007085C1 /* PayPageViewController.h */,
+				1872577C1E750DF4007085C1 /* PayPageViewController.m */,
+				1872577D1E750DF4007085C1 /* PayPageViewController.xib */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		1872577E1E750DF4007085C1 /* PersonalData */ = {
+			isa = PBXGroup;
+			children = (
+				1872577F1E750DF4007085C1 /* Jump */,
+				187257821E750DF4007085C1 /* PersonalDataTableViewCell.h */,
+				187257831E750DF4007085C1 /* PersonalDataTableViewCell.m */,
+				187257841E750DF4007085C1 /* PersonalDataTableViewController.h */,
+				187257851E750DF4007085C1 /* PersonalDataTableViewController.m */,
+			);
+			path = PersonalData;
+			sourceTree = "<group>";
+		};
+		1872577F1E750DF4007085C1 /* Jump */ = {
+			isa = PBXGroup;
+			children = (
+				187257801E750DF4007085C1 /* JumpToSettingViewController.h */,
+				187257811E750DF4007085C1 /* JumpToSettingViewController.m */,
+			);
+			path = Jump;
+			sourceTree = "<group>";
+		};
+		187257861E750DF4007085C1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				187257871E750DF4007085C1 /* SettingTableViewCell.h */,
+				187257881E750DF4007085C1 /* SettingTableViewCell.m */,
+				187257891E750DF4007085C1 /* SettingTableViewController.h */,
+				1872578A1E750DF4007085C1 /* SettingTableViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		1872578B1E750DF4007085C1 /* TheSchoolCertification */ = {
+			isa = PBXGroup;
+			children = (
+				1872578C1E750DF4007085C1 /* CertificationViewController.h */,
+				1872578D1E750DF4007085C1 /* CertificationViewController.m */,
+				1872578E1E750DF4007085C1 /* CertificationViewController.xib */,
+			);
+			path = TheSchoolCertification;
+			sourceTree = "<group>";
+		};
+		1872578F1E750DF4007085C1 /* ToEvaluate */ = {
+			isa = PBXGroup;
+			children = (
+				187257901E750DF4007085C1 /* EvaluateTableViewCell.h */,
+				187257911E750DF4007085C1 /* EvaluateTableViewCell.m */,
+				187257921E750DF4007085C1 /* EvaluateTableViewController.h */,
+				187257931E750DF4007085C1 /* EvaluateTableViewController.m */,
+			);
+			path = ToEvaluate;
+			sourceTree = "<group>";
+		};
+		187257AA1E750E2C007085C1 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				187257AB1E750E2C007085C1 /* Categories */,
+				187257B81E750E2C007085C1 /* Constants */,
+				187257BB1E750E2C007085C1 /* IQKeyboardManager.h */,
+				187257BC1E750E2C007085C1 /* IQKeyboardManager.m */,
+				187257BD1E750E2C007085C1 /* IQKeyboardReturnKeyHandler.h */,
+				187257BE1E750E2C007085C1 /* IQKeyboardReturnKeyHandler.m */,
+				187257BF1E750E2C007085C1 /* IQTextView */,
+				187257C21E750E2C007085C1 /* IQToolbar */,
+				187257CD1E750E2C007085C1 /* KeyboardManager.h */,
+				187257CE1E750E2C007085C1 /* Resources */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		187257AB1E750E2C007085C1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				187257AC1E750E2C007085C1 /* IQNSArray+Sort.h */,
+				187257AD1E750E2C007085C1 /* IQNSArray+Sort.m */,
+				187257AE1E750E2C007085C1 /* IQUIScrollView+Additions.h */,
+				187257AF1E750E2C007085C1 /* IQUIScrollView+Additions.m */,
+				187257B01E750E2C007085C1 /* IQUITextFieldView+Additions.h */,
+				187257B11E750E2C007085C1 /* IQUITextFieldView+Additions.m */,
+				187257B21E750E2C007085C1 /* IQUIView+Hierarchy.h */,
+				187257B31E750E2C007085C1 /* IQUIView+Hierarchy.m */,
+				187257B41E750E2C007085C1 /* IQUIViewController+Additions.h */,
+				187257B51E750E2C007085C1 /* IQUIViewController+Additions.m */,
+				187257B61E750E2C007085C1 /* IQUIWindow+Hierarchy.h */,
+				187257B71E750E2C007085C1 /* IQUIWindow+Hierarchy.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		187257B81E750E2C007085C1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				187257B91E750E2C007085C1 /* IQKeyboardManagerConstants.h */,
+				187257BA1E750E2C007085C1 /* IQKeyboardManagerConstantsInternal.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		187257BF1E750E2C007085C1 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				187257C01E750E2C007085C1 /* IQTextView.h */,
+				187257C11E750E2C007085C1 /* IQTextView.m */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		187257C21E750E2C007085C1 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				187257C31E750E2C007085C1 /* IQBarButtonItem.h */,
+				187257C41E750E2C007085C1 /* IQBarButtonItem.m */,
+				187257C51E750E2C007085C1 /* IQPreviousNextView.h */,
+				187257C61E750E2C007085C1 /* IQPreviousNextView.m */,
+				187257C71E750E2C007085C1 /* IQTitleBarButtonItem.h */,
+				187257C81E750E2C007085C1 /* IQTitleBarButtonItem.m */,
+				187257C91E750E2C007085C1 /* IQToolbar.h */,
+				187257CA1E750E2C007085C1 /* IQToolbar.m */,
+				187257CB1E750E2C007085C1 /* IQUIView+IQKeyboardToolbar.h */,
+				187257CC1E750E2C007085C1 /* IQUIView+IQKeyboardToolbar.m */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		187257CE1E750E2C007085C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				187257CF1E750E2C007085C1 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		187257D01E750E2C007085C1 /* JCAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				187257D11E750E2C007085C1 /* JCAlertView.bundle */,
+				187257D21E750E2C007085C1 /* JCAlertView.h */,
+				187257D31E750E2C007085C1 /* JCAlertView.m */,
+			);
+			path = JCAlertView;
+			sourceTree = "<group>";
+		};
+		187257D41E750E2C007085C1 /* SMSButton */ = {
+			isa = PBXGroup;
+			children = (
+				187257D51E750E2C007085C1 /* NSString+Helper.h */,
+				187257D61E750E2C007085C1 /* NSString+Helper.m */,
+				187257D71E750E2C007085C1 /* UIButton+TimerButton.h */,
+				187257D81E750E2C007085C1 /* UIButton+TimerButton.m */,
+			);
+			path = SMSButton;
+			sourceTree = "<group>";
+		};
+		187257D91E750E2C007085C1 /* YCXMenu */ = {
+			isa = PBXGroup;
+			children = (
+				187257DA1E750E2C007085C1 /* Color */,
+				187257DD1E750E2C007085C1 /* YCXMenu.h */,
+				187257DE1E750E2C007085C1 /* YCXMenu.m */,
+				187257DF1E750E2C007085C1 /* YCXMenuItem.h */,
+				187257E01E750E2C007085C1 /* YCXMenuItem.m */,
+			);
+			path = YCXMenu;
+			sourceTree = "<group>";
+		};
+		187257DA1E750E2C007085C1 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				187257DB1E750E2C007085C1 /* UIColor+Hex.h */,
+				187257DC1E750E2C007085C1 /* UIColor+Hex.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		570462081E481198003961EB /* DownloadUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -3245,6 +3617,14 @@
 		57CAC20F1E02E85A005A3F7E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				187257601E750DF4007085C1 /* AccountSecurity */,
+				1872576E1E750DF4007085C1 /* Delivery */,
+				187257711E750DF4007085C1 /* MyWallet */,
+				1872577A1E750DF4007085C1 /* Pay */,
+				1872577E1E750DF4007085C1 /* PersonalData */,
+				187257861E750DF4007085C1 /* Setting */,
+				1872578B1E750DF4007085C1 /* TheSchoolCertification */,
+				1872578F1E750DF4007085C1 /* ToEvaluate */,
 				57CAC28E1E02E920005A3F7E /* MainViewController.h */,
 				57CAC28F1E02E920005A3F7E /* MainViewController.m */,
 				57CAC2911E02E937005A3F7E /* YTNavigationController.h */,
@@ -3334,6 +3714,10 @@
 		57CAC2361E02E85A005A3F7E /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				187257AA1E750E2C007085C1 /* IQKeyboardManager */,
+				187257D01E750E2C007085C1 /* JCAlertView */,
+				187257D41E750E2C007085C1 /* SMSButton */,
+				187257D91E750E2C007085C1 /* YCXMenu */,
 				57A63B541E49743F0053D692 /* MBProgressHUD */,
 				57EE758D1E272CA0004573F1 /* FMDB */,
 				57EE759A1E272CA0004573F1 /* Refresh */,
@@ -3739,6 +4123,7 @@
 				574AD4E71E49894A00BF099E /* chatBar_colorMore_camera@2x.png in Resources */,
 				574AD5671E49894B00BF099E /* chat_receiver_audio_playing003@2x.png in Resources */,
 				574AD51B1E49894A00BF099E /* sr_refresh@2X.png in Resources */,
+				187257A71E750DF4007085C1 /* CertificationViewController.xib in Resources */,
 				574AD5701E49894B00BF099E /* chat_sender_bg.png in Resources */,
 				574AD5581E49894B00BF099E /* chat_location_annotation_someone.png in Resources */,
 				574AD4EE1E49894A00BF099E /* chatBar_colorMore_videoCall@2x.png in Resources */,
@@ -3774,6 +4159,7 @@
 				574AD55F1E49894B00BF099E /* chat_location_preview@2x.png in Resources */,
 				574AD5A61E49894B00BF099E /* tabbar_chats.png in Resources */,
 				574AD4F91E49894A00BF099E /* chatBar_recordSelected@2x.png in Resources */,
+				1872579E1E750DF4007085C1 /* WithdrawalViewController.xib in Resources */,
 				574AD5A41E49894B00BF099E /* nav_createGroup@2x.png in Resources */,
 				574AD5571E49894B00BF099E /* chat_video_play.png in Resources */,
 				574AD50B1E49894A00BF099E /* VoiceSearchFeedback010@2x.png in Resources */,
@@ -3900,7 +4286,10 @@
 				574AD5911E49894B00BF099E /* icon_040_cover.png in Resources */,
 				574AD5111E49894A00BF099E /* VoiceSearchFeedback016@2x.png in Resources */,
 				574AD5811E49894B00BF099E /* icon_020_cover.png in Resources */,
+				187257EF1E750E2C007085C1 /* IQKeyboardManager.bundle in Resources */,
+				187257F01E750E2C007085C1 /* JCAlertView.bundle in Resources */,
 				574AD5661E49894B00BF099E /* chat_receiver_audio_playing002@2x.png in Resources */,
+				187257A01E750DF4007085C1 /* PayPageViewController.xib in Resources */,
 				574AD5B41E49894B00BF099E /* tabbarSelectBg.png in Resources */,
 				574AD4E91E49894A00BF099E /* chatBar_colorMore_location@2x.png in Resources */,
 				574AD5021E49894A00BF099E /* VoiceSearchFeedback001@2x.png in Resources */,
@@ -3959,6 +4348,7 @@
 				574AD4AE1E49894A00BF099E /* PSTGridLayoutSection.m in Sources */,
 				574AD5251E49894B00BF099E /* ChatViewController.m in Sources */,
 				574AD47D1E49894A00BF099E /* MJRefreshAutoStateFooter.m in Sources */,
+				187257A61E750DF4007085C1 /* CertificationViewController.m in Sources */,
 				57CAC2871E02E85A005A3F7E /* MJPropertyKey.m in Sources */,
 				574AD5211E49894A00BF099E /* UIImageView+HeadImage.m in Sources */,
 				574AD5371E49894B00BF099E /* ApplyFriendCell.m in Sources */,
@@ -3966,6 +4356,7 @@
 				574077FB1E66A9330008DFA4 /* WXApiManager.m in Sources */,
 				574AD4A11E49894A00BF099E /* UIView+EMWebCacheOperation.m in Sources */,
 				574AD53D1E49894B00BF099E /* EMSearchBar.m in Sources */,
+				187257F51E750E2C007085C1 /* YCXMenu.m in Sources */,
 				574AD4701E49894A00BF099E /* EMCDDeviceManagerBase.m in Sources */,
 				574AD4761E49894A00BF099E /* MJRefreshAutoFooter.m in Sources */,
 				574AD4BD1E49894A00BF099E /* EaseEmojiEmoticons.m in Sources */,
@@ -3985,11 +4376,13 @@
 				574AD53A1E49894B00BF099E /* InvitationManager.m in Sources */,
 				57CAC29F1E02EADD005A3F7E /* ProfileViewController.m in Sources */,
 				574AD4BC1E49894A00BF099E /* EaseEmoji.m in Sources */,
+				187257E41E750E2C007085C1 /* IQUIView+Hierarchy.m in Sources */,
 				57BFC78A1E4B4588001690E4 /* UserInfoData.m in Sources */,
 				574AD52B1E49894B00BF099E /* GroupListViewController.m in Sources */,
 				57EE76081E272CA0004573F1 /* UIImage+GIF.m in Sources */,
 				574AD4671E49894A00BF099E /* AppDelegate+EaseMob.m in Sources */,
 				574AD4C01E49894A00BF099E /* FixFopen.c in Sources */,
+				187257971E750DF4007085C1 /* ModifyPhoneNumberViewController.m in Sources */,
 				574AD5351E49894B00BF099E /* AddFriendCell.m in Sources */,
 				574AD4731E49894A00BF099E /* EMVoiceConverter.mm in Sources */,
 				57EE75F81E272CA0004573F1 /* RefreshStateNormalHeader.m in Sources */,
@@ -4001,11 +4394,13 @@
 				574AD4941E49894A00BF099E /* EMSDWebImageDecoder.m in Sources */,
 				57CAC2801E02E85A005A3F7E /* NSArray+MASAdditions.m in Sources */,
 				574AD5231E49894B00BF099E /* UIViewController+HUD.m in Sources */,
+				1872579F1E750DF4007085C1 /* PayPageViewController.m in Sources */,
 				574AD4B01E49894A00BF099E /* EaseSDKHelper.m in Sources */,
 				574077F61E66A9330008DFA4 /* PayResultView.m in Sources */,
 				57CAC2861E02E85A005A3F7E /* MJProperty.m in Sources */,
 				574AD5B91E49894B00BF099E /* RobotListViewController.m in Sources */,
 				574AD5441E49894B00BF099E /* XHMessageTextView.m in Sources */,
+				187257EB1E750E2C007085C1 /* IQPreviousNextView.m in Sources */,
 				574AD46C1E49894A00BF099E /* EMCDDeviceManager+Media.m in Sources */,
 				574AD5301E49894B00BF099E /* ChatroomDetailViewController.m in Sources */,
 				574AD5291E49894B00BF099E /* CreateGroupViewController.m in Sources */,
@@ -4013,11 +4408,14 @@
 				574AD51E1E49894A00BF099E /* THProgressView.m in Sources */,
 				574AD4CD1E49894A00BF099E /* EaseBubbleView+Gif.m in Sources */,
 				57EE75F31E272CA0004573F1 /* RefreshHeader.m in Sources */,
+				187257E81E750E2C007085C1 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				187257EA1E750E2C007085C1 /* IQBarButtonItem.m in Sources */,
 				57BFC7971E4B4902001690E4 /* OrderListData.m in Sources */,
 				574078041E66AA1E0008DFA4 /* AliOrderPayData.m in Sources */,
 				574AD4951E49894A00BF099E /* EMSDWebImageDownloader.m in Sources */,
 				574AD4BB1E49894A00BF099E /* EaseMessageReadManager.m in Sources */,
 				57CAC27A1E02E85A005A3F7E /* MASCompositeConstraint.m in Sources */,
+				187257E91E750E2C007085C1 /* IQTextView.m in Sources */,
 				574AD4871E49894A00BF099E /* UIScrollView+MJRefresh.m in Sources */,
 				57CAC27E1E02E85A005A3F7E /* MASViewAttribute.m in Sources */,
 				57BFC79E1E4B4C52001690E4 /* WalletData.m in Sources */,
@@ -4034,17 +4432,22 @@
 				57EE76091E272CA0004573F1 /* UIImage+MultiFormat.m in Sources */,
 				574AD4D81E49894A00BF099E /* EaseFaceView.m in Sources */,
 				574AD4961E49894A00BF099E /* EMSDWebImageDownloaderOperation.m in Sources */,
+				187257961E750DF4007085C1 /* ModifyNicknameViewController.m in Sources */,
+				187257E71E750E2C007085C1 /* IQKeyboardManager.m in Sources */,
 				574AD5B71E49894B00BF099E /* EMRotbotChatViewCell.m in Sources */,
 				57CAC27B1E02E85A005A3F7E /* MASConstraint.m in Sources */,
+				187257ED1E750E2C007085C1 /* IQToolbar.m in Sources */,
 				574AD4AA1E49894A00BF099E /* PSTCollectionViewUpdateItem.m in Sources */,
 				5740782B1E66AC630008DFA4 /* ShareUtil.m in Sources */,
 				57F44E671E4CB2EF00F62B16 /* OrderTypeResponse.m in Sources */,
 				57A63B5A1E49743F0053D692 /* MBProgressHUD.m in Sources */,
+				187257F31E750E2C007085C1 /* UIButton+TimerButton.m in Sources */,
 				57403FD51E1B9192007CF092 /* AFURLResponseSerialization.m in Sources */,
 				57BFC78D1E4B465B001690E4 /* NewsInfoData.m in Sources */,
 				57403FD11E1B9192007CF092 /* AFHTTPSessionManager.m in Sources */,
 				574AD5431E49894B00BF099E /* EMSearchDisplayController.m in Sources */,
 				574AD48D1E49894A00BF099E /* MWPhotoBrowser.m in Sources */,
+				1872579A1E750DF4007085C1 /* DeliveryTableViewController.m in Sources */,
 				574AD4B91E49894A00BF099E /* EaseChineseToPinyin.m in Sources */,
 				57CAC2761E02E85A005A3F7E /* GlobalManager.m in Sources */,
 				57F44E561E4CABCF00F62B16 /* UserRegisterRequest.m in Sources */,
@@ -4082,8 +4485,12 @@
 				574077F71E66A9330008DFA4 /* PayResultViewController.m in Sources */,
 				574AD4AD1E49894A00BF099E /* PSTGridLayoutRow.m in Sources */,
 				57CAC28C1E02E85A005A3F7E /* NSObject+MJProperty.m in Sources */,
+				187257A51E750DF4007085C1 /* SettingTableViewController.m in Sources */,
 				574AD52D1E49894B00BF099E /* GroupSubjectChangingViewController.m in Sources */,
+				1872579B1E750DF4007085C1 /* WalletTableViewCell.m in Sources */,
+				1872579D1E750DF4007085C1 /* WithdrawalViewController.m in Sources */,
 				574AD4A31E49894A00BF099E /* PSTCollectionView.m in Sources */,
+				187257E51E750E2C007085C1 /* IQUIViewController+Additions.m in Sources */,
 				57CAC2881E02E85A005A3F7E /* MJPropertyType.m in Sources */,
 				574AD49A1E49894A00BF099E /* NSData+EMImageContentType.m in Sources */,
 				57A63B591E49743F0053D692 /* MBProgressHUD+Add.m in Sources */,
@@ -4096,6 +4503,7 @@
 				57CAC27C1E02E85A005A3F7E /* MASConstraintMaker.m in Sources */,
 				574AD4B51E49894A00BF099E /* NSDateFormatter+Category.m in Sources */,
 				577029FA1E02E7C300FA9E95 /* ViewController.m in Sources */,
+				187257F41E750E2C007085C1 /* UIColor+Hex.m in Sources */,
 				574AD51F1E49894A00BF099E /* TTGlobalUICommon.m in Sources */,
 				57C5B7071E4AB89C0006618F /* Tools.m in Sources */,
 				574AD52E1E49894B00BF099E /* PublicGroupDetailViewController.m in Sources */,
@@ -4106,7 +4514,10 @@
 				574AD4981E49894A00BF099E /* EMSDWebImagePrefetcher.m in Sources */,
 				574AD49C1E49894A00BF099E /* UIImage+EMGIF.m in Sources */,
 				574AD4D31E49894A00BF099E /* EaseBubbleView.m in Sources */,
+				187257991E750DF4007085C1 /* ResetPasswordViewController.m in Sources */,
+				187257A81E750DF4007085C1 /* EvaluateTableViewCell.m in Sources */,
 				571D20941E52AECE00BF3334 /* InfoInputView.m in Sources */,
+				187257981E750DF4007085C1 /* NewPhoneNumberViewController.m in Sources */,
 				57EE76061E272CA0004573F1 /* SDWebImagePrefetcher.m in Sources */,
 				577029F71E02E7C300FA9E95 /* AppDelegate.m in Sources */,
 				57CAC2851E02E85A005A3F7E /* MJFoundation.m in Sources */,
@@ -4120,12 +4531,16 @@
 				574AD4C51E49894A00BF099E /* EaseUsersListViewController.m in Sources */,
 				57EE75F71E272CA0004573F1 /* RefreshStateHeader.m in Sources */,
 				57F44E6A1E4CB6F100F62B16 /* OrderTypeRequest.m in Sources */,
+				187257F21E750E2C007085C1 /* NSString+Helper.m in Sources */,
 				574AD4BA1E49894A00BF099E /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				574AD5BC1E49894B00BF099E /* DebugViewController.m in Sources */,
 				57EE75FD1E272CA0004573F1 /* RefreshConst.m in Sources */,
 				57CAC27F1E02E85A005A3F7E /* MASViewConstraint.m in Sources */,
+				1872579C1E750DF4007085C1 /* WalletTableViewController.m in Sources */,
+				187257EC1E750E2C007085C1 /* IQTitleBarButtonItem.m in Sources */,
 				574AD4D91E49894A00BF099E /* EaseFacialView.m in Sources */,
 				574AD4DB1E49894A00BF099E /* EaseRecordView.m in Sources */,
+				187257951E750DF4007085C1 /* AccountSecurityTableViewController.m in Sources */,
 				574AD5C51E49894B00BF099E /* MessageOrderTypeCell.m in Sources */,
 				574AD5221E49894A00BF099E /* UIResponder+Router.m in Sources */,
 				574AD53B1E49894B00BF099E /* UserProfileManager.m in Sources */,
@@ -4136,6 +4551,7 @@
 				574AD4BE1E49894A00BF099E /* EaseEmotionEscape.m in Sources */,
 				574AD49B1E49894A00BF099E /* UIButton+EMWebCache.m in Sources */,
 				57CAC29C1E02EACB005A3F7E /* HelpViewController.m in Sources */,
+				187257E61E750E2C007085C1 /* IQUIWindow+Hierarchy.m in Sources */,
 				57CAC28B1E02E85A005A3F7E /* NSObject+MJKeyValue.m in Sources */,
 				574AD4C11E49894A00BF099E /* EaseConversationListViewController.m in Sources */,
 				577029F41E02E7C300FA9E95 /* main.m in Sources */,
@@ -4159,7 +4575,9 @@
 				573829311E4B449800166F3A /* BannerInfoData.m in Sources */,
 				57BFC7941E4B4849001690E4 /* PublishData.m in Sources */,
 				574AD4A21E49894A00BF099E /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
+				187257E31E750E2C007085C1 /* IQUITextFieldView+Additions.m in Sources */,
 				5740781E1E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m in Sources */,
+				187257F61E750E2C007085C1 /* YCXMenuItem.m in Sources */,
 				574AD5BF1E49894B00BF099E /* SettingsViewController.m in Sources */,
 				57EE75F21E272CA0004573F1 /* RefreshFooter.m in Sources */,
 				57EE76031E272CA0004573F1 /* SDWebImageDownloader.m in Sources */,
@@ -4168,6 +4586,7 @@
 				57EE75FA1E272CA0004573F1 /* UIScrollView+Refresh.m in Sources */,
 				57EE75F61E272CA0004573F1 /* RefreshGifHeader.m in Sources */,
 				57BFC7A51E4B4E0C001690E4 /* OrderTypeListData.m in Sources */,
+				187257E11E750E2C007085C1 /* IQNSArray+Sort.m in Sources */,
 				57CAC26D1E02E85A005A3F7E /* NSArray+Log.m in Sources */,
 				574AD4DA1E49894A00BF099E /* EaseChatBarMoreView.m in Sources */,
 				574AD53F1E49894B00BF099E /* EMRemarkImageView.m in Sources */,
@@ -4184,6 +4603,7 @@
 				574AD5201E49894A00BF099E /* CallViewController.m in Sources */,
 				57F44E501E4CA16C00F62B16 /* UserMessageCodeResponse.m in Sources */,
 				57EE76021E272CA0004573F1 /* SDWebImageDecoder.m in Sources */,
+				187257A11E750DF4007085C1 /* JumpToSettingViewController.m in Sources */,
 				574AD5181E49894A00BF099E /* EMAlertView.m in Sources */,
 				574AD5241E49894B00BF099E /* ConversationListController.m in Sources */,
 				574AD4781E49894A00BF099E /* MJRefreshComponent.m in Sources */,
@@ -4193,6 +4613,7 @@
 				574AD47A1E49894A00BF099E /* MJRefreshHeader.m in Sources */,
 				574AD4C81E49894A00BF099E /* EaseBaseMessageCell.m in Sources */,
 				574AD4771E49894A00BF099E /* MJRefreshBackFooter.m in Sources */,
+				187257A41E750DF4007085C1 /* SettingTableViewCell.m in Sources */,
 				574AD5361E49894B00BF099E /* AddFriendViewController.m in Sources */,
 				574AD4721E49894A00BF099E /* wav.mm in Sources */,
 				574AD5321E49894B00BF099E /* MyChatroomListViewController.m in Sources */,
@@ -4204,11 +4625,15 @@
 				574AD4DC1E49894A00BF099E /* EaseConversationCell.m in Sources */,
 				574AD4711E49894A00BF099E /* amrFileCodec.mm in Sources */,
 				57CAC2701E02E85A005A3F7E /* UIBarButtonItem+YTExtension.m in Sources */,
+				187257EE1E750E2C007085C1 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				187257A21E750DF4007085C1 /* PersonalDataTableViewCell.m in Sources */,
 				574078111E66AA820008DFA4 /* ServiceOrderPayResResponse.m in Sources */,
+				187257941E750DF4007085C1 /* AccountSecurityTableViewCell.m in Sources */,
 				574AD53C1E49894B00BF099E /* BaseTableViewCell.m in Sources */,
 				57EE760C1E272CA0004573F1 /* UIImageView+WebCache.m in Sources */,
 				574AD4D51E49894A00BF099E /* EaseChatToolbarItem.m in Sources */,
 				57403FD41E1B9192007CF092 /* AFURLRequestSerialization.m in Sources */,
+				187257F11E750E2C007085C1 /* JCAlertView.m in Sources */,
 				57EE76051E272CA0004573F1 /* SDWebImageManager.m in Sources */,
 				574AD5261E49894B00BF099E /* ChatGroupDetailViewController.m in Sources */,
 				574AD4B61E49894A00BF099E /* NSString+Valid.m in Sources */,
@@ -4235,7 +4660,10 @@
 				574AD46D1E49894A00BF099E /* EMCDDeviceManager+Microphone.m in Sources */,
 				57CAC2781E02E85A005A3F7E /* LanguageManager.m in Sources */,
 				574AD4801E49894A00BF099E /* MJRefreshBackStateFooter.m in Sources */,
+				187257E21E750E2C007085C1 /* IQUIScrollView+Additions.m in Sources */,
+				187257A91E750DF4007085C1 /* EvaluateTableViewController.m in Sources */,
 				574AD4AC1E49894A00BF099E /* PSTGridLayoutItem.m in Sources */,
+				187257A31E750DF4007085C1 /* PersonalDataTableViewController.m in Sources */,
 				574AD46F1E49894A00BF099E /* EMCDDeviceManager+Remind.m in Sources */,
 				574AD4A41E49894A00BF099E /* PSTCollectionViewCell.m in Sources */,
 				574AD46B1E49894A00BF099E /* EMAudioRecorderUtil.m in Sources */,

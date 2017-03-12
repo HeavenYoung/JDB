@@ -35,10 +35,17 @@
 #import "MessageUserProfileUtil.h"
 #import "MessageUtil.h"
 
+// 宏定义
+#define RGB(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define My_Font(SIZE)  [UIFont boldSystemFontOfSize:SIZE];
+#define MAIN_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define MAIN_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#import "UIButton+TimerButton.h"
+#import "YCXMenu.h"
+#import "JCAlertView.h"
+
+
 
 
 #endif
-
-
-
 #endif /* PrefixHeader_pch */
