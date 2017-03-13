@@ -35,7 +35,7 @@
         [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
         manager.requestSerializer.timeoutInterval = NETWORK_TIMEOUTINTERVAL;
         [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
-        
+    
         manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
                                                              @"text/json",
                                                              @"text/javascript",
@@ -163,7 +163,7 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // class error
-        if (![response isKindOfClass:[NSDictionary class]]) {
+        if (![responseObject isKindOfClass:[NSDictionary class]]) {
             [self paserErrorWithCode:NETWORK_ERROR_UNKNOW request:request];
         } else {
             [[request responseParser] setResponseObject:response];

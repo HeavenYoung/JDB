@@ -43,6 +43,11 @@
 /** 网络参数*/
 #define kBaseServerURL        @"http://59.110.62.75/think/"
 
+/** 加密 */
+#define EncryptoKey          @"56A0741C0955CBC9"
+
+/**  */
+
 /** 配置参数 */
 #define kHXappKey           @"bluepane2016#bluepane"
 #define kApnsCertName       @"mt-buyer-push-dev-cert"

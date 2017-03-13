@@ -38,10 +38,11 @@
     
     NSMutableDictionary *mDic = [NSMutableDictionary dictionaryWithCapacity:10];
     
-    NSString *userName = [NSString AES128ECBEncrypt:self.userName key:@"123"];
-    
-    [mDic setObject:self.userName forKey:@"phone_num"];
-    [mDic setObject:self.passWord forKey:@"password"];
+    NSString *userName = [NSString AES128ECBEncrypt:self.userName key:EncryptoKey];
+    NSString *password = [NSString AES128ECBEncrypt:self.passWord key:EncryptoKey];
+
+    [mDic setObject:userName forKey:@"phone_num"];
+    [mDic setObject:password forKey:@"password"];
     
     self.parameters = mDic;
 }
