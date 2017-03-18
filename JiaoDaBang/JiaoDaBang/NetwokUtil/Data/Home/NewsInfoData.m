@@ -8,6 +8,10 @@
 
 #import "NewsInfoData.h"
 
+@implementation NewsListData
+
+@end
+
 @implementation NewsInfoData
 
 @end

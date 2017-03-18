@@ -53,7 +53,7 @@
 #define kApnsCertName       @"mt-buyer-push-dev-cert"
 
 
-#define kUserInfoData       @"userInfoData"
+#define kUserID             @"userId"
 #define kUserAccount        @"useraccount"
 #define kUserPassword       @"userpassword"
 

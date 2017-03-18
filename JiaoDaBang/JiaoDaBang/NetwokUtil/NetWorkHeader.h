@@ -13,8 +13,15 @@
 
 /***   REQUEST   BEGIN ***/
 #import "UserLoginRequest.h"
+#import "UserInfoRequest.h"
 #import "UserRegisterRequest.h"
 #import "UserMessageCodeRequest.h"
+#import "UserForgetRequest.h"
+
+#import "HomeBannerListRequest.h"
+#import "NewsInfoData.h"
+#import "DeliveryInfoData.h"
+
 #import "LocalPointRequest.h"
 #import "OrderTypeRequest.h"
 /***   REQUEST   END ***/

@@ -226,4 +226,14 @@
 }
 
 
++ (NSString *)encryptWithPlainText:(NSString *)plainText {
+
+    return [NSString AES128ECBEncrypt:plainText key:EncryptoKey];
+}
+
++ (NSString *)decryptWithCryptString:(NSString *)cryptString {
+
+    return [NSString AES128ECBDecrypt:cryptString key:EncryptoKey];
+}
+
 @end

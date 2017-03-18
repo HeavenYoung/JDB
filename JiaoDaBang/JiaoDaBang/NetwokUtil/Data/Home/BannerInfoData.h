@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@interface HomeBannerInfoData : NSObject
+
+@property (nonatomic, strong) NSArray *bannerDataArray;
+
+@end
+
 @interface BannerInfoData : NSObject
 
 @property (nonatomic, copy) NSString *bannerId;

@@ -43,7 +43,7 @@
 @property (nonatomic, assign, readonly) BOOL isLogin;
 @property (nonatomic, copy, readonly) NSString *token;
 @property (nonatomic, copy, readonly) NSString *username;
-@property (nonatomic, assign, readonly) NSInteger userId;
+@property (nonatomic, assign, readonly) NSString *userId;
 @property (nonatomic, copy, readonly) NSURL *avatarUrl;
 @property (nonatomic, strong) UIImage *localAvatarImage;
 @property (nonatomic, copy) NSString *deviceId;

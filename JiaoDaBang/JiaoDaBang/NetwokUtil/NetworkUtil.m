@@ -163,7 +163,7 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // class error
-        if (![responseObject isKindOfClass:[NSDictionary class]]) {
+        if (![response isKindOfClass:[NSDictionary class]]) {
             [self paserErrorWithCode:NETWORK_ERROR_UNKNOW request:request];
         } else {
             [[request responseParser] setResponseObject:response];

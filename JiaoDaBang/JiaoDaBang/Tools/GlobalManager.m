@@ -25,14 +25,24 @@
 - (void)loginSuccessedWithUserInfo:(UserInfoData *)userInfoData {
     _userInfoData = userInfoData;
 
+    [[NSUserDefaults standardUserDefaults] setObject:_userInfoData.userId forKey:kUserID];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFCATION_USER_STATUSCHANGE object:nil];
 }
 
 - (void)refreshWithUserInfo:(UserInfoData *)userInfoData {
     _userInfoData = userInfoData;
+    [[NSUserDefaults standardUserDefaults] setObject:_userInfoData.userId forKey:kUserID];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFCATION_USER_STATUSCHANGE object:nil];
 
+}
+
+- (NSString *)userId {
+
+    return _userInfoData.userId;
 }
 
 - (BOOL)isLogin {

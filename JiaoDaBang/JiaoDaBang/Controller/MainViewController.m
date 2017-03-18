@@ -34,12 +34,11 @@
 
 - (void)autoLogin {
 
-    NSString *userAccount = [[NSUserDefaults standardUserDefaults] objectForKey:kUserAccount];
-    NSString *userPassword = [[NSUserDefaults standardUserDefaults] objectForKey:kUserAccount];
+    NSString *userId = [[NSUserDefaults standardUserDefaults] objectForKey:kUserID];
     
-    if (userAccount && userPassword) {
-        UserLoginRequest *request = [[UserLoginRequest alloc] init];
-        [request setParametersWithUserName:@"15311437664" passWord:@"123456"];
+    if (userId) {
+        UserInfoRequest *request = [[UserInfoRequest alloc] init];
+        [request setParametersWithUserId:userId];
         [request setSuccessBlock:^(id object, id responseObject) {
             DLog(@"-----用户登录成功");
             
@@ -48,6 +47,7 @@
         }];
         [request setFailureBlock:^(NSInteger errorCode, id responseObject) {
             DLog(@"-----用户登录失败");
+            [self showLogin];
             
         }];
         [request sendRequest];
@@ -56,13 +56,17 @@
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
-            LoginViewController *loginViewController = [[LoginViewController alloc] init];
-            YTNavigationController *navigationController = [[YTNavigationController alloc] initWithRootViewController:loginViewController];
-            [self presentViewController:navigationController animated:NO completion:nil];
+            [self showLogin];
             
         });
 
     }
+}
+
+- (void)showLogin {
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    YTNavigationController *navigationController = [[YTNavigationController alloc] initWithRootViewController:loginViewController];
+    [self presentViewController:navigationController animated:NO completion:nil];
 }
 
 //添加所有子控制器

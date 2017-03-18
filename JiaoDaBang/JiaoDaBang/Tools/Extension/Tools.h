@@ -63,4 +63,7 @@
 
 + (NSData *)imageCutData:(UIImage *)myimage;
 
++ (NSString *)encryptWithPlainText:(NSString *)plainText;
++ (NSString *)decryptWithCryptString:(NSString *)cryptString;
+
 @end

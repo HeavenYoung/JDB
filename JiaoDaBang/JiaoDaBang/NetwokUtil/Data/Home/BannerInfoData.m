@@ -8,6 +8,10 @@
 
 #import "BannerInfoData.h"
 
+@implementation HomeBannerInfoData
+
+@end
+
 @implementation BannerInfoData
 
 @end

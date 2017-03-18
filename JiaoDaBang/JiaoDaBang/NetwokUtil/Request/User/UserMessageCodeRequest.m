@@ -37,7 +37,9 @@
 - (void)parametersWithProperties {
     
     NSMutableDictionary *mDic = [NSMutableDictionary dictionaryWithCapacity:10];
-    [mDic setObject:self.phoneNumber forKey:@"username"];
+    NSString *phoneNumber = [NSString AES128ECBEncrypt:self.phoneNumber key:EncryptoKey];
+    
+    [mDic setObject:phoneNumber forKey:@"username"];
     
     self.parameters = mDic;
     
