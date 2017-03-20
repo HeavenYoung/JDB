@@ -17,6 +17,7 @@
 #import "UserRegisterRequest.h"
 #import "UserMessageCodeRequest.h"
 #import "UserForgetRequest.h"
+#import "UserAvatarRequest.h"
 
 #import "HomeBannerListRequest.h"
 #import "NewsListRequest.h"

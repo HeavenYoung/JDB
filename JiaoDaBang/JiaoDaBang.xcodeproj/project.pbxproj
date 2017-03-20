@@ -84,6 +84,10 @@
 		5732EB9F1E23862C003C56B5 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732EB9E1E23862C003C56B5 /* libiconv.tbd */; };
 		5732EBA11E238639003C56B5 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732EBA01E238639003C56B5 /* libsqlite3.tbd */; };
 		573829311E4B449800166F3A /* BannerInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 573829301E4B449800166F3A /* BannerInfoData.m */; };
+		573C73AF1E7FB9F900C27B55 /* UserAvatarRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C73AE1E7FB9F900C27B55 /* UserAvatarRequest.m */; };
+		573C73B21E7FBC5C00C27B55 /* UserAvatarResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C73B11E7FBC5C00C27B55 /* UserAvatarResponse.m */; };
+		573C73B51E7FBD9400C27B55 /* UserInfoSetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C73B41E7FBD9400C27B55 /* UserInfoSetRequest.m */; };
+		573C73B81E7FBDA900C27B55 /* UserInfoSetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C73B71E7FBDA900C27B55 /* UserInfoSetResponse.m */; };
 		57403FD01E1B9192007CF092 /* NetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 57403FBE1E1B9192007CF092 /* NetworkUtil.m */; };
 		57403FD11E1B9192007CF092 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57403FC21E1B9192007CF092 /* AFHTTPSessionManager.m */; };
 		57403FD21E1B9192007CF092 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57403FC51E1B9192007CF092 /* AFNetworkReachabilityManager.m */; };
@@ -776,6 +780,14 @@
 		5732EBA21E238BB9003C56B5 /* MacroInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroInfo.h; sourceTree = "<group>"; };
 		5738292F1E4B449800166F3A /* BannerInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerInfoData.h; sourceTree = "<group>"; };
 		573829301E4B449800166F3A /* BannerInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerInfoData.m; sourceTree = "<group>"; };
+		573C73AD1E7FB9F900C27B55 /* UserAvatarRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAvatarRequest.h; sourceTree = "<group>"; };
+		573C73AE1E7FB9F900C27B55 /* UserAvatarRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAvatarRequest.m; sourceTree = "<group>"; };
+		573C73B01E7FBC5C00C27B55 /* UserAvatarResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAvatarResponse.h; sourceTree = "<group>"; };
+		573C73B11E7FBC5C00C27B55 /* UserAvatarResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAvatarResponse.m; sourceTree = "<group>"; };
+		573C73B31E7FBD9400C27B55 /* UserInfoSetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoSetRequest.h; sourceTree = "<group>"; };
+		573C73B41E7FBD9400C27B55 /* UserInfoSetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoSetRequest.m; sourceTree = "<group>"; };
+		573C73B61E7FBDA900C27B55 /* UserInfoSetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoSetResponse.h; sourceTree = "<group>"; };
+		573C73B71E7FBDA900C27B55 /* UserInfoSetResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoSetResponse.m; sourceTree = "<group>"; };
 		57403FBC1E1B9192007CF092 /* NetworkConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConst.h; sourceTree = "<group>"; };
 		57403FBD1E1B9192007CF092 /* NetworkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUtil.h; sourceTree = "<group>"; };
 		57403FBE1E1B9192007CF092 /* NetworkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUtil.m; sourceTree = "<group>"; };
@@ -2030,6 +2042,10 @@
 				575CAFD41E7D44DC004784AA /* UserForgetResponse.m */,
 				575CAFDC1E7D4AF3004784AA /* UserForgetCheckResponse.h */,
 				575CAFDD1E7D4AF3004784AA /* UserForgetCheckResponse.m */,
+				573C73B01E7FBC5C00C27B55 /* UserAvatarResponse.h */,
+				573C73B11E7FBC5C00C27B55 /* UserAvatarResponse.m */,
+				573C73B61E7FBDA900C27B55 /* UserInfoSetResponse.h */,
+				573C73B71E7FBDA900C27B55 /* UserInfoSetResponse.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -2049,6 +2065,10 @@
 				575CAFD11E7D44C0004784AA /* UserForgetRequest.m */,
 				575CAFD91E7D4AB1004784AA /* UserForgetCheckRequest.h */,
 				575CAFDA1E7D4AB1004784AA /* UserForgetCheckRequest.m */,
+				573C73AD1E7FB9F900C27B55 /* UserAvatarRequest.h */,
+				573C73AE1E7FB9F900C27B55 /* UserAvatarRequest.m */,
+				573C73B31E7FBD9400C27B55 /* UserInfoSetRequest.h */,
+				573C73B41E7FBD9400C27B55 /* UserInfoSetRequest.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -4651,6 +4671,7 @@
 				57189A2F1E7F7E8B00F6E621 /* RaiseLabelListRequest.m in Sources */,
 				574AD5411E49894B00BF099E /* EMChooseViewController.m in Sources */,
 				57EE75FF1E272CA0004573F1 /* NSData+ImageContentType.m in Sources */,
+				573C73B51E7FBD9400C27B55 /* UserInfoSetRequest.m in Sources */,
 				57F44E591E4CAC4600F62B16 /* UserRegisterResponse.m in Sources */,
 				574AD47C1E49894A00BF099E /* MJRefreshAutoNormalFooter.m in Sources */,
 				574AD4891E49894A00BF099E /* MWCaptionView.m in Sources */,
@@ -4803,6 +4824,7 @@
 				574077FE1E66A9330008DFA4 /* WXMediaMessage+messageConstruct.m in Sources */,
 				574AD4A51E49894A00BF099E /* PSTCollectionViewController.m in Sources */,
 				574AD5401E49894B00BF099E /* BaseViewController.m in Sources */,
+				573C73B21E7FBC5C00C27B55 /* UserAvatarResponse.m in Sources */,
 				57CAC2741E02E85A005A3F7E /* UIImage+ScreenShot.m in Sources */,
 				575CAFF21E7D5202004784AA /* DeliveryListRequest.m in Sources */,
 				574AD5C31E49894B00BF099E /* MessageUtil.m in Sources */,
@@ -4831,9 +4853,11 @@
 				574AD4811E49894A00BF099E /* MJRefreshGifHeader.m in Sources */,
 				574AD5311E49894B00BF099E /* ChatroomListViewController.m in Sources */,
 				574AD5421E49894B00BF099E /* EMNavigationController.m in Sources */,
+				573C73AF1E7FB9F900C27B55 /* UserAvatarRequest.m in Sources */,
 				574AD5451E49894B00BF099E /* UserProfileViewController.m in Sources */,
 				574AD4B21E49894A00BF099E /* EaseMessageModel.m in Sources */,
 				574AD4851E49894A00BF099E /* MJRefreshConst.m in Sources */,
+				573C73B81E7FBDA900C27B55 /* UserInfoSetResponse.m in Sources */,
 				571D20971E52B6F300BF3334 /* ForgetPassViewController.m in Sources */,
 				57CAC2831E02E85A005A3F7E /* ViewController+MASAdditions.m in Sources */,
 				57CAC28A1E02E85A005A3F7E /* NSObject+MJCoding.m in Sources */,
