@@ -23,6 +23,8 @@
 #import "RaiseLabelListRequest.h"
 #import "LocalPointRequest.h"
 #import "OrderTypeRequest.h"
+#import "GetOrderByIdRequest.h"
+#import "GetOrderListRequest.h"
 /***   REQUEST   END ***/
 
 /***   DATA   BEGIN ***/

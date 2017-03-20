@@ -21,7 +21,7 @@
         NSArray *dataArray = [jsonObject objectForKeySafe:@"data"];
         if ([dataArray isKindOfClass:[NSArray class]]) {
             
-           DeliveryListData *listData = [[HomeBannerInfoData alloc] init];
+           DeliveryListData *listData = [[DeliveryListData alloc] init];
             
             NSMutableArray *mArray = [[NSMutableArray alloc] init];
             
