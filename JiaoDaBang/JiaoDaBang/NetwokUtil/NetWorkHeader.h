@@ -19,9 +19,8 @@
 #import "UserForgetRequest.h"
 
 #import "HomeBannerListRequest.h"
-#import "NewsInfoData.h"
-#import "DeliveryInfoData.h"
-
+#import "NewsListRequest.h"
+#import "RaiseLabelListRequest.h"
 #import "LocalPointRequest.h"
 #import "OrderTypeRequest.h"
 /***   REQUEST   END ***/

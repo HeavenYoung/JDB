@@ -57,6 +57,12 @@
 		570462271E48140A003961EB /* UserLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 570462261E48140A003961EB /* UserLoginRequest.m */; };
 		5704622A1E481420003961EB /* UserLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 570462291E481420003961EB /* UserLoginResponse.m */; };
 		570462331E481BD5003961EB /* NSArray+YTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 570462321E481BD5003961EB /* NSArray+YTExtension.m */; };
+		57189A2C1E7F7DC200F6E621 /* RaiseLabelListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A2B1E7F7DC200F6E621 /* RaiseLabelListData.m */; };
+		57189A2F1E7F7E8B00F6E621 /* RaiseLabelListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A2E1E7F7E8B00F6E621 /* RaiseLabelListRequest.m */; };
+		57189A321E7F7EF300F6E621 /* RaiseLabelListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A311E7F7EF300F6E621 /* RaiseLabelListResponse.m */; };
+		57189A381E7F84F700F6E621 /* ReleaseOrderRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A371E7F84F700F6E621 /* ReleaseOrderRequest.m */; };
+		57189A3B1E7F873100F6E621 /* ReleaseOrderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A3A1E7F873100F6E621 /* ReleaseOrderResponse.m */; };
+		57189A3E1E7F87E300F6E621 /* ReleaseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A3D1E7F87E300F6E621 /* ReleaseData.m */; };
 		5718A7F61E4ACAC4007B1F0A /* EaseUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5718A7F51E4ACAC4007B1F0A /* EaseUIResource.bundle */; };
 		571D20901E52AB6F00BF3334 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D208F1E52AB6F00BF3334 /* RegisterViewController.m */; };
 		571D20941E52AECE00BF3334 /* InfoInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D20931E52AECE00BF3334 /* InfoInputView.m */; };
@@ -722,6 +728,18 @@
 		570462291E481420003961EB /* UserLoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginResponse.m; sourceTree = "<group>"; };
 		570462311E481BD5003961EB /* NSArray+YTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YTExtension.h"; sourceTree = "<group>"; };
 		570462321E481BD5003961EB /* NSArray+YTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YTExtension.m"; sourceTree = "<group>"; };
+		57189A2A1E7F7DC200F6E621 /* RaiseLabelListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseLabelListData.h; sourceTree = "<group>"; };
+		57189A2B1E7F7DC200F6E621 /* RaiseLabelListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseLabelListData.m; sourceTree = "<group>"; };
+		57189A2D1E7F7E8B00F6E621 /* RaiseLabelListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseLabelListRequest.h; sourceTree = "<group>"; };
+		57189A2E1E7F7E8B00F6E621 /* RaiseLabelListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseLabelListRequest.m; sourceTree = "<group>"; };
+		57189A301E7F7EF300F6E621 /* RaiseLabelListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseLabelListResponse.h; sourceTree = "<group>"; };
+		57189A311E7F7EF300F6E621 /* RaiseLabelListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseLabelListResponse.m; sourceTree = "<group>"; };
+		57189A361E7F84F700F6E621 /* ReleaseOrderRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseOrderRequest.h; sourceTree = "<group>"; };
+		57189A371E7F84F700F6E621 /* ReleaseOrderRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseOrderRequest.m; sourceTree = "<group>"; };
+		57189A391E7F873100F6E621 /* ReleaseOrderResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseOrderResponse.h; sourceTree = "<group>"; };
+		57189A3A1E7F873100F6E621 /* ReleaseOrderResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseOrderResponse.m; sourceTree = "<group>"; };
+		57189A3C1E7F87E300F6E621 /* ReleaseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseData.h; sourceTree = "<group>"; };
+		57189A3D1E7F87E300F6E621 /* ReleaseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseData.m; sourceTree = "<group>"; };
 		5718A7F51E4ACAC4007B1F0A /* EaseUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EaseUIResource.bundle; sourceTree = "<group>"; };
 		571D208E1E52AB6F00BF3334 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		571D208F1E52AB6F00BF3334 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
@@ -1961,6 +1979,7 @@
 		5704621B1E4813D2003961EB /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				57189A331E7F83DF00F6E621 /* Release */,
 				575CAFEF1E7D51EA004784AA /* Delivery */,
 				575CAFDF1E7D4CF2004784AA /* Home */,
 				574078131E66AA8D0008DFA4 /* Pay */,
@@ -1975,6 +1994,7 @@
 		5704621E1E4813D2003961EB /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				57189A341E7F83EF00F6E621 /* Release */,
 				575CAFEE1E7D51CF004784AA /* Delivery */,
 				575CAFE01E7D4CFB004784AA /* Home */,
 				574078061E66AA820008DFA4 /* Pay */,
@@ -2028,6 +2048,7 @@
 			isa = PBXGroup;
 			children = (
 				57D0AD3E1E496EB600889005 /* DataModel.h */,
+				57189A351E7F84A100F6E621 /* Release */,
 				575CAFF71E7D613B004784AA /* Delivery */,
 				574077FF1E66AA1E0008DFA4 /* Pay */,
 				57BFC79F1E4B4CE6001690E4 /* Common */,
@@ -2046,6 +2067,33 @@
 				57BFC7891E4B4588001690E4 /* UserInfoData.m */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		57189A331E7F83DF00F6E621 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				57189A361E7F84F700F6E621 /* ReleaseOrderRequest.h */,
+				57189A371E7F84F700F6E621 /* ReleaseOrderRequest.m */,
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		57189A341E7F83EF00F6E621 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				57189A391E7F873100F6E621 /* ReleaseOrderResponse.h */,
+				57189A3A1E7F873100F6E621 /* ReleaseOrderResponse.m */,
+			);
+			path = Release;
+			sourceTree = "<group>";
+		};
+		57189A351E7F84A100F6E621 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				57189A3C1E7F87E300F6E621 /* ReleaseData.h */,
+				57189A3D1E7F87E300F6E621 /* ReleaseData.m */,
+			);
+			path = Release;
 			sourceTree = "<group>";
 		};
 		571D20911E52AECE00BF3334 /* User */ = {
@@ -3715,6 +3763,8 @@
 				57BFC7A11E4B4D14001690E4 /* LocalPointListData.m */,
 				57BFC7A31E4B4E0C001690E4 /* OrderTypeListData.h */,
 				57BFC7A41E4B4E0C001690E4 /* OrderTypeListData.m */,
+				57189A2A1E7F7DC200F6E621 /* RaiseLabelListData.h */,
+				57189A2B1E7F7DC200F6E621 /* RaiseLabelListData.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4077,6 +4127,8 @@
 				57F44E5D1E4CAF5300F62B16 /* LocalPointRequest.m */,
 				57F44E681E4CB6F100F62B16 /* OrderTypeRequest.h */,
 				57F44E691E4CB6F100F62B16 /* OrderTypeRequest.m */,
+				57189A2D1E7F7E8B00F6E621 /* RaiseLabelListRequest.h */,
+				57189A2E1E7F7E8B00F6E621 /* RaiseLabelListRequest.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4088,6 +4140,8 @@
 				57F44E601E4CAFA500F62B16 /* LocalPointResponse.m */,
 				57F44E651E4CB2EF00F62B16 /* OrderTypeResponse.h */,
 				57F44E661E4CB2EF00F62B16 /* OrderTypeResponse.m */,
+				57189A301E7F7EF300F6E621 /* RaiseLabelListResponse.h */,
+				57189A311E7F7EF300F6E621 /* RaiseLabelListResponse.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4455,10 +4509,12 @@
 				574AD47D1E49894A00BF099E /* MJRefreshAutoStateFooter.m in Sources */,
 				187257A61E750DF4007085C1 /* CertificationViewController.m in Sources */,
 				57CAC2871E02E85A005A3F7E /* MJPropertyKey.m in Sources */,
+				57189A3B1E7F873100F6E621 /* ReleaseOrderResponse.m in Sources */,
 				574AD5211E49894A00BF099E /* UIImageView+HeadImage.m in Sources */,
 				574AD5371E49894B00BF099E /* ApplyFriendCell.m in Sources */,
 				574AD4911E49894A00BF099E /* DACircularProgressView.m in Sources */,
 				574077FB1E66A9330008DFA4 /* WXApiManager.m in Sources */,
+				57189A3E1E7F87E300F6E621 /* ReleaseData.m in Sources */,
 				574AD4A11E49894A00BF099E /* UIView+EMWebCacheOperation.m in Sources */,
 				574AD53D1E49894B00BF099E /* EMSearchBar.m in Sources */,
 				187257F51E750E2C007085C1 /* YCXMenu.m in Sources */,
@@ -4467,6 +4523,7 @@
 				574AD4BD1E49894A00BF099E /* EaseEmojiEmoticons.m in Sources */,
 				57EE75F01E272CA0004573F1 /* RefreshAutoFooter.m in Sources */,
 				574AD4C41E49894A00BF099E /* EaseRefreshTableViewController.m in Sources */,
+				57189A2C1E7F7DC200F6E621 /* RaiseLabelListData.m in Sources */,
 				574AD47B1E49894A00BF099E /* MJRefreshAutoGifFooter.m in Sources */,
 				574077F41E66A9330008DFA4 /* PayManager.m in Sources */,
 				574AD52F1E49894B00BF099E /* PublicGroupListViewController.m in Sources */,
@@ -4539,6 +4596,7 @@
 				57EE76091E272CA0004573F1 /* UIImage+MultiFormat.m in Sources */,
 				575F0BB91E7D650B0056589A /* UserInfoResponse.m in Sources */,
 				574AD4D81E49894A00BF099E /* EaseFaceView.m in Sources */,
+				57189A321E7F7EF300F6E621 /* RaiseLabelListResponse.m in Sources */,
 				574AD4961E49894A00BF099E /* EMSDWebImageDownloaderOperation.m in Sources */,
 				187257961E750DF4007085C1 /* ModifyNicknameViewController.m in Sources */,
 				187257E71E750E2C007085C1 /* IQKeyboardManager.m in Sources */,
@@ -4584,6 +4642,7 @@
 				575CAFDB1E7D4AB1004784AA /* UserForgetCheckRequest.m in Sources */,
 				57EE75EE1E272CA0004573F1 /* FMResultSet.m in Sources */,
 				574AD4B71E49894A00BF099E /* UIViewController+DismissKeyboard.m in Sources */,
+				57189A2F1E7F7E8B00F6E621 /* RaiseLabelListRequest.m in Sources */,
 				574AD5411E49894B00BF099E /* EMChooseViewController.m in Sources */,
 				57EE75FF1E272CA0004573F1 /* NSData+ImageContentType.m in Sources */,
 				57F44E591E4CAC4600F62B16 /* UserRegisterResponse.m in Sources */,
@@ -4669,6 +4728,7 @@
 				57EE75EC1E272CA0004573F1 /* FMDatabasePool.m in Sources */,
 				574077FC1E66A9330008DFA4 /* WXApiRequestHandler.m in Sources */,
 				57CAC2721E02E85A005A3F7E /* UIColor+YTExtension.m in Sources */,
+				57189A381E7F84F700F6E621 /* ReleaseOrderRequest.m in Sources */,
 				574AD5BB1E49894B00BF099E /* BlackListViewController.m in Sources */,
 				57EE75F51E272CA0004573F1 /* RefreshAutoStateNormalFooter.m in Sources */,
 				57EE76121E272CA0004573F1 /* SVRadialGradientLayer.m in Sources */,
