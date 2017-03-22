@@ -55,7 +55,7 @@
 - (void)parametersWithProperties {
 
     NSMutableDictionary *mDic = [NSMutableDictionary dictionaryWithCapacity:20];
-    
+
     [mDic setObject:[Tools encryptWithPlainText:self.releaseuserid] forKey:@"releaseuserid"];
     [mDic setObject:[Tools encryptWithPlainText:self.ordertype] forKey:@"ordertype"];
     [mDic setObject:[Tools encryptWithPlainText:self.ordertypename] forKey:@"ordertypename"];

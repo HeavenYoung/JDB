@@ -73,6 +73,10 @@
 		571D20901E52AB6F00BF3334 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D208F1E52AB6F00BF3334 /* RegisterViewController.m */; };
 		571D20941E52AECE00BF3334 /* InfoInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D20931E52AECE00BF3334 /* InfoInputView.m */; };
 		571D20971E52B6F300BF3334 /* ForgetPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571D20961E52B6F300BF3334 /* ForgetPassViewController.m */; };
+		57322CF21E82666E00B491B0 /* ConfirmOrderRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57322CF11E82666E00B491B0 /* ConfirmOrderRequest.m */; };
+		57322CF51E82668400B491B0 /* ConfirmOrderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57322CF41E82668400B491B0 /* ConfirmOrderResponse.m */; };
+		57322CF81E8267E900B491B0 /* CancelOrderRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57322CF71E8267E900B491B0 /* CancelOrderRequest.m */; };
+		57322CFB1E8267FC00B491B0 /* CancelOrderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57322CFA1E8267FC00B491B0 /* CancelOrderResponse.m */; };
 		5732EB8D1E238589003C56B5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732EB8C1E238589003C56B5 /* CoreMedia.framework */; };
 		5732EB8F1E2385AC003C56B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732EB8E1E2385AC003C56B5 /* AudioToolbox.framework */; };
 		5732EB911E2385B8003C56B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732EB901E2385B8003C56B5 /* AVFoundation.framework */; };
@@ -766,6 +770,14 @@
 		571D20931E52AECE00BF3334 /* InfoInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoInputView.m; sourceTree = "<group>"; };
 		571D20951E52B6F300BF3334 /* ForgetPassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPassViewController.h; sourceTree = "<group>"; };
 		571D20961E52B6F300BF3334 /* ForgetPassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPassViewController.m; sourceTree = "<group>"; };
+		57322CF01E82666E00B491B0 /* ConfirmOrderRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmOrderRequest.h; sourceTree = "<group>"; };
+		57322CF11E82666E00B491B0 /* ConfirmOrderRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmOrderRequest.m; sourceTree = "<group>"; };
+		57322CF31E82668400B491B0 /* ConfirmOrderResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmOrderResponse.h; sourceTree = "<group>"; };
+		57322CF41E82668400B491B0 /* ConfirmOrderResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmOrderResponse.m; sourceTree = "<group>"; };
+		57322CF61E8267E900B491B0 /* CancelOrderRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelOrderRequest.h; sourceTree = "<group>"; };
+		57322CF71E8267E900B491B0 /* CancelOrderRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelOrderRequest.m; sourceTree = "<group>"; };
+		57322CF91E8267FC00B491B0 /* CancelOrderResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelOrderResponse.h; sourceTree = "<group>"; };
+		57322CFA1E8267FC00B491B0 /* CancelOrderResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelOrderResponse.m; sourceTree = "<group>"; };
 		5732EB8C1E238589003C56B5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		5732EB8E1E2385AC003C56B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5732EB901E2385B8003C56B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -2106,6 +2118,10 @@
 				57189A461E7F8D7100F6E621 /* GetOrderByIdRequest.m */,
 				57189A481E7F8D8400F6E621 /* GetOrderListRequest.h */,
 				57189A491E7F8D8400F6E621 /* GetOrderListRequest.m */,
+				57322CF01E82666E00B491B0 /* ConfirmOrderRequest.h */,
+				57322CF11E82666E00B491B0 /* ConfirmOrderRequest.m */,
+				57322CF61E8267E900B491B0 /* CancelOrderRequest.h */,
+				57322CF71E8267E900B491B0 /* CancelOrderRequest.m */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -2119,6 +2135,10 @@
 				57189A4C1E7F8DA000F6E621 /* GetOrderByIdResponse.m */,
 				57189A4E1E7F8DB500F6E621 /* GetOrderListResponse.h */,
 				57189A4F1E7F8DB500F6E621 /* GetOrderListResponse.m */,
+				57322CF31E82668400B491B0 /* ConfirmOrderResponse.h */,
+				57322CF41E82668400B491B0 /* ConfirmOrderResponse.m */,
+				57322CF91E8267FC00B491B0 /* CancelOrderResponse.h */,
+				57322CFA1E8267FC00B491B0 /* CancelOrderResponse.m */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -4572,6 +4592,7 @@
 				57EE76081E272CA0004573F1 /* UIImage+GIF.m in Sources */,
 				574AD4671E49894A00BF099E /* AppDelegate+EaseMob.m in Sources */,
 				574AD4C01E49894A00BF099E /* FixFopen.c in Sources */,
+				57322CF81E8267E900B491B0 /* CancelOrderRequest.m in Sources */,
 				187257971E750DF4007085C1 /* ModifyPhoneNumberViewController.m in Sources */,
 				574AD5351E49894B00BF099E /* AddFriendCell.m in Sources */,
 				574AD4731E49894A00BF099E /* EMVoiceConverter.mm in Sources */,
@@ -4585,7 +4606,9 @@
 				574AD4941E49894A00BF099E /* EMSDWebImageDecoder.m in Sources */,
 				57CAC2801E02E85A005A3F7E /* NSArray+MASAdditions.m in Sources */,
 				574AD5231E49894B00BF099E /* UIViewController+HUD.m in Sources */,
+				57322CF21E82666E00B491B0 /* ConfirmOrderRequest.m in Sources */,
 				1872579F1E750DF4007085C1 /* PayPageViewController.m in Sources */,
+				57322CFB1E8267FC00B491B0 /* CancelOrderResponse.m in Sources */,
 				574AD4B01E49894A00BF099E /* EaseSDKHelper.m in Sources */,
 				574077F61E66A9330008DFA4 /* PayResultView.m in Sources */,
 				57CAC2861E02E85A005A3F7E /* MJProperty.m in Sources */,
@@ -4622,6 +4645,7 @@
 				574AD51D1E49894A00BF099E /* SRSlimeView.m in Sources */,
 				57EE76091E272CA0004573F1 /* UIImage+MultiFormat.m in Sources */,
 				575F0BB91E7D650B0056589A /* UserInfoResponse.m in Sources */,
+				57322CF51E82668400B491B0 /* ConfirmOrderResponse.m in Sources */,
 				574AD4D81E49894A00BF099E /* EaseFaceView.m in Sources */,
 				57189A321E7F7EF300F6E621 /* RaiseLabelListResponse.m in Sources */,
 				574AD4961E49894A00BF099E /* EMSDWebImageDownloaderOperation.m in Sources */,
