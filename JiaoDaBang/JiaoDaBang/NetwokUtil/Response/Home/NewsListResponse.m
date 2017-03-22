@@ -37,9 +37,9 @@
                 [mArray addObject:infoData];
             }];
             
-            bannerInfoData.bannerDataArray = mArray.copy;
+            listData.dataListArray = mArray.copy;
             
-            [self showSuccessInfo:orderTypeListData];
+            [self showSuccessInfo:listData];
             
         } else {
             

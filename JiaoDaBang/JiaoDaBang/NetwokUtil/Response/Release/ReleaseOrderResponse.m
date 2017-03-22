@@ -24,7 +24,7 @@
             ReleaseData *releaseData = [[ReleaseData alloc] init];
             releaseData.orderid = [dataDic objectForKeySafe:@"orderid"];
             
-            [self showSuccessInfo:userInfoData];
+            [self showSuccessInfo:releaseData];
             
         } else {
             

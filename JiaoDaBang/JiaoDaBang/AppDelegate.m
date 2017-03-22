@@ -50,7 +50,7 @@
                 if (9000 == resultCode) {
                     isSuccess = YES;
                 }
-                [self.MTMainViewController payResultHandler:isSuccess];
+                [self.MainViewController payResultHandler:isSuccess];
             }];
         }
         else if ([url.host isEqualToString:@"platformapi"]){

@@ -29,36 +29,38 @@
             
             [dataArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 
+                NSDictionary *objDic = (NSDictionary *)obj;
+                
                 OrderData *orderdata = [[OrderData alloc] init];
                 
-                orderdata.orderId = [dataDic objectForKeySafe:@"orderid"];
-                orderdata.orderType = [dataDic objectForKeySafe:@"ordertype"];
-                orderdata.orderTypeName = [dataDic objectForKeySafe:@"ordertypename"];
-                orderdata.mainType = [dataDic objectForKeySafe:@"maintype"];
-                orderdata.releaseUserName = [dataDic objectForKeySafe:@"releaseusername"];
-                orderdata.releaseSex = [dataDic objectForKeySafe:@"releasesex"];
-                orderdata.releaseNickName = [dataDic objectForKeySafe:@"releasenickname"];
-                orderdata.releaseAvatar = [dataDic objectForKeySafe:@"releaseavatar"];
-                orderdata.releaseSchool = [dataDic objectForKeySafe:@"releaseschool"];
-                orderdata.orderId = [dataDic objectForKeySafe:@"orderid"];
-                orderdata.orderId = [dataDic objectForKeySafe:@"orderid"];
-                orderdata.srcId = [dataDic objectForKeySafe:@"srcid"];
-                orderdata.srcName = [dataDic objectForKeySafe:@"srcname"];
-                orderdata.srcDetail = [dataDic objectForKeySafe:@"srcdetail"];
-                orderdata.desId = [dataDic objectForKeySafe:@"desid"];
-                orderdata.desName = [dataDic objectForKeySafe:@"desname"];
-                orderdata.desDetail = [dataDic objectForKeySafe:@"desdetail"];
-                orderdata.money = [dataDic objectForKeySafe:@"money"];
-                orderdata.payType = [dataDic objectForKeySafe:@"paytype"];
-                orderdata.remark = [dataDic objectForKeySafe:@"remark"];
-                orderdata.createTime = [dataDic objectForKeySafe:@"createtime"];
-                orderdata.stateId = [dataDic objectForKeySafe:@"stateid"];
-                orderdata.state = [dataDic objectForKeySafe:@"state"];
-                orderdata.acceptUserName = [dataDic objectForKeySafe:@"acceptusername"];
-                orderdata.acceptSex = [dataDic objectForKeySafe:@"acceptsex"];
-                orderdata.acceptNickName = [dataDic objectForKeySafe:@"acceptnickname"];
-                orderdata.releaseAvatar = [dataDic objectForKeySafe:@"acceptavator"];
-                orderdata.finishTime = [dataDic objectForKeySafe:@"finishtime"];
+                orderdata.orderId = [objDic objectForKeySafe:@"orderid"];
+                orderdata.orderType = [objDic objectForKeySafe:@"ordertype"];
+                orderdata.orderTypeName = [objDic objectForKeySafe:@"ordertypename"];
+                orderdata.mainType = [objDic objectForKeySafe:@"maintype"];
+                orderdata.releaseUserName = [objDic objectForKeySafe:@"releaseusername"];
+                orderdata.releaseSex = [objDic objectForKeySafe:@"releasesex"];
+                orderdata.releaseNickName = [objDic objectForKeySafe:@"releasenickname"];
+                orderdata.releaseAvatar = [objDic objectForKeySafe:@"releaseavatar"];
+                orderdata.releaseSchool = [objDic objectForKeySafe:@"releaseschool"];
+                orderdata.orderId = [objDic objectForKeySafe:@"orderid"];
+                orderdata.orderId = [objDic objectForKeySafe:@"orderid"];
+                orderdata.srcId = [objDic objectForKeySafe:@"srcid"];
+                orderdata.srcName = [objDic objectForKeySafe:@"srcname"];
+                orderdata.srcDetail = [objDic objectForKeySafe:@"srcdetail"];
+                orderdata.desId = [objDic objectForKeySafe:@"desid"];
+                orderdata.desName = [objDic objectForKeySafe:@"desname"];
+                orderdata.desDetail = [objDic objectForKeySafe:@"desdetail"];
+                orderdata.money = [objDic objectForKeySafe:@"money"];
+                orderdata.payType = [objDic objectForKeySafe:@"paytype"];
+                orderdata.remark = [objDic objectForKeySafe:@"remark"];
+                orderdata.createTime = [objDic objectForKeySafe:@"createtime"];
+                orderdata.stateId = [objDic objectForKeySafe:@"stateid"];
+                orderdata.state = [objDic objectForKeySafe:@"state"];
+                orderdata.acceptUserName = [objDic objectForKeySafe:@"acceptusername"];
+                orderdata.acceptSex = [objDic objectForKeySafe:@"acceptsex"];
+                orderdata.acceptNickName = [objDic objectForKeySafe:@"acceptnickname"];
+                orderdata.releaseAvatar = [objDic objectForKeySafe:@"acceptavator"];
+                orderdata.finishTime = [objDic objectForKeySafe:@"finishtime"];
                 
                 [mArray addObject:orderdata];
             }];

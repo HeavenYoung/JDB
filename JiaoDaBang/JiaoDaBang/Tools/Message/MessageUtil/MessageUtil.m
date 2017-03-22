@@ -145,7 +145,7 @@ static MessageUtil *messageManager = nil;
     
     if (!_mainTabBarController) {
         AppDelegate *adelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        _mainTabBarController = adelegate.MTMainViewController;
+        _mainTabBarController = adelegate.MainViewController;
     }
     
     
@@ -648,7 +648,7 @@ static MessageUtil *messageManager = nil;
     
     if (!_mainTabBarController) {
         AppDelegate *adelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-        _mainTabBarController = adelegate.MTMainViewController;
+        _mainTabBarController = adelegate.MainViewController;
     }
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{

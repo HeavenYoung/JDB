@@ -30,6 +30,7 @@
         self.httpMethod = @"POST";
         self.URLString = @"setuserinfo";
     }
+    return self;
 }
 
 - (void)setParametersWithUserId:(NSString *)userID sexString:(NSString *)sexString school:(NSString *)schoolStr nickName:(NSString *)nickName payPassWord:(NSString *)payPassWord aliAccount:(NSString *)aliAccount realName:(NSString *)realName {
@@ -54,8 +55,6 @@
     [mDic setObject:[Tools encryptWithPlainText:self.payPassWord] forKey:@"paypwd"];
     [mDic setObject:[Tools encryptWithPlainText:self.aliAccount] forKey:@"aliaccount"];
     [mDic setObject:[Tools encryptWithPlainText:self.realName] forKey:@"realname"];
-
-    [mDic setObject:self.data forKey:@"avatar"];
     
     self.parameters = mDic;
 }

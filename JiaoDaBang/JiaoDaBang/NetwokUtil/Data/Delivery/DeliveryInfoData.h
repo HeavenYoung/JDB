@@ -2,13 +2,13 @@
 //  DeliveryInfoData.h
 //  JiaoDaBang
 //
-//  Created by Heaven on 18/03/2017.
+//  Created by Heaven on 22/03/2017.
 //  Copyright © 2017 Heaven. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface DeliveryListData : NSObject
+@interface DeliveryListArrayData : NSObject
 
 @property (nonatomic, strong) NSArray *deliveryInfoDataArray;
 
@@ -24,3 +24,4 @@
 @property (nonatomic, copy) NSString *orderid;
 
 @end
+

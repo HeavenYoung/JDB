@@ -77,6 +77,7 @@
 		57322CF51E82668400B491B0 /* ConfirmOrderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57322CF41E82668400B491B0 /* ConfirmOrderResponse.m */; };
 		57322CF81E8267E900B491B0 /* CancelOrderRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57322CF71E8267E900B491B0 /* CancelOrderRequest.m */; };
 		57322CFB1E8267FC00B491B0 /* CancelOrderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57322CFA1E8267FC00B491B0 /* CancelOrderResponse.m */; };
+		57322CFF1E827BFC00B491B0 /* DeliveryInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57322CFE1E827BFC00B491B0 /* DeliveryInfoData.m */; };
 		5732EB8D1E238589003C56B5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732EB8C1E238589003C56B5 /* CoreMedia.framework */; };
 		5732EB8F1E2385AC003C56B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732EB8E1E2385AC003C56B5 /* AudioToolbox.framework */; };
 		5732EB911E2385B8003C56B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5732EB901E2385B8003C56B5 /* AVFoundation.framework */; };
@@ -488,7 +489,6 @@
 		575CAFEC1E7D5030004784AA /* NewsListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 575CAFEB1E7D5030004784AA /* NewsListResponse.m */; };
 		575CAFF21E7D5202004784AA /* DeliveryListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 575CAFF11E7D5202004784AA /* DeliveryListRequest.m */; };
 		575CAFF51E7D5396004784AA /* DeliveryListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 575CAFF41E7D5396004784AA /* DeliveryListResponse.m */; };
-		575CAFFA1E7D615A004784AA /* DeliveryInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 575CAFF91E7D615A004784AA /* DeliveryInfoData.m */; };
 		575F0BB51E7D64900056589A /* UserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 575F0BB41E7D64900056589A /* UserInfoRequest.m */; };
 		575F0BB91E7D650B0056589A /* UserInfoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 575F0BB81E7D650B0056589A /* UserInfoResponse.m */; };
 		577029F41E02E7C300FA9E95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 577029F31E02E7C300FA9E95 /* main.m */; };
@@ -778,6 +778,8 @@
 		57322CF71E8267E900B491B0 /* CancelOrderRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelOrderRequest.m; sourceTree = "<group>"; };
 		57322CF91E8267FC00B491B0 /* CancelOrderResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelOrderResponse.h; sourceTree = "<group>"; };
 		57322CFA1E8267FC00B491B0 /* CancelOrderResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelOrderResponse.m; sourceTree = "<group>"; };
+		57322CFD1E827BFC00B491B0 /* DeliveryInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryInfoData.h; sourceTree = "<group>"; };
+		57322CFE1E827BFC00B491B0 /* DeliveryInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryInfoData.m; sourceTree = "<group>"; };
 		5732EB8C1E238589003C56B5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		5732EB8E1E2385AC003C56B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5732EB901E2385B8003C56B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -1472,8 +1474,6 @@
 		575CAFF11E7D5202004784AA /* DeliveryListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryListRequest.m; sourceTree = "<group>"; };
 		575CAFF31E7D5396004784AA /* DeliveryListResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryListResponse.h; sourceTree = "<group>"; };
 		575CAFF41E7D5396004784AA /* DeliveryListResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryListResponse.m; sourceTree = "<group>"; };
-		575CAFF81E7D615A004784AA /* DeliveryInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryInfoData.h; sourceTree = "<group>"; };
-		575CAFF91E7D615A004784AA /* DeliveryInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryInfoData.m; sourceTree = "<group>"; };
 		575F0BB31E7D64900056589A /* UserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoRequest.h; sourceTree = "<group>"; };
 		575F0BB41E7D64900056589A /* UserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoRequest.m; sourceTree = "<group>"; };
 		575F0BB71E7D650B0056589A /* UserInfoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoResponse.h; sourceTree = "<group>"; };
@@ -3689,8 +3689,8 @@
 		575CAFF71E7D613B004784AA /* Delivery */ = {
 			isa = PBXGroup;
 			children = (
-				575CAFF81E7D615A004784AA /* DeliveryInfoData.h */,
-				575CAFF91E7D615A004784AA /* DeliveryInfoData.m */,
+				57322CFD1E827BFC00B491B0 /* DeliveryInfoData.h */,
+				57322CFE1E827BFC00B491B0 /* DeliveryInfoData.m */,
 			);
 			path = Delivery;
 			sourceTree = "<group>";
@@ -4666,6 +4666,7 @@
 				574AD48D1E49894A00BF099E /* MWPhotoBrowser.m in Sources */,
 				1872579A1E750DF4007085C1 /* DeliveryTableViewController.m in Sources */,
 				574AD4B91E49894A00BF099E /* EaseChineseToPinyin.m in Sources */,
+				57322CFF1E827BFC00B491B0 /* DeliveryInfoData.m in Sources */,
 				57CAC2761E02E85A005A3F7E /* GlobalManager.m in Sources */,
 				57F44E561E4CABCF00F62B16 /* UserRegisterRequest.m in Sources */,
 				574AD4B31E49894A00BF099E /* EaseUserModel.m in Sources */,
@@ -4894,7 +4895,6 @@
 				575CAFEC1E7D5030004784AA /* NewsListResponse.m in Sources */,
 				574AD46D1E49894A00BF099E /* EMCDDeviceManager+Microphone.m in Sources */,
 				57CAC2781E02E85A005A3F7E /* LanguageManager.m in Sources */,
-				575CAFFA1E7D615A004784AA /* DeliveryInfoData.m in Sources */,
 				574AD4801E49894A00BF099E /* MJRefreshBackStateFooter.m in Sources */,
 				187257E21E750E2C007085C1 /* IQUIScrollView+Additions.m in Sources */,
 				187257A91E750DF4007085C1 /* EvaluateTableViewController.m in Sources */,

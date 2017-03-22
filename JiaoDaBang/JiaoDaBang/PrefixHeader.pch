@@ -22,7 +22,6 @@
 #import "NetWorkHeader.h"
 
 #import "Masonry.h"
-#import "DataModel.h"
 #import "GlobalManager.h"
 #import "MBProgressHUD.h"
 #import "SVProgressHUD.h"

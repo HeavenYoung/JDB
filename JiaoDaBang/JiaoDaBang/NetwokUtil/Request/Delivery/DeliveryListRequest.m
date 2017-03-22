@@ -24,6 +24,7 @@
         self.URLString = @"deliverylist";
         self.httpMethod = @"POST";
     }
+    return self;
 }
 
 - (void)setParametersWithUserId:(NSString *)userId {

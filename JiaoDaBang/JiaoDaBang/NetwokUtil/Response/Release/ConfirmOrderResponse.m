@@ -18,11 +18,8 @@
     if (code == CODE_SUCCESS) {
         
         [self showSuccessInfo:self.responseObject];
+   
     } else {
-        
-        [self showFailureInfo:NETWORK_ERROR_UNKNOW];
-    }
-} else {
     
     [self showFailureInfo:code];
 }

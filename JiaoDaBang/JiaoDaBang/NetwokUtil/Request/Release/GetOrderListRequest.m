@@ -31,7 +31,7 @@
     return self;
 }
 
-- (void)setParametersWithUserId:(NSString *)userId acceptUserId:(NSString *)acceptUserId page:(NSString *)page action:(NSString *) {
+- (void)setParametersWithUserId:(NSString *)userId acceptUserId:(NSString *)acceptUserId page:(NSString *)page action:(NSString *)action {
 
     self.userId = userId;
     self.acceptUserId = acceptUserId;

@@ -11,22 +11,19 @@
 @implementation CancelOrderResponse
 
 - (void)parseResponseObject {
-    
+
     NSDictionary *jsonObject = self.responseObject;
     NSInteger code = [[[jsonObject objectForKey:@"status"] objectForKey:@"code"] integerValue];
     
     if (code == CODE_SUCCESS) {
         
         [self showSuccessInfo:self.responseObject];
-    } else {
-        
-        [self showFailureInfo:NETWORK_ERROR_UNKNOW];
-    }
-} else {
+    }  else {
     
     [self showFailureInfo:code];
-}
+
+    }
+
 
 }
-
 @end

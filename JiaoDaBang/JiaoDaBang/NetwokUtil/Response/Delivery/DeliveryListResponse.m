@@ -21,13 +21,13 @@
         NSArray *dataArray = [jsonObject objectForKeySafe:@"data"];
         if ([dataArray isKindOfClass:[NSArray class]]) {
             
-           DeliveryListData *listData = [[DeliveryListData alloc] init];
+           DeliveryListArrayData *listData = [[DeliveryListArrayData alloc] init];
             
             NSMutableArray *mArray = [[NSMutableArray alloc] init];
             
             [dataArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 
-                 DeliveryInfoData *infoData = [[BannerInfoData alloc] init];
+                DeliveryInfoData *infoData = [[BannerInfoData alloc] init];
                 infoData.deliveryid = [obj objectForKey:@"deliveryid"];
                 infoData.deliverytype = [obj objectForKey:@"deliverytype"];
                 infoData.phoneNum = [obj objectForKey:@"phone_num"];

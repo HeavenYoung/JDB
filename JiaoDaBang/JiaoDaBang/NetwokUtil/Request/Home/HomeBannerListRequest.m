@@ -17,11 +17,11 @@
     if (self) {
         self.URLString = @"bannerlist";
     }
+    return self;
 }
 
 - (void)parametersWithProperties {
 
-    
 }
 
 ResponserParserGenerate(HomeBannerListResponse)

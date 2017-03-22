@@ -23,7 +23,7 @@
     if (self) {
         self.URLString = @"getuserinfo";
 
-        self.httpMethod = "POST";
+        self.httpMethod = @"POST";
     }
     return self;
 }
@@ -38,7 +38,7 @@
     
     NSString *userId = [NSString AES128ECBEncrypt:self.userId key:EncryptoKey];
     
-    [mDic setObject:userName forKey:@"userid"];
+    [mDic setObject:userId forKey:@"userid"];
     
     self.parameters = mDic;
 

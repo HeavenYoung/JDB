@@ -65,10 +65,10 @@
 {
     BOOL loginSuccess = [notification.object boolValue];
     if (loginSuccess) {
-        if (!self.MTMainViewController) {
-            self.MTMainViewController = [[MainViewController alloc] init];
+        if (!self.MainViewController) {
+            self.MainViewController = [[MainViewController alloc] init];
         }
-        [MessageUtil shareMessageManage].mainTabBarController = self.MTMainViewController;
+        [MessageUtil shareMessageManage].mainTabBarController = self.MainViewController;
     }
 }
 
