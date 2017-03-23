@@ -51,6 +51,19 @@
 		187257F41E750E2C007085C1 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257DC1E750E2C007085C1 /* UIColor+Hex.m */; };
 		187257F51E750E2C007085C1 /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257DE1E750E2C007085C1 /* YCXMenu.m */; };
 		187257F61E750E2C007085C1 /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 187257E01E750E2C007085C1 /* YCXMenuItem.m */; };
+		18D8961C1E836590004DFC14 /* RightButtonNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D896091E836590004DFC14 /* RightButtonNew.m */; };
+		18D8961D1E836590004DFC14 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8960B1E836590004DFC14 /* UIView+Extension.m */; };
+		18D8961E1E836590004DFC14 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8960F1E836590004DFC14 /* TAAbstractDotView.m */; };
+		18D8961F1E836590004DFC14 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D896111E836590004DFC14 /* TAAnimatedDotView.m */; };
+		18D896201E836590004DFC14 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D896131E836590004DFC14 /* TADotView.m */; };
+		18D896211E836590004DFC14 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D896151E836590004DFC14 /* TAPageControl.m */; };
+		18D896221E836590004DFC14 /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D896171E836590004DFC14 /* SDCollectionViewCell.m */; };
+		18D896231E836590004DFC14 /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D896191E836590004DFC14 /* SDCycleScrollView.m */; };
+		18D896241E836590004DFC14 /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8961B1E836590004DFC14 /* UIView+SDExtension.m */; };
+		18D8962F1E8365B1004DFC14 /* JDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D896271E8365B1004DFC14 /* JDHomeViewController.m */; };
+		18D896301E8365B1004DFC14 /* LiuXSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8962A1E8365B1004DFC14 /* LiuXSegmentView.m */; };
+		18D896311E8365B1004DFC14 /* LXSegmentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8962C1E8365B1004DFC14 /* LXSegmentScrollView.m */; };
+		18D896321E8365B1004DFC14 /* SendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D8962E1E8365B1004DFC14 /* SendTableViewCell.m */; };
 		5704620B1E481198003961EB /* DownloadUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5704620A1E481198003961EB /* DownloadUtil.m */; };
 		570462211E4813D2003961EB /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5704621D1E4813D2003961EB /* BaseRequest.m */; };
 		570462221E4813D2003961EB /* BaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 570462201E4813D2003961EB /* BaseResponse.m */; };
@@ -733,6 +746,32 @@
 		187257DE1E750E2C007085C1 /* YCXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenu.m; sourceTree = "<group>"; };
 		187257DF1E750E2C007085C1 /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCXMenuItem.h; sourceTree = "<group>"; };
 		187257E01E750E2C007085C1 /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCXMenuItem.m; sourceTree = "<group>"; };
+		18D896081E836590004DFC14 /* RightButtonNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightButtonNew.h; sourceTree = "<group>"; };
+		18D896091E836590004DFC14 /* RightButtonNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightButtonNew.m; sourceTree = "<group>"; };
+		18D8960A1E836590004DFC14 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		18D8960B1E836590004DFC14 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		18D8960E1E836590004DFC14 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		18D8960F1E836590004DFC14 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		18D896101E836590004DFC14 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		18D896111E836590004DFC14 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		18D896121E836590004DFC14 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		18D896131E836590004DFC14 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		18D896141E836590004DFC14 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		18D896151E836590004DFC14 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		18D896161E836590004DFC14 /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		18D896171E836590004DFC14 /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		18D896181E836590004DFC14 /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		18D896191E836590004DFC14 /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		18D8961A1E836590004DFC14 /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		18D8961B1E836590004DFC14 /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		18D896261E8365B1004DFC14 /* JDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDHomeViewController.h; sourceTree = "<group>"; };
+		18D896271E8365B1004DFC14 /* JDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDHomeViewController.m; sourceTree = "<group>"; };
+		18D896291E8365B1004DFC14 /* LiuXSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiuXSegmentView.h; sourceTree = "<group>"; };
+		18D8962A1E8365B1004DFC14 /* LiuXSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiuXSegmentView.m; sourceTree = "<group>"; };
+		18D8962B1E8365B1004DFC14 /* LXSegmentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSegmentScrollView.h; sourceTree = "<group>"; };
+		18D8962C1E8365B1004DFC14 /* LXSegmentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSegmentScrollView.m; sourceTree = "<group>"; };
+		18D8962D1E8365B1004DFC14 /* SendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendTableViewCell.h; sourceTree = "<group>"; };
+		18D8962E1E8365B1004DFC14 /* SendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendTableViewCell.m; sourceTree = "<group>"; };
 		570462091E481198003961EB /* DownloadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadUtil.h; sourceTree = "<group>"; };
 		5704620A1E481198003961EB /* DownloadUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadUtil.m; sourceTree = "<group>"; };
 		5704621C1E4813D2003961EB /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
@@ -2016,6 +2055,69 @@
 				187257DC1E750E2C007085C1 /* UIColor+Hex.m */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		18D896071E836590004DFC14 /* RightButton */ = {
+			isa = PBXGroup;
+			children = (
+				18D896081E836590004DFC14 /* RightButtonNew.h */,
+				18D896091E836590004DFC14 /* RightButtonNew.m */,
+				18D8960A1E836590004DFC14 /* UIView+Extension.h */,
+				18D8960B1E836590004DFC14 /* UIView+Extension.m */,
+			);
+			path = RightButton;
+			sourceTree = "<group>";
+		};
+		18D8960C1E836590004DFC14 /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				18D8960D1E836590004DFC14 /* PageControl */,
+				18D896161E836590004DFC14 /* SDCollectionViewCell.h */,
+				18D896171E836590004DFC14 /* SDCollectionViewCell.m */,
+				18D896181E836590004DFC14 /* SDCycleScrollView.h */,
+				18D896191E836590004DFC14 /* SDCycleScrollView.m */,
+				18D8961A1E836590004DFC14 /* UIView+SDExtension.h */,
+				18D8961B1E836590004DFC14 /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		18D8960D1E836590004DFC14 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				18D8960E1E836590004DFC14 /* TAAbstractDotView.h */,
+				18D8960F1E836590004DFC14 /* TAAbstractDotView.m */,
+				18D896101E836590004DFC14 /* TAAnimatedDotView.h */,
+				18D896111E836590004DFC14 /* TAAnimatedDotView.m */,
+				18D896121E836590004DFC14 /* TADotView.h */,
+				18D896131E836590004DFC14 /* TADotView.m */,
+				18D896141E836590004DFC14 /* TAPageControl.h */,
+				18D896151E836590004DFC14 /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+		18D896251E8365B1004DFC14 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18D896261E8365B1004DFC14 /* JDHomeViewController.h */,
+				18D896271E8365B1004DFC14 /* JDHomeViewController.m */,
+				18D896281E8365B1004DFC14 /* ScorllView */,
+				18D8962D1E8365B1004DFC14 /* SendTableViewCell.h */,
+				18D8962E1E8365B1004DFC14 /* SendTableViewCell.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18D896281E8365B1004DFC14 /* ScorllView */ = {
+			isa = PBXGroup;
+			children = (
+				18D896291E8365B1004DFC14 /* LiuXSegmentView.h */,
+				18D8962A1E8365B1004DFC14 /* LiuXSegmentView.m */,
+				18D8962B1E8365B1004DFC14 /* LXSegmentScrollView.h */,
+				18D8962C1E8365B1004DFC14 /* LXSegmentScrollView.m */,
+			);
+			path = ScorllView;
 			sourceTree = "<group>";
 		};
 		570462081E481198003961EB /* DownloadUtil */ = {
@@ -3845,6 +3947,7 @@
 		57CAC20F1E02E85A005A3F7E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18D896251E8365B1004DFC14 /* Home */,
 				187257601E750DF4007085C1 /* AccountSecurity */,
 				1872576E1E750DF4007085C1 /* Delivery */,
 				187257711E750DF4007085C1 /* MyWallet */,
@@ -3942,6 +4045,8 @@
 		57CAC2361E02E85A005A3F7E /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				18D896071E836590004DFC14 /* RightButton */,
+				18D8960C1E836590004DFC14 /* SDCycleScrollView */,
 				187257AA1E750E2C007085C1 /* IQKeyboardManager */,
 				187257D01E750E2C007085C1 /* JCAlertView */,
 				187257D41E750E2C007085C1 /* SMSButton */,
@@ -4578,6 +4683,7 @@
 				57EE760A1E272CA0004573F1 /* UIImage+WebP.m in Sources */,
 				574AD4821E49894A00BF099E /* MJRefreshNormalHeader.m in Sources */,
 				574AD4C31E49894A00BF099E /* EaseMessageViewController.m in Sources */,
+				18D896311E8365B1004DFC14 /* LXSegmentScrollView.m in Sources */,
 				57189A441E7F8D0500F6E621 /* CommentTagData.m in Sources */,
 				57EE76011E272CA0004573F1 /* SDWebImageCompat.m in Sources */,
 				574AD4A01E49894A00BF099E /* UIImageView+EMWebCache.m in Sources */,
@@ -4648,6 +4754,7 @@
 				574AD5441E49894B00BF099E /* XHMessageTextView.m in Sources */,
 				187257EB1E750E2C007085C1 /* IQPreviousNextView.m in Sources */,
 				574AD46C1E49894A00BF099E /* EMCDDeviceManager+Media.m in Sources */,
+				18D8962F1E8365B1004DFC14 /* JDHomeViewController.m in Sources */,
 				574AD5301E49894B00BF099E /* ChatroomDetailViewController.m in Sources */,
 				574AD5291E49894B00BF099E /* CreateGroupViewController.m in Sources */,
 				57CAC26C1E02E85A005A3F7E /* CryptorTools.m in Sources */,
@@ -4660,6 +4767,7 @@
 				574AD4951E49894A00BF099E /* EMSDWebImageDownloader.m in Sources */,
 				574AD4BB1E49894A00BF099E /* EaseMessageReadManager.m in Sources */,
 				57CAC27A1E02E85A005A3F7E /* MASCompositeConstraint.m in Sources */,
+				18D896231E836590004DFC14 /* SDCycleScrollView.m in Sources */,
 				187257E91E750E2C007085C1 /* IQTextView.m in Sources */,
 				574AD4871E49894A00BF099E /* UIScrollView+MJRefresh.m in Sources */,
 				57CAC27E1E02E85A005A3F7E /* MASViewAttribute.m in Sources */,
@@ -4674,6 +4782,7 @@
 				574078101E66AA820008DFA4 /* OrderPayResResponse.m in Sources */,
 				574AD46E1E49894A00BF099E /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				574AD4971E49894A00BF099E /* EMSDWebImageManager.m in Sources */,
+				18D896321E8365B1004DFC14 /* SendTableViewCell.m in Sources */,
 				574AD51D1E49894A00BF099E /* SRSlimeView.m in Sources */,
 				57EE76091E272CA0004573F1 /* UIImage+MultiFormat.m in Sources */,
 				575F0BB91E7D650B0056589A /* UserInfoResponse.m in Sources */,
@@ -4749,6 +4858,7 @@
 				5740781F1E66AA8D0008DFA4 /* WXOrderPayRequest.m in Sources */,
 				574AD49D1E49894A00BF099E /* UIImage+EMMultiFormat.m in Sources */,
 				574AD5381E49894B00BF099E /* ApplyViewController.m in Sources */,
+				18D896301E8365B1004DFC14 /* LiuXSegmentView.m in Sources */,
 				574AD4A91E49894A00BF099E /* PSTCollectionViewLayout.m in Sources */,
 				574AD4831E49894A00BF099E /* MJRefreshStateHeader.m in Sources */,
 				57CAC2811E02E85A005A3F7E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
@@ -4793,6 +4903,7 @@
 				1872579C1E750DF4007085C1 /* WalletTableViewController.m in Sources */,
 				187257EC1E750E2C007085C1 /* IQTitleBarButtonItem.m in Sources */,
 				574AD4D91E49894A00BF099E /* EaseFacialView.m in Sources */,
+				18D896221E836590004DFC14 /* SDCollectionViewCell.m in Sources */,
 				574AD4DB1E49894A00BF099E /* EaseRecordView.m in Sources */,
 				187257951E750DF4007085C1 /* AccountSecurityTableViewController.m in Sources */,
 				574AD5C51E49894B00BF099E /* MessageOrderTypeCell.m in Sources */,
@@ -4802,6 +4913,7 @@
 				57403FD31E1B9192007CF092 /* AFSecurityPolicy.m in Sources */,
 				574AD5B61E49894B00BF099E /* EMRobotChatTextBubbleView.m in Sources */,
 				57403FD01E1B9192007CF092 /* NetworkUtil.m in Sources */,
+				18D896211E836590004DFC14 /* TAPageControl.m in Sources */,
 				574AD4BE1E49894A00BF099E /* EaseEmotionEscape.m in Sources */,
 				574AD49B1E49894A00BF099E /* UIButton+EMWebCache.m in Sources */,
 				5705F9EF1E82B780002F9FB7 /* UpdateOrderRequest.m in Sources */,
@@ -4837,6 +4949,7 @@
 				187257E31E750E2C007085C1 /* IQUITextFieldView+Additions.m in Sources */,
 				5740781E1E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m in Sources */,
 				187257F61E750E2C007085C1 /* YCXMenuItem.m in Sources */,
+				18D896241E836590004DFC14 /* UIView+SDExtension.m in Sources */,
 				574AD5BF1E49894B00BF099E /* SettingsViewController.m in Sources */,
 				57EE75F21E272CA0004573F1 /* RefreshFooter.m in Sources */,
 				57EE76031E272CA0004573F1 /* SDWebImageDownloader.m in Sources */,
@@ -4844,6 +4957,7 @@
 				574AD4CF1E49894A00BF099E /* EaseBubbleView+Location.m in Sources */,
 				57EE75FA1E272CA0004573F1 /* UIScrollView+Refresh.m in Sources */,
 				57EE75F61E272CA0004573F1 /* RefreshGifHeader.m in Sources */,
+				18D896201E836590004DFC14 /* TADotView.m in Sources */,
 				57BFC7A51E4B4E0C001690E4 /* OrderTypeListData.m in Sources */,
 				57189A4D1E7F8DA000F6E621 /* GetOrderByIdResponse.m in Sources */,
 				57189A471E7F8D7100F6E621 /* GetOrderByIdRequest.m in Sources */,
@@ -4865,6 +4979,7 @@
 				57F44E501E4CA16C00F62B16 /* UserMessageCodeResponse.m in Sources */,
 				57EE76021E272CA0004573F1 /* SDWebImageDecoder.m in Sources */,
 				187257A11E750DF4007085C1 /* JumpToSettingViewController.m in Sources */,
+				18D8961F1E836590004DFC14 /* TAAnimatedDotView.m in Sources */,
 				575CAFE91E7D501C004784AA /* NewsListRequest.m in Sources */,
 				575CAFF51E7D5396004784AA /* DeliveryListResponse.m in Sources */,
 				574AD5181E49894A00BF099E /* EMAlertView.m in Sources */,
@@ -4883,6 +4998,7 @@
 				574AD5321E49894B00BF099E /* MyChatroomListViewController.m in Sources */,
 				574077FE1E66A9330008DFA4 /* WXMediaMessage+messageConstruct.m in Sources */,
 				574AD4A51E49894A00BF099E /* PSTCollectionViewController.m in Sources */,
+				18D8961D1E836590004DFC14 /* UIView+Extension.m in Sources */,
 				574AD5401E49894B00BF099E /* BaseViewController.m in Sources */,
 				573C73B21E7FBC5C00C27B55 /* UserAvatarResponse.m in Sources */,
 				57CAC2741E02E85A005A3F7E /* UIImage+ScreenShot.m in Sources */,
@@ -4910,6 +5026,7 @@
 				57EE760D1E272CA0004573F1 /* UIView+WebCacheOperation.m in Sources */,
 				57EE75FC1E272CA0004573F1 /* UIView+YTFrame.m in Sources */,
 				57EE76071E272CA0004573F1 /* UIButton+WebCache.m in Sources */,
+				18D8961E1E836590004DFC14 /* TAAbstractDotView.m in Sources */,
 				574AD4811E49894A00BF099E /* MJRefreshGifHeader.m in Sources */,
 				574AD5311E49894B00BF099E /* ChatroomListViewController.m in Sources */,
 				574AD5421E49894B00BF099E /* EMNavigationController.m in Sources */,
@@ -4919,6 +5036,7 @@
 				574AD4851E49894A00BF099E /* MJRefreshConst.m in Sources */,
 				573C73B81E7FBDA900C27B55 /* UserInfoSetResponse.m in Sources */,
 				571D20971E52B6F300BF3334 /* ForgetPassViewController.m in Sources */,
+				18D8961C1E836590004DFC14 /* RightButtonNew.m in Sources */,
 				57CAC2831E02E85A005A3F7E /* ViewController+MASAdditions.m in Sources */,
 				57CAC28A1E02E85A005A3F7E /* NSObject+MJCoding.m in Sources */,
 				574AD4CC1E49894A00BF099E /* EaseBubbleView+File.m in Sources */,
