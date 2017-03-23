@@ -17,6 +17,7 @@
 #import "UserRegisterRequest.h"
 #import "UserMessageCodeRequest.h"
 #import "UserForgetRequest.h"
+#import "UserUpdatePasswordRequest.h"
 #import "UserAvatarRequest.h"
 
 #import "HomeBannerListRequest.h"
@@ -26,6 +27,11 @@
 #import "OrderTypeRequest.h"
 #import "GetOrderByIdRequest.h"
 #import "GetOrderListRequest.h"
+#import "ConfirmOrderRequest.h"
+#import "CancelOrderRequest.h"
+#import "AppraiseRequest.h"
+#import "UpdateOrderRequest.h"
+
 /***   REQUEST   END ***/
 
 /***   DATA   BEGIN ***/

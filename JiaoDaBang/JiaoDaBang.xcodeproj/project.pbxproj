@@ -57,6 +57,12 @@
 		570462271E48140A003961EB /* UserLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 570462261E48140A003961EB /* UserLoginRequest.m */; };
 		5704622A1E481420003961EB /* UserLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 570462291E481420003961EB /* UserLoginResponse.m */; };
 		570462331E481BD5003961EB /* NSArray+YTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 570462321E481BD5003961EB /* NSArray+YTExtension.m */; };
+		5705F9E61E82A8E2002F9FB7 /* AppraiseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9E51E82A8E2002F9FB7 /* AppraiseResponse.m */; };
+		5705F9E91E82AC80002F9FB7 /* AppraiseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9E81E82AC80002F9FB7 /* AppraiseRequest.m */; };
+		5705F9EC1E82B68C002F9FB7 /* UpdateOrderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9EB1E82B68C002F9FB7 /* UpdateOrderResponse.m */; };
+		5705F9EF1E82B780002F9FB7 /* UpdateOrderRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9EE1E82B780002F9FB7 /* UpdateOrderRequest.m */; };
+		5705F9F21E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9F11E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m */; };
+		5705F9F51E82BF39002F9FB7 /* UserUpdatePasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9F41E82BF39002F9FB7 /* UserUpdatePasswordRequest.m */; };
 		57189A2C1E7F7DC200F6E621 /* RaiseLabelListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A2B1E7F7DC200F6E621 /* RaiseLabelListData.m */; };
 		57189A2F1E7F7E8B00F6E621 /* RaiseLabelListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A2E1E7F7E8B00F6E621 /* RaiseLabelListRequest.m */; };
 		57189A321E7F7EF300F6E621 /* RaiseLabelListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A311E7F7EF300F6E621 /* RaiseLabelListResponse.m */; };
@@ -739,6 +745,18 @@
 		570462291E481420003961EB /* UserLoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginResponse.m; sourceTree = "<group>"; };
 		570462311E481BD5003961EB /* NSArray+YTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YTExtension.h"; sourceTree = "<group>"; };
 		570462321E481BD5003961EB /* NSArray+YTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YTExtension.m"; sourceTree = "<group>"; };
+		5705F9E41E82A8E2002F9FB7 /* AppraiseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppraiseResponse.h; sourceTree = "<group>"; };
+		5705F9E51E82A8E2002F9FB7 /* AppraiseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppraiseResponse.m; sourceTree = "<group>"; };
+		5705F9E71E82AC80002F9FB7 /* AppraiseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppraiseRequest.h; sourceTree = "<group>"; };
+		5705F9E81E82AC80002F9FB7 /* AppraiseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppraiseRequest.m; sourceTree = "<group>"; };
+		5705F9EA1E82B68C002F9FB7 /* UpdateOrderResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateOrderResponse.h; sourceTree = "<group>"; };
+		5705F9EB1E82B68C002F9FB7 /* UpdateOrderResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateOrderResponse.m; sourceTree = "<group>"; };
+		5705F9ED1E82B780002F9FB7 /* UpdateOrderRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateOrderRequest.h; sourceTree = "<group>"; };
+		5705F9EE1E82B780002F9FB7 /* UpdateOrderRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateOrderRequest.m; sourceTree = "<group>"; };
+		5705F9F01E82BEE8002F9FB7 /* UserUpdatePasswordResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserUpdatePasswordResponse.h; sourceTree = "<group>"; };
+		5705F9F11E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserUpdatePasswordResponse.m; sourceTree = "<group>"; };
+		5705F9F31E82BF39002F9FB7 /* UserUpdatePasswordRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserUpdatePasswordRequest.h; sourceTree = "<group>"; };
+		5705F9F41E82BF39002F9FB7 /* UserUpdatePasswordRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserUpdatePasswordRequest.m; sourceTree = "<group>"; };
 		57189A2A1E7F7DC200F6E621 /* RaiseLabelListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseLabelListData.h; sourceTree = "<group>"; };
 		57189A2B1E7F7DC200F6E621 /* RaiseLabelListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseLabelListData.m; sourceTree = "<group>"; };
 		57189A2D1E7F7E8B00F6E621 /* RaiseLabelListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseLabelListRequest.h; sourceTree = "<group>"; };
@@ -2058,6 +2076,8 @@
 				573C73B11E7FBC5C00C27B55 /* UserAvatarResponse.m */,
 				573C73B61E7FBDA900C27B55 /* UserInfoSetResponse.h */,
 				573C73B71E7FBDA900C27B55 /* UserInfoSetResponse.m */,
+				5705F9F01E82BEE8002F9FB7 /* UserUpdatePasswordResponse.h */,
+				5705F9F11E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -2081,6 +2101,8 @@
 				573C73AE1E7FB9F900C27B55 /* UserAvatarRequest.m */,
 				573C73B31E7FBD9400C27B55 /* UserInfoSetRequest.h */,
 				573C73B41E7FBD9400C27B55 /* UserInfoSetRequest.m */,
+				5705F9F31E82BF39002F9FB7 /* UserUpdatePasswordRequest.h */,
+				5705F9F41E82BF39002F9FB7 /* UserUpdatePasswordRequest.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -2122,6 +2144,8 @@
 				57322CF11E82666E00B491B0 /* ConfirmOrderRequest.m */,
 				57322CF61E8267E900B491B0 /* CancelOrderRequest.h */,
 				57322CF71E8267E900B491B0 /* CancelOrderRequest.m */,
+				5705F9ED1E82B780002F9FB7 /* UpdateOrderRequest.h */,
+				5705F9EE1E82B780002F9FB7 /* UpdateOrderRequest.m */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -2139,6 +2163,8 @@
 				57322CF41E82668400B491B0 /* ConfirmOrderResponse.m */,
 				57322CF91E8267FC00B491B0 /* CancelOrderResponse.h */,
 				57322CFA1E8267FC00B491B0 /* CancelOrderResponse.m */,
+				5705F9EA1E82B68C002F9FB7 /* UpdateOrderResponse.h */,
+				5705F9EB1E82B68C002F9FB7 /* UpdateOrderResponse.m */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -4176,6 +4202,8 @@
 				57F44E691E4CB6F100F62B16 /* OrderTypeRequest.m */,
 				57189A2D1E7F7E8B00F6E621 /* RaiseLabelListRequest.h */,
 				57189A2E1E7F7E8B00F6E621 /* RaiseLabelListRequest.m */,
+				5705F9E71E82AC80002F9FB7 /* AppraiseRequest.h */,
+				5705F9E81E82AC80002F9FB7 /* AppraiseRequest.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4189,6 +4217,8 @@
 				57F44E661E4CB2EF00F62B16 /* OrderTypeResponse.m */,
 				57189A301E7F7EF300F6E621 /* RaiseLabelListResponse.h */,
 				57189A311E7F7EF300F6E621 /* RaiseLabelListResponse.m */,
+				5705F9E41E82A8E2002F9FB7 /* AppraiseResponse.h */,
+				5705F9E51E82A8E2002F9FB7 /* AppraiseResponse.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4538,6 +4568,7 @@
 				574AD48F1E49894A00BF099E /* MWTapDetectingView.m in Sources */,
 				574AD4A81E49894A00BF099E /* PSTCollectionViewItemKey.m in Sources */,
 				574AD4A61E49894A00BF099E /* PSTCollectionViewData.m in Sources */,
+				5705F9EC1E82B68C002F9FB7 /* UpdateOrderResponse.m in Sources */,
 				574AD4C61E49894A00BF099E /* EaseViewController.m in Sources */,
 				574AD5BE1E49894B00BF099E /* PushNotificationViewController.m in Sources */,
 				574AD4921E49894A00BF099E /* EMSDImageCache.m in Sources */,
@@ -4596,6 +4627,7 @@
 				187257971E750DF4007085C1 /* ModifyPhoneNumberViewController.m in Sources */,
 				574AD5351E49894B00BF099E /* AddFriendCell.m in Sources */,
 				574AD4731E49894A00BF099E /* EMVoiceConverter.mm in Sources */,
+				5705F9E61E82A8E2002F9FB7 /* AppraiseResponse.m in Sources */,
 				57EE75F81E272CA0004573F1 /* RefreshStateNormalHeader.m in Sources */,
 				574AD4CE1E49894A00BF099E /* EaseBubbleView+Image.m in Sources */,
 				574AD4C21E49894A00BF099E /* EaseLocationViewController.m in Sources */,
@@ -4740,6 +4772,7 @@
 				187257981E750DF4007085C1 /* NewPhoneNumberViewController.m in Sources */,
 				57EE76061E272CA0004573F1 /* SDWebImagePrefetcher.m in Sources */,
 				577029F71E02E7C300FA9E95 /* AppDelegate.m in Sources */,
+				5705F9E91E82AC80002F9FB7 /* AppraiseRequest.m in Sources */,
 				57CAC2851E02E85A005A3F7E /* MJFoundation.m in Sources */,
 				574AD4D41E49894A00BF099E /* EaseChatToolbar.m in Sources */,
 				574AD4CA1E49894A00BF099E /* EaseMessageCell.m in Sources */,
@@ -4771,6 +4804,7 @@
 				57403FD01E1B9192007CF092 /* NetworkUtil.m in Sources */,
 				574AD4BE1E49894A00BF099E /* EaseEmotionEscape.m in Sources */,
 				574AD49B1E49894A00BF099E /* UIButton+EMWebCache.m in Sources */,
+				5705F9EF1E82B780002F9FB7 /* UpdateOrderRequest.m in Sources */,
 				57CAC29C1E02EACB005A3F7E /* HelpViewController.m in Sources */,
 				187257E61E750E2C007085C1 /* IQUIWindow+Hierarchy.m in Sources */,
 				57CAC28B1E02E85A005A3F7E /* NSObject+MJKeyValue.m in Sources */,
@@ -4789,6 +4823,7 @@
 				574AD52A1E49894B00BF099E /* GroupBansViewController.m in Sources */,
 				574AD5331E49894B00BF099E /* ContactListSelectViewController.m in Sources */,
 				574AD5BA1E49894B00BF099E /* RobotManager.m in Sources */,
+				5705F9F21E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m in Sources */,
 				57EE76041E272CA0004573F1 /* SDWebImageDownloaderOperation.m in Sources */,
 				574AD4991E49894A00BF099E /* MKAnnotationView+EMWebCache.m in Sources */,
 				57EE758C1E272B05004573F1 /* LoginViewController.m in Sources */,
@@ -4904,6 +4939,7 @@
 				574AD4A41E49894A00BF099E /* PSTCollectionViewCell.m in Sources */,
 				574AD46B1E49894A00BF099E /* EMAudioRecorderUtil.m in Sources */,
 				574AD5BD1E49894B00BF099E /* EditNicknameViewController.m in Sources */,
+				5705F9F51E82BF39002F9FB7 /* UserUpdatePasswordRequest.m in Sources */,
 				5740781C1E66AA8D0008DFA4 /* AliOrderPayRequest.m in Sources */,
 				57F44E5E1E4CAF5300F62B16 /* LocalPointRequest.m in Sources */,
 				57CAC2961E02EA88005A3F7E /* HomeViewController.m in Sources */,
