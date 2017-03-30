@@ -27,8 +27,9 @@
             
             [dataArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 
-                NewsInfoData *infoData = [[BannerInfoData alloc] init];
-                infoData.newsId = [obj objectForKey:@"newsid"];
+                NewsInfoData *infoData = [[NewsInfoData alloc] init];
+                NSString *newsIdStr = [obj objectForKey:@"newsid"];
+                infoData.newsId = newsIdStr;
                 infoData.title = [obj objectForKey:@"title"];
                 infoData.content = [obj objectForKey:@"content"];
                 infoData.newsUrl = [obj objectForKey:@"newsurl"];

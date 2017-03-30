@@ -186,10 +186,6 @@
 
     [request setSuccessBlock:^(id object, id responseObject) {
         DLog(@"-----用户登录成功");
-        
-        [[NSUserDefaults standardUserDefaults] setObject:self.phoneTextField.text forKey:kUserAccount];
-        [[NSUserDefaults standardUserDefaults] setObject:self.passwordTextField.text forKey:kUserPassword];
-        [[NSUserDefaults standardUserDefaults] synchronize];
 
         [[GlobalManager sharedManager] loginSuccessedWithUserInfo:object];
 
@@ -197,6 +193,13 @@
     }];
     [request setFailureBlock:^(NSInteger errorCode, id responseObject) {
         DLog(@"-----用户登录失败");
+        
+        NSDictionary *dataDic = (NSDictionary *)responseObject;
+        
+        NSString *infoStr = [dataDic objectForKeySafe:@"info"];
+        
+        [SVProgressHUD showWithStatus:infoStr];
+        [SVProgressHUD dismissWithDelay:1.5];
 
     }];
     [request sendRequest];

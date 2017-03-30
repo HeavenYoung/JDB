@@ -61,6 +61,8 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
 @property (nonatomic, strong) UILabel *arriveLabel;
 // 底部tableView
 @property (nonatomic, strong) UITableView *tableViews;
+
+@property (nonatomic, strong) NSArray *dataListArray;
 @end
 
 @implementation JDHomeViewController
@@ -69,8 +71,70 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor grayColor];
-    [self addLoadFigure];
-    [self addLoadSrorllView];
+    
+    [self loadData];
+}
+
+- (void)loadData {
+
+    // Request
+    HomeBannerListRequest *homeBannerListRequest = [[HomeBannerListRequest alloc] init];
+    [homeBannerListRequest setSuccessBlock:^(id object, id responseObject) {
+        DLog(@"------首页轮播列表数据请求成功");
+        
+        HomeBannerInfoData *homeBannerInfo = (HomeBannerInfoData *)object;
+        
+        [self addLoadFigureWithWithBannerInfo:homeBannerInfo];
+
+        [self addLoadSrorllView];
+
+    }];
+    [homeBannerListRequest setFailureBlock:^(NSInteger errorCode, id responseObject) {
+        DLog(@"------首页轮播列表数据请求失败");
+    }];
+    [homeBannerListRequest sendRequest];
+    
+    NewsListRequest *neswListRequest = [[NewsListRequest alloc] init];
+    [neswListRequest setSuccessBlock:^(id object, id responseObject) {
+        
+        DLog(@"------新闻列表数据请求成功");
+        NewsListData *listData = (NewsListData *)object;
+        self.dataListArray = listData.dataListArray;
+        [self setupTableView];
+        
+    }];
+    [neswListRequest setFailureBlock:^(NSInteger errorCode, id responseObject) {
+        
+        DLog(@"------新闻列表数据失败");
+        
+    }];
+    [neswListRequest sendRequest];
+
+}
+
+// 加载轮播图
+- (void)addLoadFigureWithWithBannerInfo:(HomeBannerInfoData *)homeBannerInfo {
+    _cycleView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WIDTH, MAIN_SCREEN_WIDTH * kScrollAspectRatio) delegate:self placeholderImage:nil];
+    _cycleView.pageDotColor = [UIColor whiteColor];
+    _cycleView.currentPageDotColor = [UIColor blackColor];
+    [self.view addSubview:_cycleView];
+    // 轮播图数据赋值
+    
+    NSMutableArray *cycleUrlArray = [[NSMutableArray alloc] init];
+    [homeBannerInfo.bannerDataArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        BannerInfoData *infoData = (BannerInfoData *)obj;
+        [cycleUrlArray addObject:infoData.bannerUrl];
+    }];
+    self.cycleView.imageURLStringsGroup = cycleUrlArray.copy;
+}
+
+#pragma mark - SDCycleScrollView Delegate
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
+    
+}
+
+- (void)setupTableView {
+
     self.tableViews = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMidY(self.scrollView.frame) - 135, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT)];
     self.tableViews.showsVerticalScrollIndicator = NO;
     self.tableViews.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -78,22 +142,7 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
     self.tableViews.delegate = self;
     self.tableViews.dataSource = self;
     [self.view addSubview:self.tableViews];
-}
 
-// 加载轮播图
-- (void)addLoadFigure {
-    _cycleView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WIDTH, MAIN_SCREEN_WIDTH * kScrollAspectRatio) delegate:self placeholderImage:nil];
-    _cycleView.pageDotColor = [UIColor whiteColor];
-    _cycleView.currentPageDotColor = [UIColor blackColor];
-    [self.view addSubview:_cycleView];
-    // 轮播图数据赋值
-    NSArray *aa = @[@"zhifubao1",@"zhifubao1",@"zhifubao1",@"zhifubao1",@"zhifubao1"];
-    self.cycleView.imageURLStringsGroup = aa;
-}
-
-#pragma mark - SDCycleScrollView Delegate
-- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
-    
 }
 
 // 导航
@@ -223,7 +272,7 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
 #pragma  mark tableviewdatasourceDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == self.tableView3) {
-        return 10;
+        return self.dataListArray.count;
     }else {
         return 100;
     }

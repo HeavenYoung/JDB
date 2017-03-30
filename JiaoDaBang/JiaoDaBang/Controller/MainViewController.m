@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 #import "YTNavigationController.h"
-#import "HomeViewController.h"
+#import "JDHomeViewController.h"
 #import "SeekViewController.h"
 #import "HelpViewController.h"
 #import "ProfileViewController.h"
@@ -34,6 +34,7 @@
 
 - (void)autoLogin {
 
+    DLog(@"-------自动登陆-------")
     NSString *userId = [[NSUserDefaults standardUserDefaults] objectForKey:kUserID];
     
     if (userId) {
@@ -54,7 +55,7 @@
     
     } else {
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             
             [self showLogin];
             
@@ -72,10 +73,10 @@
 //添加所有子控制器
 - (void)addChildViewControllers {
     
-    [self addChildViewController:[[HomeViewController alloc] init] title:@"首页" imageName:@"home"];
+    [self addChildViewController:[[JDHomeViewController alloc] init] title:@"首页" imageName:@"home"];
     [self addChildViewController:[[SeekViewController alloc] init] title:@"发布求助" imageName:@"seek"];
     [self addChildViewController:[[HelpViewController alloc] init] title:@"顺手帮忙" imageName:@"help"];
-    [self addChildViewController:[[HomeViewController alloc] init] title:@"个人中心" imageName:@"profile"];
+    [self addChildViewController:[[ProfileViewController alloc] init] title:@"个人中心" imageName:@"profile"];
 
 }
 

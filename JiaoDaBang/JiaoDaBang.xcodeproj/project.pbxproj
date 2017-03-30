@@ -569,7 +569,6 @@
 		57CAC28D1E02E85A005A3F7E /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CAC2671E02E85A005A3F7E /* NSString+MJExtension.m */; };
 		57CAC2901E02E920005A3F7E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CAC28F1E02E920005A3F7E /* MainViewController.m */; };
 		57CAC2931E02E937005A3F7E /* YTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CAC2921E02E937005A3F7E /* YTNavigationController.m */; };
-		57CAC2961E02EA88005A3F7E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CAC2951E02EA88005A3F7E /* HomeViewController.m */; };
 		57CAC2991E02EAA6005A3F7E /* SeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CAC2981E02EAA6005A3F7E /* SeekViewController.m */; };
 		57CAC29C1E02EACB005A3F7E /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CAC29B1E02EACB005A3F7E /* HelpViewController.m */; };
 		57CAC29F1E02EADD005A3F7E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57CAC29E1E02EADD005A3F7E /* ProfileViewController.m */; };
@@ -1652,8 +1651,6 @@
 		57CAC28F1E02E920005A3F7E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		57CAC2911E02E937005A3F7E /* YTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTNavigationController.h; sourceTree = "<group>"; };
 		57CAC2921E02E937005A3F7E /* YTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTNavigationController.m; sourceTree = "<group>"; };
-		57CAC2941E02EA88005A3F7E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		57CAC2951E02EA88005A3F7E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		57CAC2971E02EAA6005A3F7E /* SeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeekViewController.h; sourceTree = "<group>"; };
 		57CAC2981E02EAA6005A3F7E /* SeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeekViewController.m; sourceTree = "<group>"; };
 		57CAC29A1E02EACB005A3F7E /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
@@ -3960,8 +3957,6 @@
 				57CAC28F1E02E920005A3F7E /* MainViewController.m */,
 				57CAC2911E02E937005A3F7E /* YTNavigationController.h */,
 				57CAC2921E02E937005A3F7E /* YTNavigationController.m */,
-				57CAC2941E02EA88005A3F7E /* HomeViewController.h */,
-				57CAC2951E02EA88005A3F7E /* HomeViewController.m */,
 				57CAC2971E02EAA6005A3F7E /* SeekViewController.h */,
 				57CAC2981E02EAA6005A3F7E /* SeekViewController.m */,
 				57CAC29A1E02EACB005A3F7E /* HelpViewController.h */,
@@ -5060,7 +5055,6 @@
 				5705F9F51E82BF39002F9FB7 /* UserUpdatePasswordRequest.m in Sources */,
 				5740781C1E66AA8D0008DFA4 /* AliOrderPayRequest.m in Sources */,
 				57F44E5E1E4CAF5300F62B16 /* LocalPointRequest.m in Sources */,
-				57CAC2961E02EA88005A3F7E /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
