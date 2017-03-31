@@ -39,6 +39,7 @@
 #define My_Font(SIZE)  [UIFont boldSystemFontOfSize:SIZE];
 #define MAIN_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define MAIN_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define MAIN_SCREEN_SIZE  [UIScreen mainScreen].bounds
 #import "UIButton+TimerButton.h"
 #import "YCXMenu.h"
 #import "JCAlertView.h"

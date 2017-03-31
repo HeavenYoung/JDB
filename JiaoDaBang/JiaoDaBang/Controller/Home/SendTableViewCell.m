@@ -34,7 +34,7 @@
             make.height.equalTo(@35);
         }];
         
-        // 资金
+        // song
         self.song = [UIButton new];
         self.song.layer.masksToBounds = YES;
         self.song.layer.cornerRadius = 8;

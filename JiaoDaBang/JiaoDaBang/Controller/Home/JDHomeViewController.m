@@ -6,6 +6,8 @@
 //  Copyright © 2017年 Sunjiandong. All rights reserved.
 //
 
+#import "MJExtension.h"
+
 #import "JDHomeViewController.h"
 #import "SDCycleScrollView.h"
 #import "LXSegmentScrollView.h"
@@ -63,6 +65,10 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
 @property (nonatomic, strong) UITableView *tableViews;
 
 @property (nonatomic, strong) NSArray *dataListArray;
+
+// 底层滚动
+@property (nonatomic, strong) UIScrollView *scrollView11;
+
 @end
 
 @implementation JDHomeViewController
@@ -70,7 +76,11 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor grayColor];
+//    self.view.backgroundColor = [UIColor grayColor];
+    // 底部滚动
+    _scrollView11 = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT)];
+    _scrollView11.contentSize = CGSizeMake(self.view.frame.size.width,MAIN_SCREEN_HEIGHT+45);
+    [self.view addSubview:_scrollView11];
     
     [self loadData];
 }
@@ -101,7 +111,8 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
         NewsListData *listData = (NewsListData *)object;
         self.dataListArray = listData.dataListArray;
         [self setupTableView];
-        
+        // 需要刷新对应的tableView
+        [self.tableViews reloadData];
     }];
     [neswListRequest setFailureBlock:^(NSInteger errorCode, id responseObject) {
         
@@ -117,7 +128,7 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
     _cycleView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WIDTH, MAIN_SCREEN_WIDTH * kScrollAspectRatio) delegate:self placeholderImage:nil];
     _cycleView.pageDotColor = [UIColor whiteColor];
     _cycleView.currentPageDotColor = [UIColor blackColor];
-    [self.view addSubview:_cycleView];
+    [_scrollView11 addSubview:_cycleView];
     // 轮播图数据赋值
     
     NSMutableArray *cycleUrlArray = [[NSMutableArray alloc] init];
@@ -135,14 +146,13 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
 
 - (void)setupTableView {
 
-    self.tableViews = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMidY(self.scrollView.frame) - 135, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT)];
+    self.tableViews = [[UITableView alloc] initWithFrame:CGRectMake(0, 440, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT)];
     self.tableViews.showsVerticalScrollIndicator = NO;
     self.tableViews.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableViews registerClass:[UITableViewCell class] forCellReuseIdentifier:kCellIdentifier];
     self.tableViews.delegate = self;
     self.tableViews.dataSource = self;
-    [self.view addSubview:self.tableViews];
-
+    [_scrollView11 addSubview:self.tableViews];
 }
 
 // 导航
@@ -219,9 +229,10 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
             [array addObject:_tableView3];
         }
     }
+
     // 初始化导航
-    _scrollView = [[LXSegmentScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.cycleView.frame) + 10, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT) titleArray:@[@"求助",@"帮人",@"快递直送"] contentViewArray:array];
-    [self.view addSubview:_scrollView];
+    _scrollView = [[LXSegmentScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.cycleView.frame), MAIN_SCREEN_WIDTH, 240) titleArray:@[@"求助",@"帮人",@"快递直送"] contentViewArray:array];
+    [_scrollView11 addSubview:_scrollView];
 }
 
 // view1 中的按钮点击事件
@@ -272,9 +283,11 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
 #pragma  mark tableviewdatasourceDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == self.tableView3) {
-        return self.dataListArray.count;
+        return 3;
     }else {
-        return 100;
+        
+        // 新闻列表行数
+        return self.dataListArray.count;
     }
     
 }
@@ -300,14 +313,26 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
     }else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellIdentifier forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSeparatorStyleNone;
-        cell.textLabel.text = @"sdhiduhfisudhfhsdui";
+        // 新闻列表模型赋值
+        NewsInfoData *listData = [NewsInfoData mj_objectWithKeyValues:self.dataListArray[indexPath.row]];
+        cell.textLabel.text = listData.title;
         return cell;
     }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView deselectRowAtIndexPath:indexPath animated:NO];
-
+    if (tableView == self.tableView3) {
+        // 快递直达点击监听
+        DLog(@"第：%@条快递直达",indexPath);
+        
+    }else {
+        
+        // 新闻列表模型赋值
+        NewsInfoData *listData = [NewsInfoData mj_objectWithKeyValues:self.dataListArray[indexPath.row]];
+        DLog(@"第：%@条新闻",listData.newsId);
+        
+    }
+    
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
