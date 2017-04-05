@@ -76,6 +76,8 @@
 		5705F9EF1E82B780002F9FB7 /* UpdateOrderRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9EE1E82B780002F9FB7 /* UpdateOrderRequest.m */; };
 		5705F9F21E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9F11E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m */; };
 		5705F9F51E82BF39002F9FB7 /* UserUpdatePasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5705F9F41E82BF39002F9FB7 /* UserUpdatePasswordRequest.m */; };
+		570A06CD1E9513F9006E2089 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570A06CC1E9513F9006E2089 /* AboutViewController.m */; };
+		570A06D01E951420006E2089 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570A06CF1E951420006E2089 /* SettingViewController.m */; };
 		57189A2C1E7F7DC200F6E621 /* RaiseLabelListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A2B1E7F7DC200F6E621 /* RaiseLabelListData.m */; };
 		57189A2F1E7F7E8B00F6E621 /* RaiseLabelListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A2E1E7F7E8B00F6E621 /* RaiseLabelListRequest.m */; };
 		57189A321E7F7EF300F6E621 /* RaiseLabelListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57189A311E7F7EF300F6E621 /* RaiseLabelListResponse.m */; };
@@ -795,6 +797,10 @@
 		5705F9F11E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserUpdatePasswordResponse.m; sourceTree = "<group>"; };
 		5705F9F31E82BF39002F9FB7 /* UserUpdatePasswordRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserUpdatePasswordRequest.h; sourceTree = "<group>"; };
 		5705F9F41E82BF39002F9FB7 /* UserUpdatePasswordRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserUpdatePasswordRequest.m; sourceTree = "<group>"; };
+		570A06CB1E9513F9006E2089 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		570A06CC1E9513F9006E2089 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		570A06CE1E951420006E2089 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		570A06CF1E951420006E2089 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		57189A2A1E7F7DC200F6E621 /* RaiseLabelListData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseLabelListData.h; sourceTree = "<group>"; };
 		57189A2B1E7F7DC200F6E621 /* RaiseLabelListData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseLabelListData.m; sourceTree = "<group>"; };
 		57189A2D1E7F7E8B00F6E621 /* RaiseLabelListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseLabelListRequest.h; sourceTree = "<group>"; };
@@ -3969,6 +3975,10 @@
 				571D208F1E52AB6F00BF3334 /* RegisterViewController.m */,
 				571D20951E52B6F300BF3334 /* ForgetPassViewController.h */,
 				571D20961E52B6F300BF3334 /* ForgetPassViewController.m */,
+				570A06CB1E9513F9006E2089 /* AboutViewController.h */,
+				570A06CC1E9513F9006E2089 /* AboutViewController.m */,
+				570A06CE1E951420006E2089 /* SettingViewController.h */,
+				570A06CF1E951420006E2089 /* SettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4765,6 +4775,7 @@
 				18D896231E836590004DFC14 /* SDCycleScrollView.m in Sources */,
 				187257E91E750E2C007085C1 /* IQTextView.m in Sources */,
 				574AD4871E49894A00BF099E /* UIScrollView+MJRefresh.m in Sources */,
+				570A06CD1E9513F9006E2089 /* AboutViewController.m in Sources */,
 				57CAC27E1E02E85A005A3F7E /* MASViewAttribute.m in Sources */,
 				57BFC79E1E4B4C52001690E4 /* WalletData.m in Sources */,
 				575CAFDE1E7D4AF3004784AA /* UserForgetCheckResponse.m in Sources */,
@@ -4895,6 +4906,7 @@
 				57EE75FD1E272CA0004573F1 /* RefreshConst.m in Sources */,
 				575CAFE61E7D4D3D004784AA /* HomeBannerListResponse.m in Sources */,
 				57CAC27F1E02E85A005A3F7E /* MASViewConstraint.m in Sources */,
+				570A06D01E951420006E2089 /* SettingViewController.m in Sources */,
 				1872579C1E750DF4007085C1 /* WalletTableViewController.m in Sources */,
 				187257EC1E750E2C007085C1 /* IQTitleBarButtonItem.m in Sources */,
 				574AD4D91E49894A00BF099E /* EaseFacialView.m in Sources */,
