@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol SettingViewControllerDelegate <NSObject>
+
+- (void)settingLogout;
+
+@end
+
 @interface SettingViewController : UIViewController
+
+@property (nonatomic, weak) id <SettingViewControllerDelegate> delegate;
 
 @end

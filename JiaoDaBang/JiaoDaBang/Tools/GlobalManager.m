@@ -57,8 +57,7 @@
 
     _userInfoData = nil;
     
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:kUserAccount];
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:kUserPassword];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:kUserID];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFCATION_USER_STATUSCHANGE object:nil];

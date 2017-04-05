@@ -4131,17 +4131,10 @@
 		57CAC2681E02E85A005A3F7E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				57CD2D9F1E54449100AE5E35 /* Profile */,
+				BA29BB1A1E95208C000D3A90 /* Common */,
 				571D20911E52AECE00BF3334 /* User */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		57CD2D9F1E54449100AE5E35 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		57EE758D1E272CA0004573F1 /* FMDB */ = {
@@ -4329,6 +4322,13 @@
 				57189A311E7F7EF300F6E621 /* RaiseLabelListResponse.m */,
 				5705F9E41E82A8E2002F9FB7 /* AppraiseResponse.h */,
 				5705F9E51E82A8E2002F9FB7 /* AppraiseResponse.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BA29BB1A1E95208C000D3A90 /* Common */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Common;
 			sourceTree = "<group>";

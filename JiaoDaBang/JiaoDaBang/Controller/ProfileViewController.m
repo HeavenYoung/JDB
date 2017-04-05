@@ -7,8 +7,10 @@
 //
 
 #import "ProfileViewController.h"
+#import "SettingViewController.h"
+#import "LoginViewController.h"
 
-@interface ProfileViewController ()
+@interface ProfileViewController () <SettingViewControllerDelegate>
 
 @end
 
@@ -17,6 +19,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setupNavigationBar];
+}
+
+#pragma mark - navigation
+/// 设置导航栏
+- (void)setupNavigationBar {
+    
+    // 右按钮
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonWithTitle:@"设置"
+                                                                       titleFont:[UIFont systemFontOfSize:16]
+                                                                      titleColor:[UIColor whiteColor]
+                                                                       imageName:@""
+                                                                          target:self
+                                                                          action:@selector(rightBarButtonItemDidClicked)];
+}
+
+/// 设置
+- (void)rightBarButtonItemDidClicked {
+    
+    SettingViewController *settingVC = [[SettingViewController alloc] init];
+    settingVC.delegate = self;
+    [self.navigationController pushViewController:settingVC animated:YES];
+}
+
+- (void)settingLogout {
+
+    LoginViewController *loginViewController = [[LoginViewController alloc] init];
+    YTNavigationController *navigationController = [[YTNavigationController alloc] initWithRootViewController:loginViewController];
+    [self presentViewController:navigationController animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
