@@ -14,8 +14,7 @@
 - (void)parseResponseObject {
     
     NSDictionary *jsonObject = self.responseObject;
-    NSInteger code = [[[jsonObject objectForKey:@"status"] objectForKey:@"code"] integerValue];
-    
+    NSInteger code = [[jsonObject objectForKey:@"state"] integerValue];    
     if (code == CODE_SUCCESS) {
         NSDictionary *mData = [jsonObject objectForKey:@"data"];
         

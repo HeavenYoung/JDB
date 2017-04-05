@@ -628,6 +628,9 @@
 		57F44E611E4CAFA500F62B16 /* LocalPointResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44E601E4CAFA500F62B16 /* LocalPointResponse.m */; };
 		57F44E671E4CB2EF00F62B16 /* OrderTypeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44E661E4CB2EF00F62B16 /* OrderTypeResponse.m */; };
 		57F44E6A1E4CB6F100F62B16 /* OrderTypeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44E691E4CB6F100F62B16 /* OrderTypeRequest.m */; };
+		BA29BB211E952E2A000D3A90 /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB201E952E29000D3A90 /* FeedBackViewController.m */; };
+		BA29BB241E9530F8000D3A90 /* FeedbackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */; };
+		BA29BB271E953185000D3A90 /* FeedbackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB261E953185000D3A90 /* FeedbackResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1771,6 +1774,12 @@
 		57F44E661E4CB2EF00F62B16 /* OrderTypeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTypeResponse.m; sourceTree = "<group>"; };
 		57F44E681E4CB6F100F62B16 /* OrderTypeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTypeRequest.h; sourceTree = "<group>"; };
 		57F44E691E4CB6F100F62B16 /* OrderTypeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTypeRequest.m; sourceTree = "<group>"; };
+		BA29BB1F1E952E29000D3A90 /* FeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackViewController.h; sourceTree = "<group>"; };
+		BA29BB201E952E29000D3A90 /* FeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackViewController.m; sourceTree = "<group>"; };
+		BA29BB221E9530F8000D3A90 /* FeedbackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackRequest.h; sourceTree = "<group>"; };
+		BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackRequest.m; sourceTree = "<group>"; };
+		BA29BB251E953185000D3A90 /* FeedbackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackResponse.h; sourceTree = "<group>"; };
+		BA29BB261E953185000D3A90 /* FeedbackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3979,6 +3988,8 @@
 				570A06CC1E9513F9006E2089 /* AboutViewController.m */,
 				570A06CE1E951420006E2089 /* SettingViewController.h */,
 				570A06CF1E951420006E2089 /* SettingViewController.m */,
+				BA29BB1F1E952E29000D3A90 /* FeedBackViewController.h */,
+				BA29BB201E952E29000D3A90 /* FeedBackViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4307,6 +4318,8 @@
 				57189A2E1E7F7E8B00F6E621 /* RaiseLabelListRequest.m */,
 				5705F9E71E82AC80002F9FB7 /* AppraiseRequest.h */,
 				5705F9E81E82AC80002F9FB7 /* AppraiseRequest.m */,
+				BA29BB221E9530F8000D3A90 /* FeedbackRequest.h */,
+				BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4322,6 +4335,8 @@
 				57189A311E7F7EF300F6E621 /* RaiseLabelListResponse.m */,
 				5705F9E41E82A8E2002F9FB7 /* AppraiseResponse.h */,
 				5705F9E51E82A8E2002F9FB7 /* AppraiseResponse.m */,
+				BA29BB251E953185000D3A90 /* FeedbackResponse.h */,
+				BA29BB261E953185000D3A90 /* FeedbackResponse.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -4687,6 +4702,7 @@
 				57BFC7A21E4B4D14001690E4 /* LocalPointListData.m in Sources */,
 				57EE760A1E272CA0004573F1 /* UIImage+WebP.m in Sources */,
 				574AD4821E49894A00BF099E /* MJRefreshNormalHeader.m in Sources */,
+				BA29BB241E9530F8000D3A90 /* FeedbackRequest.m in Sources */,
 				574AD4C31E49894A00BF099E /* EaseMessageViewController.m in Sources */,
 				18D896311E8365B1004DFC14 /* LXSegmentScrollView.m in Sources */,
 				57189A441E7F8D0500F6E621 /* CommentTagData.m in Sources */,
@@ -4861,6 +4877,7 @@
 				57CAC2881E02E85A005A3F7E /* MJPropertyType.m in Sources */,
 				574AD49A1E49894A00BF099E /* NSData+EMImageContentType.m in Sources */,
 				57A63B591E49743F0053D692 /* MBProgressHUD+Add.m in Sources */,
+				BA29BB211E952E2A000D3A90 /* FeedBackViewController.m in Sources */,
 				5740781F1E66AA8D0008DFA4 /* WXOrderPayRequest.m in Sources */,
 				574AD49D1E49894A00BF099E /* UIImage+EMMultiFormat.m in Sources */,
 				574AD5381E49894B00BF099E /* ApplyViewController.m in Sources */,
@@ -4937,6 +4954,7 @@
 				574AD5BB1E49894B00BF099E /* BlackListViewController.m in Sources */,
 				57EE75F51E272CA0004573F1 /* RefreshAutoStateNormalFooter.m in Sources */,
 				57EE76121E272CA0004573F1 /* SVRadialGradientLayer.m in Sources */,
+				BA29BB271E953185000D3A90 /* FeedbackResponse.m in Sources */,
 				57CAC2821E02E85A005A3F7E /* View+MASAdditions.m in Sources */,
 				574AD47E1E49894A00BF099E /* MJRefreshBackGifFooter.m in Sources */,
 				574AD52A1E49894B00BF099E /* GroupBansViewController.m in Sources */,

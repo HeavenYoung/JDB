@@ -100,7 +100,7 @@
 
 - (void)setupLogout {
 
-    // 注册按钮
+    // 按钮
     UIButton *logountBtn = [UIButton buttonWithTitle:@"退出登录"
                                           normalColor:CustomGreen
                                      highlightedColor:CustomGreen

@@ -31,6 +31,7 @@
 #import "CancelOrderRequest.h"
 #import "AppraiseRequest.h"
 #import "UpdateOrderRequest.h"
+#import "FeedbackRequest.h"
 
 /***   REQUEST   END ***/
 

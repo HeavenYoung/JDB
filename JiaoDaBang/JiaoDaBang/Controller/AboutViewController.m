@@ -7,6 +7,7 @@
 //
 
 #import "AboutViewController.h"
+#import "FeedBackViewController.h"
 
 @interface AboutViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -20,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
     
     [self setupSubviews];
 }
@@ -93,7 +94,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (indexPath.row == 0) {
-        
+        FeedBackViewController *feedBack = [[FeedBackViewController alloc] init];
+        [self.navigationController pushViewController:feedBack animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
