@@ -10,6 +10,8 @@
 #import "AboutViewController.h"
 #import "SDImageCache.h"
 
+#import "individualProfileViewController.h"
+
 @interface SettingViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -87,6 +89,8 @@
         });
         
     } else if (indexPath.row == 1) {
+        individualProfileViewController *profile = [[individualProfileViewController alloc] init];
+        [self.navigationController pushViewController:profile animated:YES];
         
     } else if (indexPath.row == 2) {
     

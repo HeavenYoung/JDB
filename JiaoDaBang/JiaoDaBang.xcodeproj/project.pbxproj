@@ -633,6 +633,7 @@
 		BA29BB211E952E2A000D3A90 /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB201E952E29000D3A90 /* FeedBackViewController.m */; };
 		BA29BB241E9530F8000D3A90 /* FeedbackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */; };
 		BA29BB271E953185000D3A90 /* FeedbackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB261E953185000D3A90 /* FeedbackResponse.m */; };
+		ED885F0D1E967F7600442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0C1E967F7600442DA4 /* individualProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1786,6 +1787,8 @@
 		BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackRequest.m; sourceTree = "<group>"; };
 		BA29BB251E953185000D3A90 /* FeedbackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackResponse.h; sourceTree = "<group>"; };
 		BA29BB261E953185000D3A90 /* FeedbackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackResponse.m; sourceTree = "<group>"; };
+		ED885F0B1E967F7600442DA4 /* individualProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = individualProfileViewController.h; sourceTree = "<group>"; };
+		ED885F0C1E967F7600442DA4 /* individualProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = individualProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3994,6 +3997,8 @@
 				570A06CC1E9513F9006E2089 /* AboutViewController.m */,
 				570A06CE1E951420006E2089 /* SettingViewController.h */,
 				570A06CF1E951420006E2089 /* SettingViewController.m */,
+				ED885F0B1E967F7600442DA4 /* individualProfileViewController.h */,
+				ED885F0C1E967F7600442DA4 /* individualProfileViewController.m */,
 				BA29BB1F1E952E29000D3A90 /* FeedBackViewController.h */,
 				BA29BB201E952E29000D3A90 /* FeedBackViewController.m */,
 				57A9898B1E966A180092AAF7 /* UserVerifyViewController.h */,
@@ -4426,7 +4431,7 @@
 				TargetAttributes = {
 					577029EE1E02E7C300FA9E95 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 3VXHMJHSRP;
+						DevelopmentTeam = GDPC99K2VE;
 						ProvisioningStyle = Automatic;
 					};
 					57702A071E02E7C300FA9E95 = {
@@ -4757,6 +4762,7 @@
 				187257E41E750E2C007085C1 /* IQUIView+Hierarchy.m in Sources */,
 				57BFC78A1E4B4588001690E4 /* UserInfoData.m in Sources */,
 				574AD52B1E49894B00BF099E /* GroupListViewController.m in Sources */,
+				ED885F0D1E967F7600442DA4 /* individualProfileViewController.m in Sources */,
 				57EE76081E272CA0004573F1 /* UIImage+GIF.m in Sources */,
 				574AD4671E49894A00BF099E /* AppDelegate+EaseMob.m in Sources */,
 				574AD4C01E49894A00BF099E /* FixFopen.c in Sources */,
@@ -5254,7 +5260,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3VXHMJHSRP;
+				DEVELOPMENT_TEAM = GDPC99K2VE;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5286,7 +5292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3VXHMJHSRP;
+				DEVELOPMENT_TEAM = GDPC99K2VE;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
