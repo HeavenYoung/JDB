@@ -10,6 +10,9 @@
 
 @interface UserInfoSetRequest : BaseRequest
 
-- (void)setParametersWithUserId:(NSString *)userID sexString:(NSString *)sexString school:(NSString *)schoolStr nickName:(NSString *)nickName payPassWord:(NSString *)payPassWord aliAccount:(NSString *)aliAccount realName:(NSString *)realName;
+- (void)setParametersWithUserId:(NSString *)userID valueString:(NSString *)valueString keyString:(NSString *)keyString;
+
+- (void)setParametersWithUserId:(NSString *)userID userNameString:(NSString *)userNameString aliAccountString:(NSString *)aliAccountString;
+
 
 @end

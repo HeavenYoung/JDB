@@ -11,13 +11,12 @@
 
 @interface UserInfoSetRequest ()
 
-@property (nonatomic, strong) NSString *userId;
-@property (nonatomic, strong) NSString *sexString;
-@property (nonatomic, strong) NSString *schoolStr;
-@property (nonatomic, strong) NSString *nickName;
-@property (nonatomic, strong) NSString *payPassWord;
-@property (nonatomic, strong) NSString *aliAccount;
-@property (nonatomic, strong) NSString *realName;
+@property (nonatomic, copy) NSString *userId;
+@property (nonatomic, copy) NSString *valueString;
+@property (nonatomic, copy) NSString *keyString;
+
+@property (nonatomic, copy) NSString *userNameString;
+@property (nonatomic, copy) NSString *aliAccountString;
 
 @end
 
@@ -33,28 +32,43 @@
     return self;
 }
 
-- (void)setParametersWithUserId:(NSString *)userID sexString:(NSString *)sexString school:(NSString *)schoolStr nickName:(NSString *)nickName payPassWord:(NSString *)payPassWord aliAccount:(NSString *)aliAccount realName:(NSString *)realName {
+- (void)setParametersWithUserId:(NSString *)userID valueString:(NSString *)valueString keyString:(NSString *)keyString {
+    self.userId = userID;
+    self.valueString = valueString;
+    self.keyString = keyString;
+}
+
+- (void)setParametersWithUserId:(NSString *)userID userNameString:(NSString *)userNameString aliAccountString:(NSString *)aliAccountString {
 
     self.userId = userID;
-    self.sexString = sexString;
-    self.schoolStr = schoolStr;
-    self.nickName = nickName;
-    self.payPassWord = payPassWord;
-    self.aliAccount = aliAccount;
-    self.realName = realName;
+    self.userNameString = userNameString;
+    self.aliAccountString = aliAccountString;
 }
 
 - (void)parametersWithProperties {
 
     NSMutableDictionary *mDic = [NSMutableDictionary dictionaryWithCapacity:20];
+   
+    if (self.userNameString !=nil && self.aliAccountString != nil) {
+        
+        [mDic setObject:[Tools encryptWithPlainText:self.userId] forKey:@"userid"];
+        [mDic setObject:[Tools encryptWithPlainText:self.userNameString] forKey:@"realname"];
+        [mDic setObject:[Tools encryptWithPlainText:self.aliAccountString] forKey:@"aliaccount"];
+
+    } else {
+        
+        [mDic setObject:[Tools encryptWithPlainText:self.valueString] forKey:self.keyString];
+        [mDic setObject:[Tools encryptWithPlainText:self.userId] forKey:@"userid"];
+    }
     
-    [mDic setObject:[Tools encryptWithPlainText:self.userId] forKey:@"userid"];
-    [mDic setObject:[Tools encryptWithPlainText:self.sexString] forKey:@"sex"];
-    [mDic setObject:[Tools encryptWithPlainText:self.schoolStr] forKey:@"school"];
-    [mDic setObject:[Tools encryptWithPlainText:self.nickName] forKey:@"nickname"];
-    [mDic setObject:[Tools encryptWithPlainText:self.payPassWord] forKey:@"paypwd"];
-    [mDic setObject:[Tools encryptWithPlainText:self.aliAccount] forKey:@"aliaccount"];
-    [mDic setObject:[Tools encryptWithPlainText:self.realName] forKey:@"realname"];
+    
+//    [mDic setObject:[Tools encryptWithPlainText:self.userId] forKey:@"userid"];
+//    [mDic setObject:[Tools encryptWithPlainText:self.sexString] forKey:@"sex"];
+//    [mDic setObject:[Tools encryptWithPlainText:self.schoolStr] forKey:@"school"];
+//    [mDic setObject:[Tools encryptWithPlainText:self.nickName] forKey:@"nickname"];
+//    [mDic setObject:[Tools encryptWithPlainText:self.payPassWord] forKey:@"paypwd"];
+//    [mDic setObject:[Tools encryptWithPlainText:self.aliAccount] forKey:@"aliaccount"];
+//    [mDic setObject:[Tools encryptWithPlainText:self.realName] forKey:@"realname"];
     
     self.parameters = mDic;
 }

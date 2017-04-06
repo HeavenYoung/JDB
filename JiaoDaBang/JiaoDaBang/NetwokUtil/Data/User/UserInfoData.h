@@ -25,5 +25,7 @@
 @property (nonatomic, assign) NSInteger userGroup;
 @property (nonatomic, copy) NSString *userCreateTime;
 @property (nonatomic, copy) NSString *userauthId;
+@property (nonatomic, copy) NSString *userAliAccount;
+@property (nonatomic, copy) NSString *userPayPwd;
 
 @end

@@ -27,6 +27,8 @@
     [UITabBar appearance].barTintColor = RGBACOLOR(171, 204, 34, 1);
     [UITabBar appearance].tintColor = [UIColor whiteColor];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showLogin) name:NOTIFCATION_USER_SETTINGLOGOUT object:nil];
+    
     [self autoLogin];
     
     [self addChildViewControllers];
