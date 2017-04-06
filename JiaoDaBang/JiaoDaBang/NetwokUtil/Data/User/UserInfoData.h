@@ -20,7 +20,7 @@
 @property (nonatomic, copy) NSString *userRealName;
 @property (nonatomic, copy) NSString *userSchoolNum;
 @property (nonatomic, copy) NSString *userClassName;
-@property (nonatomic, assign) NSInteger userType;
+@property (nonatomic, copy) NSString *userType;
 @property (nonatomic, copy) NSString *userTypeName;
 @property (nonatomic, assign) NSInteger userGroup;
 @property (nonatomic, copy) NSString *userCreateTime;

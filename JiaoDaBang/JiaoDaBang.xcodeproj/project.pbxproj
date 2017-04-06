@@ -530,6 +530,8 @@
 		579E9D781E1B998000AAAD79 /* seek@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D701E1B998000AAAD79 /* seek@2x.png */; };
 		57A63B591E49743F0053D692 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A63B561E49743F0053D692 /* MBProgressHUD+Add.m */; };
 		57A63B5A1E49743F0053D692 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A63B581E49743F0053D692 /* MBProgressHUD.m */; };
+		57A9898D1E966A180092AAF7 /* UserVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A9898C1E966A180092AAF7 /* UserVerifyViewController.m */; };
+		57A989901E967C580092AAF7 /* PaymentVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */; };
 		57BFC78A1E4B4588001690E4 /* UserInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BFC7891E4B4588001690E4 /* UserInfoData.m */; };
 		57BFC78D1E4B465B001690E4 /* NewsInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BFC78C1E4B465B001690E4 /* NewsInfoData.m */; };
 		57BFC7901E4B46FF001690E4 /* ExpressInfoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 57BFC78F1E4B46FF001690E4 /* ExpressInfoData.m */; };
@@ -1571,6 +1573,10 @@
 		57A63B561E49743F0053D692 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		57A63B571E49743F0053D692 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		57A63B581E49743F0053D692 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		57A9898B1E966A180092AAF7 /* UserVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserVerifyViewController.h; sourceTree = "<group>"; };
+		57A9898C1E966A180092AAF7 /* UserVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserVerifyViewController.m; sourceTree = "<group>"; };
+		57A9898E1E967C580092AAF7 /* PaymentVerifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentVerifyViewController.h; sourceTree = "<group>"; };
+		57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentVerifyViewController.m; sourceTree = "<group>"; };
 		57BFC7881E4B4588001690E4 /* UserInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoData.h; sourceTree = "<group>"; };
 		57BFC7891E4B4588001690E4 /* UserInfoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoData.m; sourceTree = "<group>"; };
 		57BFC78B1E4B465B001690E4 /* NewsInfoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfoData.h; sourceTree = "<group>"; };
@@ -3990,6 +3996,10 @@
 				570A06CF1E951420006E2089 /* SettingViewController.m */,
 				BA29BB1F1E952E29000D3A90 /* FeedBackViewController.h */,
 				BA29BB201E952E29000D3A90 /* FeedBackViewController.m */,
+				57A9898B1E966A180092AAF7 /* UserVerifyViewController.h */,
+				57A9898C1E966A180092AAF7 /* UserVerifyViewController.m */,
+				57A9898E1E967C580092AAF7 /* PaymentVerifyViewController.h */,
+				57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4858,6 +4868,7 @@
 				574AD4B71E49894A00BF099E /* UIViewController+DismissKeyboard.m in Sources */,
 				57189A2F1E7F7E8B00F6E621 /* RaiseLabelListRequest.m in Sources */,
 				574AD5411E49894B00BF099E /* EMChooseViewController.m in Sources */,
+				57A9898D1E966A180092AAF7 /* UserVerifyViewController.m in Sources */,
 				57EE75FF1E272CA0004573F1 /* NSData+ImageContentType.m in Sources */,
 				573C73B51E7FBD9400C27B55 /* UserInfoSetRequest.m in Sources */,
 				57F44E591E4CAC4600F62B16 /* UserRegisterResponse.m in Sources */,
@@ -4933,6 +4944,7 @@
 				574AD5C51E49894B00BF099E /* MessageOrderTypeCell.m in Sources */,
 				574AD5221E49894A00BF099E /* UIResponder+Router.m in Sources */,
 				574AD53B1E49894B00BF099E /* UserProfileManager.m in Sources */,
+				57A989901E967C580092AAF7 /* PaymentVerifyViewController.m in Sources */,
 				57EE75EA1E272CA0004573F1 /* FMDatabase.m in Sources */,
 				57403FD31E1B9192007CF092 /* AFSecurityPolicy.m in Sources */,
 				574AD5B61E49894B00BF099E /* EMRobotChatTextBubbleView.m in Sources */,

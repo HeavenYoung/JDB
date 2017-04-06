@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "SettingViewController.h"
 #import "LoginViewController.h"
+#import "UserVerifyViewController.h"
 
 @interface ProfileViewController () <SettingViewControllerDelegate>
 
@@ -21,6 +22,28 @@
     // Do any additional setup after loading the view.
     
     [self setupNavigationBar];
+    
+    // 按钮
+    UIButton *submitBtn = [UIButton buttonWithTitle:@"提交"
+                                        normalColor:CustomGreen
+                                   highlightedColor:CustomGreen
+                                          titleFont:[UIFont systemFontOfSize:16]
+                                          imageName:nil
+                                      backImageName:nil
+                                             target:self
+                                             action:@selector(submitBtnDidClicked)];
+    submitBtn.frame = CGRectMake(10, 240, SCREEN_WIDTH - 20, 40);
+    submitBtn.backgroundColor = [UIColor lightTextColor];
+    submitBtn.layer.cornerRadius = 5.0;
+    submitBtn.layer.masksToBounds = YES;
+    [self.view addSubview:submitBtn];
+
+}
+
+- (void)submitBtnDidClicked {
+
+    UserVerifyViewController *veriftVC = [[UserVerifyViewController alloc] init];
+    [self.navigationController pushViewController:veriftVC animated:YES];
 }
 
 #pragma mark - navigation
