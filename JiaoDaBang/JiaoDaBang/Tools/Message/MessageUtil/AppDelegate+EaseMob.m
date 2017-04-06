@@ -30,7 +30,7 @@
         [MessageUtil shareMessageManage];
     });
     
-    [MessageUserProfileUtil saveUserProfileWithUsername:@"c1" forNickName:@"觅糖客服" avatarURLPath:nil];
+    [MessageUserProfileUtil saveUserProfileWithUsername:@"c1" forNickName:@"客服账号" avatarURLPath:nil];
 
     
 //    BOOL isAutoLogin = [EMClient sharedClient].isAutoLogin;
