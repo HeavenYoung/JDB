@@ -41,6 +41,8 @@ static NSString *const kSchool = @"school";
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
 
+    self.title = @"设置信息";
+    
     [self setupUI];
 }
 
