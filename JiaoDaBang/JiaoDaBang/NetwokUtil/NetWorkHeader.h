@@ -33,6 +33,7 @@
 #import "AppraiseRequest.h"
 #import "UpdateOrderRequest.h"
 #import "FeedbackRequest.h"
+#import "WalletRequest.h"
 
 /***   REQUEST   END ***/
 
