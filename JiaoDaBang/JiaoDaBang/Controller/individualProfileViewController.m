@@ -8,7 +8,7 @@
 
 #import "individualProfileViewController.h"
 #import "AboutViewController.h"
-
+#import "SettingInfoView.h"
 @interface individualProfileViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *profileTableView;
@@ -22,7 +22,42 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
 
-    [self setUptableView];
+    [self setupUI];
+//    [self setUptableView];
+}
+
+- (void)setupUI{
+
+    NSString *nickNameStr = [GlobalManager sharedManager].userInfoData.userNickName ? [GlobalManager sharedManager].userInfoData.userNickName : [GlobalManager sharedManager].userInfoData.userName;
+    
+    SettingInfoView *nickName = [[SettingInfoView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 60) titleString:@"昵称" infoString:nickNameStr settingBlock:^{
+        
+    
+    }];
+    
+    NSString *phoneNumberStr = [GlobalManager sharedManager].userInfoData.userPhoneNum;
+    
+    SettingInfoView *phoneNumber = [[SettingInfoView alloc] initWithFrame:CGRectMake(0, 60, SCREEN_WIDTH, 60) titleString:@"电话号码" infoString:phoneNumberStr settingBlock:^{
+        
+    }];
+    NSString *genderStr = [GlobalManager sharedManager].userInfoData.userSex;
+    
+    SettingInfoView *gender = [[SettingInfoView alloc ]initWithFrame:CGRectMake(0, 120, SCREEN_WIDTH, 60) titleString:@"性别" infoString:genderStr settingBlock:^{
+        
+    }];
+
+    NSString *universityStr = [GlobalManager sharedManager].userInfoData.userSchool;
+    
+    SettingInfoView *university = [[SettingInfoView alloc] initWithFrame:CGRectMake(0, 180, SCREEN_WIDTH, 60) titleString:@"学校" infoString:universityStr settingBlock:^{
+        
+    }];
+    
+    [self.view addSubview:nickName];
+    [self.view addSubview:phoneNumber];
+    [self.view addSubview:gender];
+    [self.view addSubview:university];
+
+    
 }
 
 - (void)setUptableView {

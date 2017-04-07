@@ -24,6 +24,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         
+        self.backgroundColor = [UIColor whiteColor];
+        
         self.titleString = titleString;
         self.infoString = infoString;
         self.settingInfoBlcok = block;

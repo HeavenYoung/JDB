@@ -636,6 +636,7 @@
 		BA29BB271E953185000D3A90 /* FeedbackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB261E953185000D3A90 /* FeedbackResponse.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
+		ED885F131E97CD2B00442DA4 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F121E97CD2A00442DA4 /* OrderDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1795,6 +1796,8 @@
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = individualProfileViewController.h; sourceTree = "<group>"; };
 		ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = individualProfileViewController.m; sourceTree = "<group>"; };
+		ED885F111E97CD2A00442DA4 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		ED885F121E97CD2A00442DA4 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4011,6 +4014,8 @@
 				57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */,
 				ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */,
 				ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */,
+				ED885F111E97CD2A00442DA4 /* OrderDetailViewController.h */,
+				ED885F121E97CD2A00442DA4 /* OrderDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4830,6 +4835,7 @@
 				57BFC79E1E4B4C52001690E4 /* WalletData.m in Sources */,
 				575CAFDE1E7D4AF3004784AA /* UserForgetCheckResponse.m in Sources */,
 				574AD46A1E49894A00BF099E /* EMAudioPlayerUtil.m in Sources */,
+				ED885F131E97CD2B00442DA4 /* OrderDetailViewController.m in Sources */,
 				574AD4C71E49894A00BF099E /* EaseUserCell.m in Sources */,
 				574AD4CB1E49894A00BF099E /* EaseMessageTimeCell.m in Sources */,
 				574AD48B1E49894A00BF099E /* MWGridViewController.m in Sources */,
