@@ -2168,6 +2168,7 @@
 		5704621B1E4813D2003961EB /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				BAA629BE1E97D2060078F60D /* Profile */,
 				57189A331E7F83DF00F6E621 /* Release */,
 				575CAFEF1E7D51EA004784AA /* Delivery */,
 				575CAFDF1E7D4CF2004784AA /* Home */,
@@ -4385,6 +4386,13 @@
 				BA23786B1E97963200430F09 /* SettingInfoView.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BAA629BE1E97D2060078F60D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		BAE45D101E97352A00133161 /* Setting */ = {
