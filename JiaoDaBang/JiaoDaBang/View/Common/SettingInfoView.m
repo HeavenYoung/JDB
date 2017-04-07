@@ -40,24 +40,24 @@
     titleLabel.textColor = [UIColor blackColor];
     titleLabel.text = self.titleString;
     titleLabel.font = [UIFont systemFontOfSize:16];
-    [self.contentView addSubview:titleLabel];
+    [self addSubview:titleLabel];
     self.titleLabel = titleLabel;
     
     UILabel *infoLabel = [[UILabel alloc] init];
     infoLabel.textColor = [UIColor blackColor];
     infoLabel.text = self.infoString;
     infoLabel.font = [UIFont systemFontOfSize:16];
-    [self.contentView addSubview:infoLabel];
+    [self addSubview:infoLabel];
     self.infoLabel = infoLabel;
     
     [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.contentView.mas_centerY);
-        make.left.equalTo(self.contentView.mas_left).offset(10);
+        make.centerY.equalTo(self.mas_centerY);
+        make.left.equalTo(self.mas_left).offset(10);
     }];
     
     [infoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.equalTo(self.contentView.mas_centerY);
-        make.right.equalTo(self.contentView.mas_right).offset(-10);
+        make.centerY.equalTo(self.mas_centerY);
+        make.right.equalTo(self.mas_right).offset(-10);
     }];
 }
 
