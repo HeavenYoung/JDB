@@ -74,7 +74,6 @@
 
 - (void)logoutOperation {
 
-    [self setSelectedIndex:0];
     [self showLogin];
 }
 

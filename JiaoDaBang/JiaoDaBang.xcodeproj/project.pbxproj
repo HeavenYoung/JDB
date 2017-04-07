@@ -528,6 +528,7 @@
 		579E9D761E1B998000AAAD79 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D6E1E1B998000AAAD79 /* profile@2x.png */; };
 		579E9D771E1B998000AAAD79 /* seek_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D6F1E1B998000AAAD79 /* seek_selected@2x.png */; };
 		579E9D781E1B998000AAAD79 /* seek@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D701E1B998000AAAD79 /* seek@2x.png */; };
+		57A090FA1E97D54A00793D4A /* SettingInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A090F91E97D54A00793D4A /* SettingInfoViewController.m */; };
 		57A63B591E49743F0053D692 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A63B561E49743F0053D692 /* MBProgressHUD+Add.m */; };
 		57A63B5A1E49743F0053D692 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A63B581E49743F0053D692 /* MBProgressHUD.m */; };
 		57A9898D1E966A180092AAF7 /* UserVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A9898C1E966A180092AAF7 /* UserVerifyViewController.m */; };
@@ -637,6 +638,8 @@
 		BAA629B71E97BD410078F60D /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629B61E97BD410078F60D /* WalletViewController.m */; };
 		BAA629BA1E97BD9C0078F60D /* WithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629B91E97BD9C0078F60D /* WithdrawViewController.m */; };
 		BAA629BD1E97BDDA0078F60D /* BillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629BC1E97BDDA0078F60D /* BillViewController.m */; };
+		BAA629C11E97D3CB0078F60D /* WalletRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629C01E97D3CB0078F60D /* WalletRequest.m */; };
+		BAA629C51E97D4050078F60D /* WalletResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629C41E97D4050078F60D /* WalletResponse.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
 		ED885F161E97CE4600442DA4 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */; };
@@ -1576,6 +1579,8 @@
 		579E9D6E1E1B998000AAAD79 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
 		579E9D6F1E1B998000AAAD79 /* seek_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seek_selected@2x.png"; sourceTree = "<group>"; };
 		579E9D701E1B998000AAAD79 /* seek@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seek@2x.png"; sourceTree = "<group>"; };
+		57A090F81E97D54A00793D4A /* SettingInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingInfoViewController.h; sourceTree = "<group>"; };
+		57A090F91E97D54A00793D4A /* SettingInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingInfoViewController.m; sourceTree = "<group>"; };
 		57A63B551E49743F0053D692 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
 		57A63B561E49743F0053D692 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		57A63B571E49743F0053D692 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -1801,6 +1806,10 @@
 		BAA629B91E97BD9C0078F60D /* WithdrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawViewController.m; sourceTree = "<group>"; };
 		BAA629BB1E97BDDA0078F60D /* BillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillViewController.h; sourceTree = "<group>"; };
 		BAA629BC1E97BDDA0078F60D /* BillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillViewController.m; sourceTree = "<group>"; };
+		BAA629BF1E97D3CA0078F60D /* WalletRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletRequest.h; sourceTree = "<group>"; };
+		BAA629C01E97D3CB0078F60D /* WalletRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletRequest.m; sourceTree = "<group>"; };
+		BAA629C31E97D4050078F60D /* WalletResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletResponse.h; sourceTree = "<group>"; };
+		BAA629C41E97D4050078F60D /* WalletResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletResponse.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = individualProfileViewController.h; sourceTree = "<group>"; };
@@ -2171,6 +2180,7 @@
 		5704621B1E4813D2003961EB /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				BAA629BE1E97D2060078F60D /* Profile */,
 				57189A331E7F83DF00F6E621 /* Release */,
 				575CAFEF1E7D51EA004784AA /* Delivery */,
 				575CAFDF1E7D4CF2004784AA /* Home */,
@@ -2186,6 +2196,7 @@
 		5704621E1E4813D2003961EB /* Response */ = {
 			isa = PBXGroup;
 			children = (
+				BAA629C21E97D3EA0078F60D /* Profile */,
 				57189A341E7F83EF00F6E621 /* Release */,
 				575CAFEE1E7D51CF004784AA /* Delivery */,
 				575CAFE01E7D4CFB004784AA /* Home */,
@@ -4023,6 +4034,8 @@
 				57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */,
 				ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */,
 				ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */,
+				57A090F81E97D54A00793D4A /* SettingInfoViewController.h */,
+				57A090F91E97D54A00793D4A /* SettingInfoViewController.m */,
 				BAA629B51E97BD410078F60D /* WalletViewController.h */,
 				BAA629B61E97BD410078F60D /* WalletViewController.m */,
 				BAA629B81E97BD9C0078F60D /* WithdrawViewController.h */,
@@ -4390,6 +4403,24 @@
 				BA23786B1E97963200430F09 /* SettingInfoView.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BAA629BE1E97D2060078F60D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BAA629BF1E97D3CA0078F60D /* WalletRequest.h */,
+				BAA629C01E97D3CB0078F60D /* WalletRequest.m */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BAA629C21E97D3EA0078F60D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BAA629C31E97D4050078F60D /* WalletResponse.h */,
+				BAA629C41E97D4050078F60D /* WalletResponse.m */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		BAE45D101E97352A00133161 /* Setting */ = {
@@ -4771,6 +4802,7 @@
 				57CAC2871E02E85A005A3F7E /* MJPropertyKey.m in Sources */,
 				57189A3B1E7F873100F6E621 /* ReleaseOrderResponse.m in Sources */,
 				574AD5211E49894A00BF099E /* UIImageView+HeadImage.m in Sources */,
+				57A090FA1E97D54A00793D4A /* SettingInfoViewController.m in Sources */,
 				574AD5371E49894B00BF099E /* ApplyFriendCell.m in Sources */,
 				574AD4911E49894A00BF099E /* DACircularProgressView.m in Sources */,
 				574077FB1E66A9330008DFA4 /* WXApiManager.m in Sources */,
@@ -5053,6 +5085,7 @@
 				574AD4DA1E49894A00BF099E /* EaseChatBarMoreView.m in Sources */,
 				574AD53F1E49894B00BF099E /* EMRemarkImageView.m in Sources */,
 				574AD5C41E49894B00BF099E /* MessageUserProfileUtil.m in Sources */,
+				BAA629C11E97D3CB0078F60D /* WalletRequest.m in Sources */,
 				574AD4BF1E49894A00BF099E /* EaseEmotionManager.m in Sources */,
 				5740780F1E66AA820008DFA4 /* AliOrderPayResponse.m in Sources */,
 				57F44E4D1E4CA14F00F62B16 /* UserMessageCodeRequest.m in Sources */,
@@ -5065,6 +5098,7 @@
 				574AD5201E49894A00BF099E /* CallViewController.m in Sources */,
 				57F44E501E4CA16C00F62B16 /* UserMessageCodeResponse.m in Sources */,
 				57EE76021E272CA0004573F1 /* SDWebImageDecoder.m in Sources */,
+				BAA629C51E97D4050078F60D /* WalletResponse.m in Sources */,
 				187257A11E750DF4007085C1 /* JumpToSettingViewController.m in Sources */,
 				18D8961F1E836590004DFC14 /* TAAnimatedDotView.m in Sources */,
 				575CAFE91E7D501C004784AA /* NewsListRequest.m in Sources */,

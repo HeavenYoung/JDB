@@ -12,6 +12,8 @@ typedef void (^SettingInfoBlock) ();
 
 @interface SettingInfoView : UIView
 
+@property (nonatomic, strong) UILabel *infoLabel;
+
 - (instancetype)initWithFrame:(CGRect)frame titleString:(NSString *)titleString infoString:(NSString *)infoString settingBlock:(SettingInfoBlock)block;
 
 @end

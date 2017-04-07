@@ -9,10 +9,16 @@
 #import "individualProfileViewController.h"
 #import "AboutViewController.h"
 #import "SettingInfoView.h"
+#import "SettingInfoViewController.h"
+
 @interface individualProfileViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *profileTableView;
 
+@property (nonatomic, strong) SettingInfoView *nickName;
+@property (nonatomic, strong) SettingInfoView *phoneNumber;
+@property (nonatomic, strong) SettingInfoView *gender;
+@property (nonatomic, strong) SettingInfoView *university;
 @end
 
 @implementation individualProfileViewController
@@ -28,11 +34,18 @@
 
 - (void)setupUI{
 
+    __weak typeof(self) weakSelf = self;
+    
     NSString *nickNameStr = [GlobalManager sharedManager].userInfoData.userNickName ? [GlobalManager sharedManager].userInfoData.userNickName : [GlobalManager sharedManager].userInfoData.userName;
     
     SettingInfoView *nickName = [[SettingInfoView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 60) titleString:@"昵称" infoString:nickNameStr settingBlock:^{
         
-    
+        SettingInfoViewController *setting = [[SettingInfoViewController alloc] initWithInfoType:SettingInfoTypeNickName contentString:nickNameStr settingBlock:^(NSString *contentString) {
+            
+            weakSelf.nickName.infoLabel.text = contentString;
+        }];
+        [self.navigationController pushViewController:setting animated:YES];
+
     }];
     
     NSString *phoneNumberStr = [GlobalManager sharedManager].userInfoData.userPhoneNum;
@@ -44,12 +57,22 @@
     
     SettingInfoView *gender = [[SettingInfoView alloc ]initWithFrame:CGRectMake(0, 120, SCREEN_WIDTH, 60) titleString:@"性别" infoString:genderStr settingBlock:^{
         
+        SettingInfoViewController *setting = [[SettingInfoViewController alloc] initWithInfoType:SettingInfoTypeGender contentString:genderStr settingBlock:^(NSString *contentString) {
+            
+            weakSelf.nickName.infoLabel.text = contentString;
+        }];
+        [self.navigationController pushViewController:setting animated:YES];
     }];
 
     NSString *universityStr = [GlobalManager sharedManager].userInfoData.userSchool;
     
     SettingInfoView *university = [[SettingInfoView alloc] initWithFrame:CGRectMake(0, 180, SCREEN_WIDTH, 60) titleString:@"学校" infoString:universityStr settingBlock:^{
         
+        SettingInfoViewController *setting = [[SettingInfoViewController alloc] initWithInfoType:SettingInfoTypeSchool contentString:universityStr settingBlock:^(NSString *contentString) {
+            
+            weakSelf.nickName.infoLabel.text = contentString;
+        }];
+        [self.navigationController pushViewController:setting animated:YES];
     }];
     
     [self.view addSubview:nickName];
@@ -57,7 +80,10 @@
     [self.view addSubview:gender];
     [self.view addSubview:university];
 
-    
+    self.nickName = nickName;
+    self.phoneNumber = phoneNumber;
+    self.gender = gender;
+    self.university = university;
 }
 
 - (void)setUptableView {

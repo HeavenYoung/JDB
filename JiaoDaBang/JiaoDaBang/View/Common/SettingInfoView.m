@@ -14,7 +14,6 @@
 @property (nonatomic, copy) NSString *titleString;
 @property (nonatomic, copy) NSString *infoString;
 @property (nonatomic, strong) UILabel *titleLabel;
-@property (nonatomic, strong) UILabel *infoLabel;
 @end
 
 @implementation SettingInfoView
