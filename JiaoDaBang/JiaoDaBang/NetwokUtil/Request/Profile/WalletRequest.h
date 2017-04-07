@@ -10,4 +10,6 @@
 
 @interface WalletRequest : BaseRequest
 
+- (void)setParametersWithUserId:(NSString *)userId;
+
 @end
