@@ -528,6 +528,7 @@
 		579E9D761E1B998000AAAD79 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D6E1E1B998000AAAD79 /* profile@2x.png */; };
 		579E9D771E1B998000AAAD79 /* seek_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D6F1E1B998000AAAD79 /* seek_selected@2x.png */; };
 		579E9D781E1B998000AAAD79 /* seek@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D701E1B998000AAAD79 /* seek@2x.png */; };
+		57A090FA1E97D54A00793D4A /* SettingInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A090F91E97D54A00793D4A /* SettingInfoViewController.m */; };
 		57A63B591E49743F0053D692 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A63B561E49743F0053D692 /* MBProgressHUD+Add.m */; };
 		57A63B5A1E49743F0053D692 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A63B581E49743F0053D692 /* MBProgressHUD.m */; };
 		57A9898D1E966A180092AAF7 /* UserVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57A9898C1E966A180092AAF7 /* UserVerifyViewController.m */; };
@@ -1578,6 +1579,8 @@
 		579E9D6E1E1B998000AAAD79 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
 		579E9D6F1E1B998000AAAD79 /* seek_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seek_selected@2x.png"; sourceTree = "<group>"; };
 		579E9D701E1B998000AAAD79 /* seek@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seek@2x.png"; sourceTree = "<group>"; };
+		57A090F81E97D54A00793D4A /* SettingInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingInfoViewController.h; sourceTree = "<group>"; };
+		57A090F91E97D54A00793D4A /* SettingInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingInfoViewController.m; sourceTree = "<group>"; };
 		57A63B551E49743F0053D692 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
 		57A63B561E49743F0053D692 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		57A63B571E49743F0053D692 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -4031,6 +4034,8 @@
 				57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */,
 				ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */,
 				ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */,
+				57A090F81E97D54A00793D4A /* SettingInfoViewController.h */,
+				57A090F91E97D54A00793D4A /* SettingInfoViewController.m */,
 				BAA629B51E97BD410078F60D /* WalletViewController.h */,
 				BAA629B61E97BD410078F60D /* WalletViewController.m */,
 				BAA629B81E97BD9C0078F60D /* WithdrawViewController.h */,
@@ -4797,6 +4802,7 @@
 				57CAC2871E02E85A005A3F7E /* MJPropertyKey.m in Sources */,
 				57189A3B1E7F873100F6E621 /* ReleaseOrderResponse.m in Sources */,
 				574AD5211E49894A00BF099E /* UIImageView+HeadImage.m in Sources */,
+				57A090FA1E97D54A00793D4A /* SettingInfoViewController.m in Sources */,
 				574AD5371E49894B00BF099E /* ApplyFriendCell.m in Sources */,
 				574AD4911E49894A00BF099E /* DACircularProgressView.m in Sources */,
 				574077FB1E66A9330008DFA4 /* WXApiManager.m in Sources */,
