@@ -25,7 +25,7 @@
 //    self.navigationController.navigationBarHidden = YES;
 
     self.title = @"登陆";
-    self.view.backgroundColor = RGBACOLOR(171, 204, 34, 1);;
+    self.view.backgroundColor = CustomGreen;
     
     [self placeSubviews];
 }
