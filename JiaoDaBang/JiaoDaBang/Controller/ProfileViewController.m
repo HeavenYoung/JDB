@@ -10,6 +10,7 @@
 #import "SettingViewController.h"
 #import "LoginViewController.h"
 #import "UserVerifyViewController.h"
+#import "PaymentVerifyViewController.h"
 
 @interface ProfileViewController () <SettingViewControllerDelegate>
 
@@ -37,12 +38,33 @@
     submitBtn.layer.cornerRadius = 5.0;
     submitBtn.layer.masksToBounds = YES;
     [self.view addSubview:submitBtn];
+    
+    UIButton *submitBtn1 = [UIButton buttonWithTitle:@"renzheng"
+                                        normalColor:CustomGreen
+                                   highlightedColor:CustomGreen
+                                          titleFont:[UIFont systemFontOfSize:16]
+                                          imageName:nil
+                                      backImageName:nil
+                                             target:self
+                                             action:@selector(submitVerify)];
+    submitBtn.frame = CGRectMake(10, 240, SCREEN_WIDTH - 30, 100);
+    submitBtn.backgroundColor = [UIColor lightTextColor];
+    submitBtn.layer.cornerRadius = 5.0;
+    submitBtn.layer.masksToBounds = YES;
+    [self.view addSubview:submitBtn1
+     ];
 
 }
 
 - (void)submitBtnDidClicked {
 
     UserVerifyViewController *veriftVC = [[UserVerifyViewController alloc] init];
+    [self.navigationController pushViewController:veriftVC animated:YES];
+}
+
+- (void)submitVerify {
+    
+    PaymentVerifyViewController *veriftVC = [[PaymentVerifyViewController alloc] init];
     [self.navigationController pushViewController:veriftVC animated:YES];
 }
 
@@ -63,15 +85,7 @@
 - (void)rightBarButtonItemDidClicked {
     
     SettingViewController *settingVC = [[SettingViewController alloc] init];
-    settingVC.delegate = self;
     [self.navigationController pushViewController:settingVC animated:YES];
-}
-
-- (void)settingLogout {
-
-    LoginViewController *loginViewController = [[LoginViewController alloc] init];
-    YTNavigationController *navigationController = [[YTNavigationController alloc] initWithRootViewController:loginViewController];
-    [self presentViewController:navigationController animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

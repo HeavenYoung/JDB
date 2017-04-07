@@ -75,6 +75,8 @@
 /********* NOTIFICATION BEGIN *********/
 
 #define NOTIFCATION_USER_STATUSCHANGE           @"userStatusChange"        //用户登录状态发生
+#define NOTIFCATION_USER_SETTINGLOGOUT           @"userSettingLogout"        //用户在设置界面登出
+
 #define NOTIFCATION_USERHEAD_INFOCHANGE         @"userInfoChange"
 #define NOTIFCATION_USER_LOGOUT                 @"userLogout"
 

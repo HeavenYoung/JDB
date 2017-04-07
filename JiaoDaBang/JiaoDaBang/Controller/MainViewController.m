@@ -27,6 +27,8 @@
     [UITabBar appearance].barTintColor = RGBACOLOR(171, 204, 34, 1);
     [UITabBar appearance].tintColor = [UIColor whiteColor];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logoutOperation) name:NOTIFCATION_USER_SETTINGLOGOUT object:nil];
+    
     [self autoLogin];
     
     [self addChildViewControllers];
@@ -68,6 +70,12 @@
     LoginViewController *loginViewController = [[LoginViewController alloc] init];
     YTNavigationController *navigationController = [[YTNavigationController alloc] initWithRootViewController:loginViewController];
     [self presentViewController:navigationController animated:NO completion:nil];
+}
+
+- (void)logoutOperation {
+
+    [self setSelectedIndex:0];
+    [self showLogin];
 }
 
 //添加所有子控制器

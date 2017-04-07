@@ -146,9 +146,8 @@
    
     [[MessageUtil shareMessageManage] userlogoutWithName:nil password:@"123456"];
 
-    if ([self.delegate respondsToSelector:@selector(settingLogout)]) {
-        [self.delegate settingLogout];
-    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFCATION_USER_SETTINGLOGOUT object:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {

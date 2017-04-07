@@ -37,6 +37,8 @@
             userInfoData.userGroup = [dataDic objectForKeySafe:@"usergroup"];
             userInfoData.userCreateTime = [dataDic objectForKeySafe:@"createtime"];
             userInfoData.userauthId = [dataDic objectForKeySafe:@"authid"];
+            userInfoData.userAliAccount = [dataDic objectForKeySafe:@"aliaccount"];
+            userInfoData.userPayPwd = [dataDic objectForKeySafe:@"paypwd"];
             
             
             [self showSuccessInfo:userInfoData];

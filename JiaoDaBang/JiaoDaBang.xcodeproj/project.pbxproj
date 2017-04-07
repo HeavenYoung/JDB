@@ -630,10 +630,11 @@
 		57F44E611E4CAFA500F62B16 /* LocalPointResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44E601E4CAFA500F62B16 /* LocalPointResponse.m */; };
 		57F44E671E4CB2EF00F62B16 /* OrderTypeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44E661E4CB2EF00F62B16 /* OrderTypeResponse.m */; };
 		57F44E6A1E4CB6F100F62B16 /* OrderTypeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F44E691E4CB6F100F62B16 /* OrderTypeRequest.m */; };
+		BA23786C1E97963200430F09 /* SettingInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23786B1E97963200430F09 /* SettingInfoView.m */; };
 		BA29BB211E952E2A000D3A90 /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB201E952E29000D3A90 /* FeedBackViewController.m */; };
 		BA29BB241E9530F8000D3A90 /* FeedbackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */; };
 		BA29BB271E953185000D3A90 /* FeedbackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB261E953185000D3A90 /* FeedbackResponse.m */; };
-		ED885F0D1E967F7600442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0C1E967F7600442DA4 /* individualProfileViewController.m */; };
+		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1781,14 +1782,16 @@
 		57F44E661E4CB2EF00F62B16 /* OrderTypeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTypeResponse.m; sourceTree = "<group>"; };
 		57F44E681E4CB6F100F62B16 /* OrderTypeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTypeRequest.h; sourceTree = "<group>"; };
 		57F44E691E4CB6F100F62B16 /* OrderTypeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTypeRequest.m; sourceTree = "<group>"; };
+		BA23786A1E97963200430F09 /* SettingInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingInfoView.h; sourceTree = "<group>"; };
+		BA23786B1E97963200430F09 /* SettingInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingInfoView.m; sourceTree = "<group>"; };
 		BA29BB1F1E952E29000D3A90 /* FeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackViewController.h; sourceTree = "<group>"; };
 		BA29BB201E952E29000D3A90 /* FeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackViewController.m; sourceTree = "<group>"; };
 		BA29BB221E9530F8000D3A90 /* FeedbackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackRequest.h; sourceTree = "<group>"; };
 		BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackRequest.m; sourceTree = "<group>"; };
 		BA29BB251E953185000D3A90 /* FeedbackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackResponse.h; sourceTree = "<group>"; };
 		BA29BB261E953185000D3A90 /* FeedbackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackResponse.m; sourceTree = "<group>"; };
-		ED885F0B1E967F7600442DA4 /* individualProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = individualProfileViewController.h; sourceTree = "<group>"; };
-		ED885F0C1E967F7600442DA4 /* individualProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = individualProfileViewController.m; sourceTree = "<group>"; };
+		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
+		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3997,8 +4000,6 @@
 				570A06CC1E9513F9006E2089 /* AboutViewController.m */,
 				570A06CE1E951420006E2089 /* SettingViewController.h */,
 				570A06CF1E951420006E2089 /* SettingViewController.m */,
-				ED885F0B1E967F7600442DA4 /* individualProfileViewController.h */,
-				ED885F0C1E967F7600442DA4 /* individualProfileViewController.m */,
 				BA29BB1F1E952E29000D3A90 /* FeedBackViewController.h */,
 				BA29BB201E952E29000D3A90 /* FeedBackViewController.m */,
 				57A9898B1E966A180092AAF7 /* UserVerifyViewController.h */,
@@ -4157,6 +4158,7 @@
 		57CAC2681E02E85A005A3F7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BAE45D101E97352A00133161 /* Setting */,
 				BA29BB1A1E95208C000D3A90 /* Common */,
 				571D20911E52AECE00BF3334 /* User */,
 			);
@@ -4359,8 +4361,19 @@
 		BA29BB1A1E95208C000D3A90 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BA23786A1E97963200430F09 /* SettingInfoView.h */,
+				BA23786B1E97963200430F09 /* SettingInfoView.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BAE45D101E97352A00133161 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BAE45D111E97355400133161 /* SettingCommonCell.h */,
+				BAE45D121E97355400133161 /* SettingCommonCell.m */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -4431,7 +4444,7 @@
 				TargetAttributes = {
 					577029EE1E02E7C300FA9E95 = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = GDPC99K2VE;
+						DevelopmentTeam = 3VXHMJHSRP;
 						ProvisioningStyle = Automatic;
 					};
 					57702A071E02E7C300FA9E95 = {
@@ -4720,6 +4733,7 @@
 				BA29BB241E9530F8000D3A90 /* FeedbackRequest.m in Sources */,
 				574AD4C31E49894A00BF099E /* EaseMessageViewController.m in Sources */,
 				18D896311E8365B1004DFC14 /* LXSegmentScrollView.m in Sources */,
+				BA23786C1E97963200430F09 /* SettingInfoView.m in Sources */,
 				57189A441E7F8D0500F6E621 /* CommentTagData.m in Sources */,
 				57EE76011E272CA0004573F1 /* SDWebImageCompat.m in Sources */,
 				574AD4A01E49894A00BF099E /* UIImageView+EMWebCache.m in Sources */,
@@ -4762,7 +4776,6 @@
 				187257E41E750E2C007085C1 /* IQUIView+Hierarchy.m in Sources */,
 				57BFC78A1E4B4588001690E4 /* UserInfoData.m in Sources */,
 				574AD52B1E49894B00BF099E /* GroupListViewController.m in Sources */,
-				ED885F0D1E967F7600442DA4 /* individualProfileViewController.m in Sources */,
 				57EE76081E272CA0004573F1 /* UIImage+GIF.m in Sources */,
 				574AD4671E49894A00BF099E /* AppDelegate+EaseMob.m in Sources */,
 				574AD4C01E49894A00BF099E /* FixFopen.c in Sources */,
@@ -4935,6 +4948,7 @@
 				57EE75F71E272CA0004573F1 /* RefreshStateHeader.m in Sources */,
 				57F44E6A1E4CB6F100F62B16 /* OrderTypeRequest.m in Sources */,
 				187257F21E750E2C007085C1 /* NSString+Helper.m in Sources */,
+				BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */,
 				574AD4BA1E49894A00BF099E /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				574AD5BC1E49894B00BF099E /* DebugViewController.m in Sources */,
 				57EE75FD1E272CA0004573F1 /* RefreshConst.m in Sources */,
@@ -5260,7 +5274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GDPC99K2VE;
+				DEVELOPMENT_TEAM = 3VXHMJHSRP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5292,7 +5306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = GDPC99K2VE;
+				DEVELOPMENT_TEAM = 3VXHMJHSRP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

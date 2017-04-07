@@ -17,6 +17,7 @@
 #import "UserRegisterRequest.h"
 #import "UserMessageCodeRequest.h"
 #import "UserForgetRequest.h"
+#import "UserInfoSetRequest.h"
 #import "UserUpdatePasswordRequest.h"
 #import "UserAvatarRequest.h"
 
