@@ -634,9 +634,11 @@
 		BA29BB211E952E2A000D3A90 /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB201E952E29000D3A90 /* FeedBackViewController.m */; };
 		BA29BB241E9530F8000D3A90 /* FeedbackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */; };
 		BA29BB271E953185000D3A90 /* FeedbackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB261E953185000D3A90 /* FeedbackResponse.m */; };
+		BAA629B71E97BD410078F60D /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629B61E97BD410078F60D /* WalletViewController.m */; };
+		BAA629BA1E97BD9C0078F60D /* WithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629B91E97BD9C0078F60D /* WithdrawViewController.m */; };
+		BAA629BD1E97BDDA0078F60D /* BillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629BC1E97BDDA0078F60D /* BillViewController.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
-		ED885F131E97CD2B00442DA4 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F121E97CD2A00442DA4 /* OrderDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1792,12 +1794,16 @@
 		BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackRequest.m; sourceTree = "<group>"; };
 		BA29BB251E953185000D3A90 /* FeedbackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackResponse.h; sourceTree = "<group>"; };
 		BA29BB261E953185000D3A90 /* FeedbackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackResponse.m; sourceTree = "<group>"; };
+		BAA629B51E97BD410078F60D /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
+		BAA629B61E97BD410078F60D /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
+		BAA629B81E97BD9C0078F60D /* WithdrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawViewController.h; sourceTree = "<group>"; };
+		BAA629B91E97BD9C0078F60D /* WithdrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawViewController.m; sourceTree = "<group>"; };
+		BAA629BB1E97BDDA0078F60D /* BillViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillViewController.h; sourceTree = "<group>"; };
+		BAA629BC1E97BDDA0078F60D /* BillViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillViewController.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = individualProfileViewController.h; sourceTree = "<group>"; };
 		ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = individualProfileViewController.m; sourceTree = "<group>"; };
-		ED885F111E97CD2A00442DA4 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
-		ED885F121E97CD2A00442DA4 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4014,8 +4020,12 @@
 				57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */,
 				ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */,
 				ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */,
-				ED885F111E97CD2A00442DA4 /* OrderDetailViewController.h */,
-				ED885F121E97CD2A00442DA4 /* OrderDetailViewController.m */,
+				BAA629B51E97BD410078F60D /* WalletViewController.h */,
+				BAA629B61E97BD410078F60D /* WalletViewController.m */,
+				BAA629B81E97BD9C0078F60D /* WithdrawViewController.h */,
+				BAA629B91E97BD9C0078F60D /* WithdrawViewController.m */,
+				BAA629BB1E97BDDA0078F60D /* BillViewController.h */,
+				BAA629BC1E97BDDA0078F60D /* BillViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4769,6 +4779,7 @@
 				57EE75F01E272CA0004573F1 /* RefreshAutoFooter.m in Sources */,
 				574AD4C41E49894A00BF099E /* EaseRefreshTableViewController.m in Sources */,
 				57189A2C1E7F7DC200F6E621 /* RaiseLabelListData.m in Sources */,
+				BAA629B71E97BD410078F60D /* WalletViewController.m in Sources */,
 				574AD47B1E49894A00BF099E /* MJRefreshAutoGifFooter.m in Sources */,
 				574077F41E66A9330008DFA4 /* PayManager.m in Sources */,
 				574AD52F1E49894B00BF099E /* PublicGroupListViewController.m in Sources */,
@@ -4835,7 +4846,6 @@
 				57BFC79E1E4B4C52001690E4 /* WalletData.m in Sources */,
 				575CAFDE1E7D4AF3004784AA /* UserForgetCheckResponse.m in Sources */,
 				574AD46A1E49894A00BF099E /* EMAudioPlayerUtil.m in Sources */,
-				ED885F131E97CD2B00442DA4 /* OrderDetailViewController.m in Sources */,
 				574AD4C71E49894A00BF099E /* EaseUserCell.m in Sources */,
 				574AD4CB1E49894A00BF099E /* EaseMessageTimeCell.m in Sources */,
 				574AD48B1E49894A00BF099E /* MWGridViewController.m in Sources */,
@@ -4872,6 +4882,7 @@
 				574AD4B91E49894A00BF099E /* EaseChineseToPinyin.m in Sources */,
 				57322CFF1E827BFC00B491B0 /* DeliveryInfoData.m in Sources */,
 				57CAC2761E02E85A005A3F7E /* GlobalManager.m in Sources */,
+				BAA629BA1E97BD9C0078F60D /* WithdrawViewController.m in Sources */,
 				57F44E561E4CABCF00F62B16 /* UserRegisterRequest.m in Sources */,
 				574AD4B31E49894A00BF099E /* EaseUserModel.m in Sources */,
 				574AD4901E49894A00BF099E /* MWZoomingScrollView.m in Sources */,
@@ -4931,6 +4942,7 @@
 				574AD4B51E49894A00BF099E /* NSDateFormatter+Category.m in Sources */,
 				577029FA1E02E7C300FA9E95 /* ViewController.m in Sources */,
 				187257F41E750E2C007085C1 /* UIColor+Hex.m in Sources */,
+				BAA629BD1E97BDDA0078F60D /* BillViewController.m in Sources */,
 				574AD51F1E49894A00BF099E /* TTGlobalUICommon.m in Sources */,
 				57C5B7071E4AB89C0006618F /* Tools.m in Sources */,
 				574AD52E1E49894B00BF099E /* PublicGroupDetailViewController.m in Sources */,
