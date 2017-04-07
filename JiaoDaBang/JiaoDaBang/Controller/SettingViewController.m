@@ -11,6 +11,7 @@
 #import "SDImageCache.h"
 
 #import "individualProfileViewController.h"
+#import "OrderDetailViewController.h"
 
 @interface SettingViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -89,8 +90,10 @@
         });
         
     } else if (indexPath.row == 1) {
-        individualProfileViewController *profile = [[individualProfileViewController alloc] init];
-        [self.navigationController pushViewController:profile animated:YES];
+//        individualProfileViewController *profile = [[individualProfileViewController alloc] init];
+//        [self.navigationController pushViewController:profile animated:YES];
+          OrderDetailViewController *order = [[OrderDetailViewController alloc] init];
+          [self.navigationController pushViewController:order animated:YES];
         
     } else if (indexPath.row == 2) {
     
