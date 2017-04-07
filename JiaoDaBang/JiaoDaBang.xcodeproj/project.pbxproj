@@ -633,6 +633,7 @@
 		BA29BB211E952E2A000D3A90 /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB201E952E29000D3A90 /* FeedBackViewController.m */; };
 		BA29BB241E9530F8000D3A90 /* FeedbackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */; };
 		BA29BB271E953185000D3A90 /* FeedbackResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA29BB261E953185000D3A90 /* FeedbackResponse.m */; };
+		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1786,6 +1787,8 @@
 		BA29BB231E9530F8000D3A90 /* FeedbackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackRequest.m; sourceTree = "<group>"; };
 		BA29BB251E953185000D3A90 /* FeedbackResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackResponse.h; sourceTree = "<group>"; };
 		BA29BB261E953185000D3A90 /* FeedbackResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackResponse.m; sourceTree = "<group>"; };
+		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
+		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4152,6 +4155,7 @@
 		57CAC2681E02E85A005A3F7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BAE45D101E97352A00133161 /* Setting */,
 				BA29BB1A1E95208C000D3A90 /* Common */,
 				571D20911E52AECE00BF3334 /* User */,
 			);
@@ -4356,6 +4360,15 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		BAE45D101E97352A00133161 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BAE45D111E97355400133161 /* SettingCommonCell.h */,
+				BAE45D121E97355400133161 /* SettingCommonCell.m */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -4929,6 +4942,7 @@
 				57EE75F71E272CA0004573F1 /* RefreshStateHeader.m in Sources */,
 				57F44E6A1E4CB6F100F62B16 /* OrderTypeRequest.m in Sources */,
 				187257F21E750E2C007085C1 /* NSString+Helper.m in Sources */,
+				BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */,
 				574AD4BA1E49894A00BF099E /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				574AD5BC1E49894B00BF099E /* DebugViewController.m in Sources */,
 				57EE75FD1E272CA0004573F1 /* RefreshConst.m in Sources */,
