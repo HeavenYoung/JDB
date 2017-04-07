@@ -639,6 +639,7 @@
 		BAA629BD1E97BDDA0078F60D /* BillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629BC1E97BDDA0078F60D /* BillViewController.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
+		ED885F161E97CE4600442DA4 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1804,6 +1805,8 @@
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = individualProfileViewController.h; sourceTree = "<group>"; };
 		ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = individualProfileViewController.m; sourceTree = "<group>"; };
+		ED885F141E97CE4600442DA4 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4026,6 +4029,8 @@
 				BAA629B91E97BD9C0078F60D /* WithdrawViewController.m */,
 				BAA629BB1E97BDDA0078F60D /* BillViewController.h */,
 				BAA629BC1E97BDDA0078F60D /* BillViewController.m */,
+				ED885F141E97CE4600442DA4 /* OrderDetailViewController.h */,
+				ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -5006,6 +5011,7 @@
 				57EE75EC1E272CA0004573F1 /* FMDatabasePool.m in Sources */,
 				574077FC1E66A9330008DFA4 /* WXApiRequestHandler.m in Sources */,
 				57CAC2721E02E85A005A3F7E /* UIColor+YTExtension.m in Sources */,
+				ED885F161E97CE4600442DA4 /* OrderDetailViewController.m in Sources */,
 				57189A381E7F84F700F6E621 /* ReleaseOrderRequest.m in Sources */,
 				574AD5BB1E49894B00BF099E /* BlackListViewController.m in Sources */,
 				57EE75F51E272CA0004573F1 /* RefreshAutoStateNormalFooter.m in Sources */,
