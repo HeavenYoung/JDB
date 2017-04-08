@@ -12,6 +12,7 @@
 
 @property (nonatomic, weak) UITextField *moneyTextField;
 @property (nonatomic, copy) NSString *balanceString;
+@property (nonatomic, weak) NSString *password;
 
 @end
 
@@ -115,7 +116,7 @@
                                           imageName:nil
                                       backImageName:nil
                                              target:self
-                                             action:@selector(withdraw)];
+                                             action:@selector(showPayAlert)];
     submitBtn.frame = CGRectMake(10, 220, SCREEN_WIDTH - 20, 40);
     submitBtn.backgroundColor = [UIColor lightTextColor];
     submitBtn.layer.cornerRadius = 5.0;
@@ -123,11 +124,9 @@
     [self.view addSubview:submitBtn];
 }
 
-- (void)withdraw{
-    if (_moneyTextField.text.floatValue<=_balanceString.floatValue
-        && _moneyTextField.text.floatValue>0){
+- (void)withdrawPassWord:(NSString *)password{
         WithdrawRequest *withdrawRequest = [[WithdrawRequest alloc] init];
-        [withdrawRequest setParametersWithUserId:[GlobalManager sharedManager].userInfoData.userId payPassword:@"123" money:_moneyTextField.text];
+        [withdrawRequest setParametersWithUserId:[GlobalManager sharedManager].userInfoData.userId payPassword:password money:_moneyTextField.text];
         [withdrawRequest setSuccessBlock:^(id object, id responseObject) {
                         
             [SVProgressHUD showErrorWithStatus:@"提现成功"];
@@ -150,6 +149,34 @@
             
         }];
         [withdrawRequest sendRequest];
+}
+
+-(void)showPayAlert{
+    if (_moneyTextField.text.floatValue<=_balanceString.floatValue
+        && _moneyTextField.text.floatValue>0){
+    UIAlertController *alertController =
+    [UIAlertController alertControllerWithTitle:@"请输入支付密码"
+                                        message:nil
+                                 preferredStyle:UIAlertControllerStyleAlert ];
+    
+    //添加取消到UIAlertController中
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil];
+    
+    //添加确定到UIAlertController中
+    UIAlertAction *OKAction = [UIAlertAction actionWithTitle:@"认证" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        UITextField *textField = alertController.textFields[0];
+        if (![Tools iSNull:textField.text]) {
+            [self withdrawPassWord:textField.text];
+        }
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:OKAction];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField){
+        textField.placeholder = @"请输入支付密码";
+        textField.secureTextEntry = YES;
+    }];
+    [self presentViewController:alertController animated:YES completion:nil];
+        
     }else{
         [SVProgressHUD showErrorWithStatus:@"不能超过可提现金额"];
         [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
