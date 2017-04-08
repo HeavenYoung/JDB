@@ -138,7 +138,7 @@
 - (void)billBtnDidClicked {
     
     BillViewController *billVC = [[BillViewController alloc] init];
-    [self.navigationController pushViewController:billVC animated:YES]
+    [self.navigationController pushViewController:billVC animated:YES];
 }
 
 - (void)verifyBtnDidClicked {
