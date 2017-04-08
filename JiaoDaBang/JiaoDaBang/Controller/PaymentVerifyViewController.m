@@ -81,6 +81,20 @@
         make.height.equalTo(@70);
     }];
     
+    UILabel *contentLabel = [[UILabel alloc] init];
+    contentLabel.backgroundColor = [UIColor clearColor];
+    contentLabel.textAlignment = NSTextAlignmentCenter;
+    contentLabel.numberOfLines = 0;
+    contentLabel.font = [UIFont systemFontOfSize:12];
+    contentLabel.text = @"温馨提示：为保证提现安全，输入的姓名需要和支付宝实名认证姓名一致，确保姓名和支付宝无误后再提交。";
+    contentLabel.textColor = [UIColor orangeColor];
+    [self.view addSubview:contentLabel];
+    [contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(backView.mas_bottom).offset(15);
+        make.left.equalTo(self.view.mas_left).offset(10);
+        make.right.equalTo(self.view.mas_right).offset(-10);
+    }];
+    
     // 按钮
     UIButton *submitBtn = [UIButton buttonWithTitle:@"认证"
                                         normalColor:CustomGreen
@@ -90,7 +104,7 @@
                                       backImageName:nil
                                              target:self
                                              action:@selector(verifyOperation)];
-    submitBtn.frame = CGRectMake(10, 180, SCREEN_WIDTH - 20, 40);
+    submitBtn.frame = CGRectMake(10, 240, SCREEN_WIDTH - 20, 40);
     submitBtn.backgroundColor = [UIColor lightTextColor];
     submitBtn.layer.cornerRadius = 5.0;
     submitBtn.layer.masksToBounds = YES;
