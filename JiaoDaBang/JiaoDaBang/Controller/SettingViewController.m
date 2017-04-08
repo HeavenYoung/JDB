@@ -13,6 +13,8 @@
 #import "individualProfileViewController.h"
 #import "OrderDetailViewController.h"
 
+#import "WebViewController.h"
+
 @interface SettingViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -90,10 +92,15 @@
         });
         
     } else if (indexPath.row == 1) {
+//test for profile
 //        individualProfileViewController *profile = [[individualProfileViewController alloc] init];
 //        [self.navigationController pushViewController:profile animated:YES];
-          OrderDetailViewController *order = [[OrderDetailViewController alloc] init];
-          [self.navigationController pushViewController:order animated:YES];
+//test for orderdetail
+//        OrderDetailViewController *order = [[OrderDetailViewController alloc] init];
+//        [self.navigationController pushViewController:order animated:YES];
+//test for webview
+        WebViewController *web = [[WebViewController alloc] initwithNameString:@"test" urlString:@"http://www.baidu.com"];
+        [self.navigationController pushViewController:web animated:YES];
         
     } else if (indexPath.row == 2) {
     

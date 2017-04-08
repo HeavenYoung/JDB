@@ -10,5 +10,6 @@
 
 @interface WebViewController : UIViewController
 
+- (id)initwithNameString:(NSString *)nameString urlString:(NSString *)urlString;
 
 @end

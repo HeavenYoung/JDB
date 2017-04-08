@@ -7,6 +7,7 @@
 //
 
 #import "SettingInfoViewController.h"
+
 static NSString *const kNickName = @"nickname";
 static NSString *const kGender = @"sex";
 static NSString *const kSchool = @"school";
