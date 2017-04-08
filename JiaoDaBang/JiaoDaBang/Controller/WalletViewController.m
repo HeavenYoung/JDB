@@ -7,6 +7,9 @@
 //
 
 #import "WalletViewController.h"
+#import "WithdrawViewController.h"
+#import "BillViewController.h"
+#import "PaymentVerifyViewController.h"
 
 @interface WalletViewController ()
 
@@ -23,6 +26,28 @@
     self.title = @"我的钱包";
     self.view.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
     [self setupUI];
+    
+    [self loadData];
+}
+
+- (void)loadData {
+
+    WalletRequest *walletRequest = [[WalletRequest alloc] init];
+    [walletRequest setParametersWithUserId:[GlobalManager sharedManager].userId];    [walletRequest setSuccessBlock:^(id object, id responseObject) {
+    
+        WalletData *walletData = (WalletData *)object;
+        
+        self.balanceLabel.text = walletData.money;
+    
+    }];
+    
+    [walletRequest setFailureBlock:^(NSInteger errorCode, id responseObject) {
+        
+        DLog(@"-----获取我的钱失败");
+        
+    }];
+    [walletRequest sendRequest];
+
 }
 
 - (void)setupUI{
@@ -70,7 +95,6 @@
     breakView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:breakView];
 
-    
     UIButton *billBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     billBtn.backgroundColor = [UIColor whiteColor];
     billBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
@@ -103,22 +127,24 @@
         make.right.equalTo(self.view.mas_right);
         make.height.equalTo(@60);
     }];
-    
 }
 
 - (void)withDrawBtnDidClicked {
 
-    
+    WithdrawViewController *withdrawVC = [[WithdrawViewController alloc] initWithBalanceString:self.balanceLabel.text];
+    [self.navigationController pushViewController:withdrawVC animated:YES];
 }
 
 - (void)billBtnDidClicked {
     
-    
+    BillViewController *billVC = [[BillViewController alloc] init];
+    [self.navigationController pushViewController:billVC animated:YES]
 }
 
 - (void)verifyBtnDidClicked {
     
-    
+    PaymentVerifyViewController *veriftVC = [[PaymentVerifyViewController alloc] init];
+    [self.navigationController pushViewController:veriftVC animated:YES];
 }
 
 

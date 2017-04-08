@@ -10,4 +10,6 @@
 
 @interface WithdrawViewController : UIViewController
 
+- (instancetype)initWithBalanceString:(NSString *)balanceString;
+
 @end
