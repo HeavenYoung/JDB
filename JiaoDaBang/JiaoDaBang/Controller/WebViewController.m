@@ -6,13 +6,13 @@
 //  Copyright © 2017年 Heaven. All rights reserved.
 //
 
-#import "webViewController.h"
+#import "WebViewController.h"
 
-@interface webViewController ()
+@interface WebViewController ()
 
 @end
 
-@implementation webViewController
+@implementation WebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
