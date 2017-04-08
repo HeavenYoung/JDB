@@ -150,6 +150,12 @@
             
         }];
         [withdrawRequest sendRequest];
+    }else{
+        [SVProgressHUD showErrorWithStatus:@"不能超过可提现金额"];
+        [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [SVProgressHUD dismiss];
+        });
     }
 }
 
