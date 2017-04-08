@@ -24,7 +24,6 @@
         self.titleString = titleString;
     }
     return self;
-    
 }
 
 - (void)viewDidLoad {
