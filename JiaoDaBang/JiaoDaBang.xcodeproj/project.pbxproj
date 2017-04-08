@@ -644,6 +644,9 @@
 		BAA629CB1E988B140078F60D /* WithdrawRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629CA1E988B140078F60D /* WithdrawRequest.m */; };
 		BAA629CE1E98902D0078F60D /* BillResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629CD1E98902D0078F60D /* BillResponse.m */; };
 		BAA629D11E98904B0078F60D /* BillRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629D01E98904B0078F60D /* BillRequest.m */; };
+		BAA631881E98BCCF0078F60D /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA631871E98BCCF0078F60D /* AccountViewController.m */; };
+		BAA6318B1E98C6160078F60D /* ChangeUserPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */; };
+		BAA6318E1E98C6320078F60D /* ChangePayPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED68E2B81E989650003221A9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED68E2B71E989650003221A9 /* WebViewController.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
@@ -1823,6 +1826,12 @@
 		BAA629CD1E98902D0078F60D /* BillResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillResponse.m; sourceTree = "<group>"; };
 		BAA629CF1E98904B0078F60D /* BillRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillRequest.h; sourceTree = "<group>"; };
 		BAA629D01E98904B0078F60D /* BillRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillRequest.m; sourceTree = "<group>"; };
+		BAA631861E98BCCF0078F60D /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		BAA631871E98BCCF0078F60D /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		BAA631891E98C6160078F60D /* ChangeUserPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeUserPasswordViewController.h; sourceTree = "<group>"; };
+		BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeUserPasswordViewController.m; sourceTree = "<group>"; };
+		BAA6318C1E98C6320078F60D /* ChangePayPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePayPasswordViewController.h; sourceTree = "<group>"; };
+		BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePayPasswordViewController.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED68E2B61E989650003221A9 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -4061,6 +4070,12 @@
 				BAA629BC1E97BDDA0078F60D /* BillViewController.m */,
 				ED885F141E97CE4600442DA4 /* OrderDetailViewController.h */,
 				ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */,
+				BAA631861E98BCCF0078F60D /* AccountViewController.h */,
+				BAA631871E98BCCF0078F60D /* AccountViewController.m */,
+				BAA631891E98C6160078F60D /* ChangeUserPasswordViewController.h */,
+				BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */,
+				BAA6318C1E98C6320078F60D /* ChangePayPasswordViewController.h */,
+				BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4860,6 +4875,7 @@
 				187257E41E750E2C007085C1 /* IQUIView+Hierarchy.m in Sources */,
 				57BFC78A1E4B4588001690E4 /* UserInfoData.m in Sources */,
 				574AD52B1E49894B00BF099E /* GroupListViewController.m in Sources */,
+				BAA6318E1E98C6320078F60D /* ChangePayPasswordViewController.m in Sources */,
 				57EE76081E272CA0004573F1 /* UIImage+GIF.m in Sources */,
 				574AD4671E49894A00BF099E /* AppDelegate+EaseMob.m in Sources */,
 				574AD4C01E49894A00BF099E /* FixFopen.c in Sources */,
@@ -4949,6 +4965,7 @@
 				BAA629BA1E97BD9C0078F60D /* WithdrawViewController.m in Sources */,
 				57F44E561E4CABCF00F62B16 /* UserRegisterRequest.m in Sources */,
 				574AD4B31E49894A00BF099E /* EaseUserModel.m in Sources */,
+				BAA6318B1E98C6160078F60D /* ChangeUserPasswordViewController.m in Sources */,
 				574AD4901E49894A00BF099E /* MWZoomingScrollView.m in Sources */,
 				57EE760B1E272CA0004573F1 /* UIImageView+HighlightedWebCache.m in Sources */,
 				574AD5B81E49894B00BF099E /* RobotChatViewController.m in Sources */,
@@ -5037,6 +5054,7 @@
 				57F44E6A1E4CB6F100F62B16 /* OrderTypeRequest.m in Sources */,
 				187257F21E750E2C007085C1 /* NSString+Helper.m in Sources */,
 				BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */,
+				BAA631881E98BCCF0078F60D /* AccountViewController.m in Sources */,
 				574AD4BA1E49894A00BF099E /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				574AD5BC1E49894B00BF099E /* DebugViewController.m in Sources */,
 				57EE75FD1E272CA0004573F1 /* RefreshConst.m in Sources */,

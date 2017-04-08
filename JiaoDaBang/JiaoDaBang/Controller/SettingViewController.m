@@ -12,6 +12,7 @@
 
 #import "individualProfileViewController.h"
 #import "OrderDetailViewController.h"
+#import "AccountViewController.h"
 
 @interface SettingViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -92,9 +93,10 @@
     } else if (indexPath.row == 1) {
 //        individualProfileViewController *profile = [[individualProfileViewController alloc] init];
 //        [self.navigationController pushViewController:profile animated:YES];
-          OrderDetailViewController *order = [[OrderDetailViewController alloc] init];
-          [self.navigationController pushViewController:order animated:YES];
-        
+//          OrderDetailViewController *order = [[OrderDetailViewController alloc] init];
+//          [self.navigationController pushViewController:order animated:YES];
+        AccountViewController *accountVC = [[AccountViewController alloc] init];
+        [self.navigationController pushViewController:accountVC animated:YES];
     } else if (indexPath.row == 2) {
     
         AboutViewController *about = [[AboutViewController alloc] init];
