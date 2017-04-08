@@ -124,17 +124,29 @@
 }
 
 - (void)withdraw{
-    if (moneyTextField.text.floatValue<=balanceString.floatValue
-        && moneyTextField.text.floatValue>0){
-        WithdrawRequest withdrawRequest = [[WithdrawRequest alloc] init];
-        withdrawRequest setParametersWithUserId:[GlobalManager sharedManager].userInfoData.userId payPassword:"" money:moneyTextField.text.floatValue;
+    if (_moneyTextField.text.floatValue<=_balanceString.floatValue
+        && _moneyTextField.text.floatValue>0){
+        WithdrawRequest *withdrawRequest = [[WithdrawRequest alloc] init];
+        [withdrawRequest setParametersWithUserId:[GlobalManager sharedManager].userInfoData.userId payPassword:@"123" money:_moneyTextField.text];
         [withdrawRequest setSuccessBlock:^(id object, id responseObject) {
+                        
+            [SVProgressHUD showErrorWithStatus:@"提现成功"];
+            [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+
             
         }];
         
         [withdrawRequest setFailureBlock:^(NSInteger errorCode, id responseObject) {
             
             DLog(@"-----获取失败");
+            [SVProgressHUD showErrorWithStatus:@"提现失败"];
+            [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
             
         }];
         [withdrawRequest sendRequest];

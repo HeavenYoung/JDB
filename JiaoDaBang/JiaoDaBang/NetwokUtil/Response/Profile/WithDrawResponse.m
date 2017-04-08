@@ -10,17 +10,21 @@
 
 @implementation WithDrawResponse
 
-NSDictionary *jsonObject = self.responseObject;
-
-NSInteger code = [[jsonObject objectForKey:@"state"] integerValue];
-
-if (code == CODE_SUCCESS) {
+- (void)parseResponseObject {
     
-    [self showSuccessInfo:self.responseObject];
-}  else {
+    NSDictionary *jsonObject = self.responseObject;
     
-    [self showFailureInfo:code];
+    NSInteger code = [[jsonObject objectForKey:@"state"] integerValue];
+    
+    if (code == CODE_SUCCESS) {
+        
+        [self showSuccessInfo:self.responseObject];
+    }  else {
+        
+        [self showFailureInfo:code];
+        
+    }
+    
     
 }
-
 @end

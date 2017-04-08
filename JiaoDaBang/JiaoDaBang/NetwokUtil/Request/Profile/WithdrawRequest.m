@@ -23,7 +23,7 @@
 {
     self = [super init];
     if (self) {
-        self.URLString = @"transtoali;
+        self.URLString = @"transtoali";
         self.httpMethod = @"POST";
     }
     return self;}
