@@ -28,8 +28,6 @@
 
 - (void)setupUI{
     
-    
-    
     UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 140)];
     backView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:backView];
@@ -40,11 +38,9 @@
     nameLabel.textColor = [UIColor blackColor];
     [backView addSubview:nameLabel];
     
-    
-    
     UITextField *userNameTextField = [[UITextField alloc] init];
     userNameTextField.backgroundColor = [UIColor clearColor];
-    userNameTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入姓名" attributes:@{NSForegroundColorAttributeName:PlaceTextColor ,NSFontAttributeName:PlaceTextFont}];
+    userNameTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入姓名" attributes:@{NSForegroundColorAttributeName:[UIColor grayColor] ,NSFontAttributeName:PlaceTextFont}];
     userNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     userNameTextField.returnKeyType = UIReturnKeyNext;
     userNameTextField.textColor = [UIColor blackColor];
@@ -71,7 +67,7 @@
     
     UITextField *aliAccountTextField = [[UITextField alloc] init];
     aliAccountTextField.backgroundColor = [UIColor clearColor];
-    aliAccountTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入支付宝" attributes:@{NSForegroundColorAttributeName:PlaceTextColor ,NSFontAttributeName:PlaceTextFont}];
+    aliAccountTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入支付宝" attributes:@{NSForegroundColorAttributeName:[UIColor grayColor] ,NSFontAttributeName:PlaceTextFont}];
     aliAccountTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     aliAccountTextField.returnKeyType = UIReturnKeyNext;
     aliAccountTextField.textColor = [UIColor blackColor];

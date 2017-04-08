@@ -640,6 +640,10 @@
 		BAA629BD1E97BDDA0078F60D /* BillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629BC1E97BDDA0078F60D /* BillViewController.m */; };
 		BAA629C11E97D3CB0078F60D /* WalletRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629C01E97D3CB0078F60D /* WalletRequest.m */; };
 		BAA629C51E97D4050078F60D /* WalletResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629C41E97D4050078F60D /* WalletResponse.m */; };
+		BAA629C81E988A9B0078F60D /* WithDrawResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629C71E988A9B0078F60D /* WithDrawResponse.m */; };
+		BAA629CB1E988B140078F60D /* WithdrawRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629CA1E988B140078F60D /* WithdrawRequest.m */; };
+		BAA629CE1E98902D0078F60D /* BillResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629CD1E98902D0078F60D /* BillResponse.m */; };
+		BAA629D11E98904B0078F60D /* BillRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629D01E98904B0078F60D /* BillRequest.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
 		ED885F161E97CE4600442DA4 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */; };
@@ -1810,6 +1814,14 @@
 		BAA629C01E97D3CB0078F60D /* WalletRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletRequest.m; sourceTree = "<group>"; };
 		BAA629C31E97D4050078F60D /* WalletResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletResponse.h; sourceTree = "<group>"; };
 		BAA629C41E97D4050078F60D /* WalletResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletResponse.m; sourceTree = "<group>"; };
+		BAA629C61E988A9B0078F60D /* WithDrawResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithDrawResponse.h; sourceTree = "<group>"; };
+		BAA629C71E988A9B0078F60D /* WithDrawResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithDrawResponse.m; sourceTree = "<group>"; };
+		BAA629C91E988B140078F60D /* WithdrawRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawRequest.h; sourceTree = "<group>"; };
+		BAA629CA1E988B140078F60D /* WithdrawRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawRequest.m; sourceTree = "<group>"; };
+		BAA629CC1E98902D0078F60D /* BillResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillResponse.h; sourceTree = "<group>"; };
+		BAA629CD1E98902D0078F60D /* BillResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillResponse.m; sourceTree = "<group>"; };
+		BAA629CF1E98904B0078F60D /* BillRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillRequest.h; sourceTree = "<group>"; };
+		BAA629D01E98904B0078F60D /* BillRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillRequest.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = individualProfileViewController.h; sourceTree = "<group>"; };
@@ -4410,6 +4422,10 @@
 			children = (
 				BAA629BF1E97D3CA0078F60D /* WalletRequest.h */,
 				BAA629C01E97D3CB0078F60D /* WalletRequest.m */,
+				BAA629C91E988B140078F60D /* WithdrawRequest.h */,
+				BAA629CA1E988B140078F60D /* WithdrawRequest.m */,
+				BAA629CF1E98904B0078F60D /* BillRequest.h */,
+				BAA629D01E98904B0078F60D /* BillRequest.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -4419,6 +4435,10 @@
 			children = (
 				BAA629C31E97D4050078F60D /* WalletResponse.h */,
 				BAA629C41E97D4050078F60D /* WalletResponse.m */,
+				BAA629C61E988A9B0078F60D /* WithDrawResponse.h */,
+				BAA629C71E988A9B0078F60D /* WithDrawResponse.m */,
+				BAA629CC1E98902D0078F60D /* BillResponse.h */,
+				BAA629CD1E98902D0078F60D /* BillResponse.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -4804,6 +4824,7 @@
 				574AD5211E49894A00BF099E /* UIImageView+HeadImage.m in Sources */,
 				57A090FA1E97D54A00793D4A /* SettingInfoViewController.m in Sources */,
 				574AD5371E49894B00BF099E /* ApplyFriendCell.m in Sources */,
+				BAA629C81E988A9B0078F60D /* WithDrawResponse.m in Sources */,
 				574AD4911E49894A00BF099E /* DACircularProgressView.m in Sources */,
 				574077FB1E66A9330008DFA4 /* WXApiManager.m in Sources */,
 				57189A3E1E7F87E300F6E621 /* ReleaseData.m in Sources */,
@@ -4882,6 +4903,7 @@
 				57CAC27E1E02E85A005A3F7E /* MASViewAttribute.m in Sources */,
 				57BFC79E1E4B4C52001690E4 /* WalletData.m in Sources */,
 				575CAFDE1E7D4AF3004784AA /* UserForgetCheckResponse.m in Sources */,
+				BAA629D11E98904B0078F60D /* BillRequest.m in Sources */,
 				574AD46A1E49894A00BF099E /* EMAudioPlayerUtil.m in Sources */,
 				574AD4C71E49894A00BF099E /* EaseUserCell.m in Sources */,
 				574AD4CB1E49894A00BF099E /* EaseMessageTimeCell.m in Sources */,
@@ -5014,6 +5036,7 @@
 				574AD5BC1E49894B00BF099E /* DebugViewController.m in Sources */,
 				57EE75FD1E272CA0004573F1 /* RefreshConst.m in Sources */,
 				575CAFE61E7D4D3D004784AA /* HomeBannerListResponse.m in Sources */,
+				BAA629CE1E98902D0078F60D /* BillResponse.m in Sources */,
 				57CAC27F1E02E85A005A3F7E /* MASViewConstraint.m in Sources */,
 				570A06D01E951420006E2089 /* SettingViewController.m in Sources */,
 				1872579C1E750DF4007085C1 /* WalletTableViewController.m in Sources */,
@@ -5116,6 +5139,7 @@
 				187257A41E750DF4007085C1 /* SettingTableViewCell.m in Sources */,
 				574AD5361E49894B00BF099E /* AddFriendViewController.m in Sources */,
 				574AD4721E49894A00BF099E /* wav.mm in Sources */,
+				BAA629CB1E988B140078F60D /* WithdrawRequest.m in Sources */,
 				574AD5321E49894B00BF099E /* MyChatroomListViewController.m in Sources */,
 				574077FE1E66A9330008DFA4 /* WXMediaMessage+messageConstruct.m in Sources */,
 				574AD4A51E49894A00BF099E /* PSTCollectionViewController.m in Sources */,

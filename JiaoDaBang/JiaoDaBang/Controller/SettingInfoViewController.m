@@ -54,7 +54,7 @@ static NSString *const kSchool = @"school";
     
     UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 0, SCREEN_WIDTH-20, 40)];
     textField.backgroundColor = [UIColor whiteColor];
-    textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入内容" attributes:@{NSForegroundColorAttributeName:PlaceTextColor ,NSFontAttributeName:PlaceTextFont}];
+    textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入内容" attributes:@{NSForegroundColorAttributeName:[UIColor grayColor] ,NSFontAttributeName:PlaceTextFont}];
     textField.keyboardType = UIKeyboardTypePhonePad;
     textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     textField.returnKeyType = UIReturnKeyNext;
@@ -126,18 +126,20 @@ static NSString *const kSchool = @"school";
             
             switch (self.settingInfoType) {
                 case SettingInfoTypeNickName: {
-                    infoData.userNickName = kNickName;
+                    infoData.userNickName = self.textField.text;
                 }
                     break;
                 case SettingInfoTypeGender: {
-                    infoData.userSex = kGender;
+                    infoData.userSex = self.textField.text;
                 }
                 case SettingInfoTypeSchool: {
-                    infoData.userSchool = kSchool;
+                    infoData.userSchool = self.textField.text;
                 }
                 default:
                     break;
             }
+            
+            
             [[GlobalManager sharedManager] loginSuccessedWithUserInfo:infoData];
             
         }];

@@ -40,7 +40,7 @@
     
     UITextField *userNameTextField = [[UITextField alloc] init];
         userNameTextField.backgroundColor = [UIColor clearColor];
-    userNameTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入名称" attributes:@{NSForegroundColorAttributeName:PlaceTextColor ,NSFontAttributeName:PlaceTextFont}];
+    userNameTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入名称" attributes:@{NSForegroundColorAttributeName:[UIColor grayColor] ,NSFontAttributeName:PlaceTextFont}];
     userNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     userNameTextField.returnKeyType = UIReturnKeyNext;
     userNameTextField.textColor = [UIColor blackColor];
@@ -66,7 +66,7 @@
     
     UITextField *userNumberTextField = [[UITextField alloc] init];
     userNumberTextField.backgroundColor = [UIColor clearColor];
-    userNumberTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入学生证号" attributes:@{NSForegroundColorAttributeName:PlaceTextColor ,NSFontAttributeName:PlaceTextFont}];
+    userNumberTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入学生证号" attributes:@{NSForegroundColorAttributeName:[UIColor grayColor] ,NSFontAttributeName:PlaceTextFont}];
     userNumberTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     userNumberTextField.returnKeyType = UIReturnKeyDone;
     userNumberTextField.textColor = [UIColor blackColor];

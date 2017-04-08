@@ -34,6 +34,7 @@
 #import "UpdateOrderRequest.h"
 #import "FeedbackRequest.h"
 #import "WalletRequest.h"
+#import "WithdrawRequest.h"
 
 /***   REQUEST   END ***/
 

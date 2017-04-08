@@ -10,13 +10,135 @@
 
 @interface WithdrawViewController ()
 
+@property (nonatomic, weak) UITextField *moneyTextField;
+@property (nonatomic, copy) NSString *balanceString;
+
 @end
 
 @implementation WithdrawViewController
 
+- (instancetype)initWithBalanceString:(NSString *)balanceString {
+
+    self = [super init];
+    if (self) {
+        self.balanceString = balanceString;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"提现";
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
+    [self setupUI];
+}
+
+- (void)setupUI{
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 140)];
+    backView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:backView];
+    
+    UILabel *nameLabel = [[UILabel alloc] init];
+    nameLabel.text = @"支付宝";
+    nameLabel.backgroundColor = [UIColor clearColor];
+    nameLabel.textColor = [UIColor blackColor];
+    [backView addSubview:nameLabel];
+    [nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@0);
+        make.left.equalTo(@10);
+        make.height.equalTo(@70);
+    }];
+    
+    UILabel *aliAccountLabel = [[UILabel alloc] init];
+    aliAccountLabel.text = [GlobalManager sharedManager].userInfoData.userAliAccount;
+    aliAccountLabel.textColor = [UIColor grayColor];
+    aliAccountLabel.font = [UIFont systemFontOfSize:16];
+    aliAccountLabel.textAlignment = NSTextAlignmentCenter;
+    [backView addSubview:aliAccountLabel];
+    [aliAccountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(nameLabel.mas_centerY);
+        make.left.equalTo(@100);
+    }];
+    
+    // 分割线
+    UIView *breakView = [[UIView alloc] initWithFrame:CGRectMake(0, 69.5, SCREEN_WIDTH, 0.5)];
+    breakView.backgroundColor = [UIColor lightGrayColor];
+    [backView addSubview:breakView];
+    
+    UILabel *withdrawLabel = [[UILabel alloc] init];
+    withdrawLabel.backgroundColor = [UIColor clearColor];
+    withdrawLabel.text = @"提现金额";
+    withdrawLabel.textColor = [UIColor blackColor];
+    [backView addSubview:withdrawLabel];
+    [withdrawLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(breakView.mas_bottom);
+        make.left.equalTo(@10);
+        make.height.equalTo(@70);
+    }];
+
+    
+    UITextField *moneyTextField = [[UITextField alloc] init];
+    moneyTextField.backgroundColor = [UIColor clearColor];
+    moneyTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入提现金额" attributes:@{NSForegroundColorAttributeName:[UIColor grayColor] ,NSFontAttributeName:PlaceTextFont}];
+    moneyTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    moneyTextField.returnKeyType = UIReturnKeyNext;
+    moneyTextField.textColor = [UIColor blackColor];
+    moneyTextField.delegate = self;
+    [backView addSubview:moneyTextField];
+    self.moneyTextField = moneyTextField;
+    [moneyTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(withdrawLabel.mas_centerY);
+        make.left.equalTo(@100);
+        make.width.equalTo(@250);
+        make.height.equalTo(@70);
+    }];
+    
+    
+    UILabel *contentLabel = [[UILabel alloc] init];
+    contentLabel.backgroundColor = [UIColor clearColor];
+    contentLabel.font = [UIFont systemFontOfSize:12];
+    NSString *balanceStr = [NSString stringWithFormat:@"可提现金额：%@，提现成功后24小时内到账", self.balanceString];
+    contentLabel.text = balanceStr;
+    contentLabel.textColor = [UIColor orangeColor];
+    contentLabel.textAlignment = NSTextAlignmentRight;
+    [self.view addSubview:contentLabel];
+    [contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(backView.mas_bottom).offset(15);
+        make.right.equalTo(self.view.mas_right).offset(-10);
+    }];
+    
+    UIButton *submitBtn = [UIButton buttonWithTitle:@"提现"
+                                        normalColor:CustomGreen
+                                   highlightedColor:CustomGreen
+                                          titleFont:[UIFont systemFontOfSize:16]
+                                          imageName:nil
+                                      backImageName:nil
+                                             target:self
+                                             action:@selector(withdraw)];
+    submitBtn.frame = CGRectMake(10, 220, SCREEN_WIDTH - 20, 40);
+    submitBtn.backgroundColor = [UIColor lightTextColor];
+    submitBtn.layer.cornerRadius = 5.0;
+    submitBtn.layer.masksToBounds = YES;
+    [self.view addSubview:submitBtn];
+}
+
+- (void)withdraw{
+    if (moneyTextField.text.floatValue<=balanceString.floatValue
+        && moneyTextField.text.floatValue>0){
+        WithdrawRequest withdrawRequest = [[WithdrawRequest alloc] init];
+        withdrawRequest setParametersWithUserId:[GlobalManager sharedManager].userInfoData.userId payPassword:"" money:moneyTextField.text.floatValue;
+        [withdrawRequest setSuccessBlock:^(id object, id responseObject) {
+            
+        }];
+        
+        [withdrawRequest setFailureBlock:^(NSInteger errorCode, id responseObject) {
+            
+            DLog(@"-----获取失败");
+            
+        }];
+        [withdrawRequest sendRequest];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

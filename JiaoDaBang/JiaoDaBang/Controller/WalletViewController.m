@@ -95,7 +95,6 @@
     breakView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:breakView];
 
-    
     UIButton *billBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     billBtn.backgroundColor = [UIColor whiteColor];
     billBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
@@ -132,23 +131,20 @@
 
 - (void)withDrawBtnDidClicked {
 
-    WithdrawViewController *withdrawVC = [[WithdrawViewController alloc] init];
+    WithdrawViewController *withdrawVC = [[WithdrawViewController alloc] initWithBalanceString:self.balanceLabel.text];
     [self.navigationController pushViewController:withdrawVC animated:YES];
-    
 }
 
 - (void)billBtnDidClicked {
     
     BillViewController *billVC = [[BillViewController alloc] init];
-    [self.navigationController pushViewController:billVC animated:YES];
-    
+    [self.navigationController pushViewController:billVC animated:YES]
 }
 
 - (void)verifyBtnDidClicked {
     
     PaymentVerifyViewController *veriftVC = [[PaymentVerifyViewController alloc] init];
     [self.navigationController pushViewController:veriftVC animated:YES];
-    
 }
 
 
