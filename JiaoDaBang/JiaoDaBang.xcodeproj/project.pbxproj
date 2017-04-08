@@ -645,6 +645,7 @@
 		BAA629CE1E98902D0078F60D /* BillResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629CD1E98902D0078F60D /* BillResponse.m */; };
 		BAA629D11E98904B0078F60D /* BillRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629D01E98904B0078F60D /* BillRequest.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
+		ED68E2B81E989650003221A9 /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED68E2B71E989650003221A9 /* webViewController.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
 		ED885F161E97CE4600442DA4 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */; };
 /* End PBXBuildFile section */
@@ -1824,6 +1825,8 @@
 		BAA629D01E98904B0078F60D /* BillRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillRequest.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
+		ED68E2B61E989650003221A9 /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
+		ED68E2B71E989650003221A9 /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewController.m; sourceTree = "<group>"; };
 		ED885F0E1E97B57100442DA4 /* individualProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = individualProfileViewController.h; sourceTree = "<group>"; };
 		ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = individualProfileViewController.m; sourceTree = "<group>"; };
 		ED885F141E97CE4600442DA4 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
@@ -4052,6 +4055,8 @@
 				BAA629B61E97BD410078F60D /* WalletViewController.m */,
 				BAA629B81E97BD9C0078F60D /* WithdrawViewController.h */,
 				BAA629B91E97BD9C0078F60D /* WithdrawViewController.m */,
+				ED68E2B61E989650003221A9 /* webViewController.h */,
+				ED68E2B71E989650003221A9 /* webViewController.m */,
 				BAA629BB1E97BDDA0078F60D /* BillViewController.h */,
 				BAA629BC1E97BDDA0078F60D /* BillViewController.m */,
 				ED885F141E97CE4600442DA4 /* OrderDetailViewController.h */,
@@ -5053,6 +5058,7 @@
 				57403FD31E1B9192007CF092 /* AFSecurityPolicy.m in Sources */,
 				574AD5B61E49894B00BF099E /* EMRobotChatTextBubbleView.m in Sources */,
 				57403FD01E1B9192007CF092 /* NetworkUtil.m in Sources */,
+				ED68E2B81E989650003221A9 /* webViewController.m in Sources */,
 				18D896211E836590004DFC14 /* TAPageControl.m in Sources */,
 				574AD4BE1E49894A00BF099E /* EaseEmotionEscape.m in Sources */,
 				574AD49B1E49894A00BF099E /* UIButton+EMWebCache.m in Sources */,
