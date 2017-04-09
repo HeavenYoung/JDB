@@ -96,9 +96,11 @@
 }
 
 - (void)setupScrollView {
+    
     // 不要自动调整scrollView的inset
     self.automaticallyAdjustsScrollViewInsets = NO;
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 60, SCREEN_WIDTH, SCREEN_HEIGHT-60)];
+    
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 60, SCREEN_WIDTH, SCREEN_HEIGHT-60-69-44)];
     scrollView.delegate = self;
     scrollView.pagingEnabled = YES;
     scrollView.showsHorizontalScrollIndicator = NO;
@@ -107,13 +109,13 @@
     [self.view addSubview:scrollView];
     self.scrollView = scrollView;
     
-    PublishInfoView *publishInfoView = [[PublishInfoView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-60)];
+    PublishInfoView *publishInfoView = [[PublishInfoView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-60-69-44)];
     [self.scrollView addSubview:publishInfoView];
     
-    ProcessingOrderView *processOrderVeiw = [[ProcessingOrderView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT-60)];
+    ProcessingOrderView *processOrderVeiw = [[ProcessingOrderView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT-60-69-44)];
     [self.scrollView addSubview:processOrderVeiw];
     
-    CompletedOrderView *completedOrderView = [[CompletedOrderView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*2, 0, SCREEN_WIDTH, SCREEN_HEIGHT-60)];
+    CompletedOrderView *completedOrderView = [[CompletedOrderView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*2, 0, SCREEN_WIDTH, SCREEN_HEIGHT-60-69-44)];
     [self.scrollView addSubview:completedOrderView];
 }
 

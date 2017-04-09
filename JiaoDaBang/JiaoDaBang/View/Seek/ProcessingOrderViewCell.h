@@ -20,4 +20,5 @@
 
 @property (nonatomic, strong) OrderData *orderData;
 
+@property (nonatomic, weak) id <ProcessingOrderViewCellDelegate> delegate;
 @end

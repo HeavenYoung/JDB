@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) NSMutableArray *dataListArray;
 
+@property (nonatomic, strong) NSString *page;
+
 @end
 
 @implementation ProcessingOrderView
@@ -24,6 +26,7 @@
     self = [super initWithFrame:frame];
     if (self) {
     
+        self.page = @"0";
         [self placeSubview];
     }
     return self;
@@ -37,6 +40,14 @@
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addSubview:tableView];
     self.tableView = tableView;
+    RefreshAutoStateNormalFooter *footer = [RefreshAutoStateNormalFooter footerWithRefreshingBlock:^{
+        [self loadData];
+    }];
+    footer.stateLabel.hidden = YES;
+    footer.refreshingTitleHidden = YES;
+    self.tableView.footer = footer;    
+    [self.tableView.footer beginRefreshing];
+
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -44,23 +55,55 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return self.dataListArray.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    return 120;
+    return 200;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    return [[ProcessingOrderViewCell alloc] init];
+    OrderData *orderData = self.dataListArray[indexPath.row];
+    
+    ProcessingOrderViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"order"];
+    if (cell == nil) {
+        cell = [[ProcessingOrderViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"order"];
+    }
+    
+    cell.orderData = orderData;
+    
+    return cell;
 }
 
-- (void)setDataArray:(NSArray *)dataArray {
+- (void)loadData {
+    
+    GetOrderListRequest *request = [[GetOrderListRequest alloc] init];
+    [request setParametersWithUserId:[GlobalManager sharedManager].userId acceptUserId:@"" page:self.page action:@"0"];
+    [request setSuccessBlock:^(id object, id responseObject) {
+        
+        DLog(@"-------订单请求成功-------");
+        
+        self.page = [NSString stringWithFormat:@"%d", self.page.integerValue+1];
+        
+        OrderListData *listData = (OrderListData *)object;
+        
+        [self.dataListArray addObjectsFromArray:listData.listDataArray];
+        
+        [self.tableView.footer endRefreshing];
+        
+        [self.tableView reloadData];
+    }];
+    [request setFailureBlock:^(NSInteger errorCode, id responseObject) {
+        
+        DLog(@"-------订单请求失败-------");
+        
+        [self.tableView.footer endRefreshing];
 
-    [self.dataListArray addObjectsFromArray:dataArray];
-    [self.tableView reloadData];
+    }];
+    [request sendRequest];
+    
 }
 
 - (NSMutableArray *)dataListArray {
