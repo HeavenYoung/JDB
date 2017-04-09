@@ -59,7 +59,7 @@
                 orderdata.acceptUserName = [objDic objectForKeySafe:@"acceptusername"];
                 orderdata.acceptSex = [objDic objectForKeySafe:@"acceptsex"];
                 orderdata.acceptNickName = [objDic objectForKeySafe:@"acceptnickname"];
-                orderdata.releaseAvatar = [objDic objectForKeySafe:@"acceptavator"];
+                orderdata.acceptAvatar = [objDic objectForKeySafe:@"acceptavatar"];
                 orderdata.finishTime = [objDic objectForKeySafe:@"finishtime"];
                 
                 [mArray addObject:orderdata];

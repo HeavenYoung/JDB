@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol CompletedOrderViewDelegate <NSObject>
+
+- (void)jumptoDetailWithOrderData:(OrderData *)order;
+
+@end
+
 @interface CompletedOrderView : UIView
+
+@property (nonatomic, weak) id <CompletedOrderViewDelegate> delegate;
 
 @end

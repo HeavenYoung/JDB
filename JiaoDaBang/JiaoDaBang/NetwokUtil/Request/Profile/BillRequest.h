@@ -10,4 +10,6 @@
 
 @interface BillRequest : BaseRequest
 
+- (void)setParametersWithUserId:(NSString *)userId page:(NSString *)page;
+
 @end

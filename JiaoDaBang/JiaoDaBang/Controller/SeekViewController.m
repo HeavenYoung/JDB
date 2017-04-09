@@ -10,8 +10,9 @@
 #import "PublishInfoView.h"
 #import "ProcessingOrderView.h"
 #import "CompletedOrderView.h"
+#import "OrderDetailViewController.h"
 
-@interface SeekViewController () <UIScrollViewDelegate>
+@interface SeekViewController () <UIScrollViewDelegate, ProcessingOrderViewDelegate, CompletedOrderViewDelegate>
 
 @property (nonatomic, weak) UIButton *seekBtn;
 @property (nonatomic, weak) UIButton *processingBtn;
@@ -113,10 +114,18 @@
     [self.scrollView addSubview:publishInfoView];
     
     ProcessingOrderView *processOrderVeiw = [[ProcessingOrderView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT-60-69-44)];
+    processOrderVeiw.delegate = self;
     [self.scrollView addSubview:processOrderVeiw];
     
     CompletedOrderView *completedOrderView = [[CompletedOrderView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH*2, 0, SCREEN_WIDTH, SCREEN_HEIGHT-60-69-44)];
+    completedOrderView.delegate = self;
     [self.scrollView addSubview:completedOrderView];
+}
+
+- (void)jumptoDetailWithOrderData:(OrderData *)order {
+
+    OrderDetailViewController *detailVC = [[OrderDetailViewController alloc] initWithOrderData:order];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 - (void)chooseCurrentView:(UIButton *)sender {

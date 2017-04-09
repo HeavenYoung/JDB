@@ -26,7 +26,7 @@
     self = [super initWithFrame:frame];
     if (self) {
     
-        self.page = @"0";
+        self.page = @"1";
         [self placeSubview];
     }
     return self;
@@ -77,10 +77,19 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    OrderData *orderData = self.dataListArray[indexPath.row];
+
+    if ([self.delegate respondsToSelector:@selector(jumptoDetailWithOrderData:)]) {
+        [self.delegate jumptoDetailWithOrderData:orderData];
+    }
+}
+
 - (void)loadData {
     
     GetOrderListRequest *request = [[GetOrderListRequest alloc] init];
-    [request setParametersWithUserId:[GlobalManager sharedManager].userId acceptUserId:@"" page:self.page action:@"0"];
+    [request setParametersWithUserId:[GlobalManager sharedManager].userId acceptUserId:@"" page:self.page action:@"-1"];
     [request setSuccessBlock:^(id object, id responseObject) {
         
         DLog(@"-------订单请求成功-------");
@@ -91,7 +100,13 @@
         
         [self.dataListArray addObjectsFromArray:listData.listDataArray];
         
-        [self.tableView.footer endRefreshing];
+        if (self.dataListArray.count >= listData.orderCount) {
+            
+            [self.tableView.footer endRefreshingWithNoMoreData];
+        } else {
+            
+            [self.tableView.footer endRefreshing];
+        }
         
         [self.tableView reloadData];
     }];

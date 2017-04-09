@@ -651,6 +651,9 @@
 		BAA631881E98BCCF0078F60D /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA631871E98BCCF0078F60D /* AccountViewController.m */; };
 		BAA6318B1E98C6160078F60D /* ChangeUserPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */; };
 		BAA6318E1E98C6320078F60D /* ChangePayPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */; };
+		BADDF4C91E9A1D5900B37460 /* BillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4C81E9A1D5900B37460 /* BillTableViewCell.m */; };
+		BADDF4CC1E9A212C00B37460 /* BillData.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4CB1E9A212C00B37460 /* BillData.m */; };
+		BADDF4CF1E9A337E00B37460 /* CompletedOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4CE1E9A337E00B37460 /* CompletedOrderTableViewCell.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED68E2B81E989650003221A9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED68E2B71E989650003221A9 /* WebViewController.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
@@ -1844,6 +1847,12 @@
 		BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeUserPasswordViewController.m; sourceTree = "<group>"; };
 		BAA6318C1E98C6320078F60D /* ChangePayPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePayPasswordViewController.h; sourceTree = "<group>"; };
 		BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePayPasswordViewController.m; sourceTree = "<group>"; };
+		BADDF4C71E9A1D5900B37460 /* BillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillTableViewCell.h; sourceTree = "<group>"; };
+		BADDF4C81E9A1D5900B37460 /* BillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillTableViewCell.m; sourceTree = "<group>"; };
+		BADDF4CA1E9A212C00B37460 /* BillData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillData.h; sourceTree = "<group>"; };
+		BADDF4CB1E9A212C00B37460 /* BillData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillData.m; sourceTree = "<group>"; };
+		BADDF4CD1E9A337E00B37460 /* CompletedOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedOrderTableViewCell.h; sourceTree = "<group>"; };
+		BADDF4CE1E9A337E00B37460 /* CompletedOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedOrderTableViewCell.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED68E2B61E989650003221A9 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -3990,6 +3999,8 @@
 				5791A92D1E98DCE900DF59F8 /* ProcessingOrderViewCell.m */,
 				5791A9291E98DAAA00DF59F8 /* CompletedOrderView.h */,
 				5791A92A1E98DAAA00DF59F8 /* CompletedOrderView.m */,
+				BADDF4CD1E9A337E00B37460 /* CompletedOrderTableViewCell.h */,
+				BADDF4CE1E9A337E00B37460 /* CompletedOrderTableViewCell.m */,
 			);
 			path = Seek;
 			sourceTree = "<group>";
@@ -4028,6 +4039,8 @@
 			children = (
 				57BFC79C1E4B4C52001690E4 /* WalletData.h */,
 				57BFC79D1E4B4C52001690E4 /* WalletData.m */,
+				BADDF4CA1E9A212C00B37460 /* BillData.h */,
+				BADDF4CB1E9A212C00B37460 /* BillData.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -4255,6 +4268,7 @@
 		57CAC2681E02E85A005A3F7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BADDF4C61E9A1D2700B37460 /* Bill */,
 				5791A9221E98D73B00DF59F8 /* Seek */,
 				BAE45D101E97352A00133161 /* Setting */,
 				BA29BB1A1E95208C000D3A90 /* Common */,
@@ -4489,6 +4503,15 @@
 				BAA629CD1E98902D0078F60D /* BillResponse.m */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		BADDF4C61E9A1D2700B37460 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF4C71E9A1D5900B37460 /* BillTableViewCell.h */,
+				BADDF4C81E9A1D5900B37460 /* BillTableViewCell.m */,
+			);
+			path = Bill;
 			sourceTree = "<group>";
 		};
 		BAE45D101E97352A00133161 /* Setting */ = {
@@ -4898,6 +4921,7 @@
 				574AD4D11E49894A00BF099E /* EaseBubbleView+Video.m in Sources */,
 				57BFC7901E4B46FF001690E4 /* ExpressInfoData.m in Sources */,
 				57403FD21E1B9192007CF092 /* AFNetworkReachabilityManager.m in Sources */,
+				BADDF4C91E9A1D5900B37460 /* BillTableViewCell.m in Sources */,
 				574AD53A1E49894B00BF099E /* InvitationManager.m in Sources */,
 				57CAC29F1E02EADD005A3F7E /* ProfileViewController.m in Sources */,
 				574AD4BC1E49894A00BF099E /* EaseEmoji.m in Sources */,
@@ -4944,6 +4968,7 @@
 				187257EA1E750E2C007085C1 /* IQBarButtonItem.m in Sources */,
 				574078041E66AA1E0008DFA4 /* AliOrderPayData.m in Sources */,
 				574AD4951E49894A00BF099E /* EMSDWebImageDownloader.m in Sources */,
+				BADDF4CC1E9A212C00B37460 /* BillData.m in Sources */,
 				574AD4BB1E49894A00BF099E /* EaseMessageReadManager.m in Sources */,
 				57CAC27A1E02E85A005A3F7E /* MASCompositeConstraint.m in Sources */,
 				18D896231E836590004DFC14 /* SDCycleScrollView.m in Sources */,
@@ -5002,6 +5027,7 @@
 				57EE75ED1E272CA0004573F1 /* FMDatabaseQueue.m in Sources */,
 				574AD5271E49894B00BF099E /* ContactSelectionViewController.m in Sources */,
 				574AD4AB1E49894A00BF099E /* PSTGridLayoutInfo.m in Sources */,
+				BADDF4CF1E9A337E00B37460 /* CompletedOrderTableViewCell.m in Sources */,
 				57EE75EB1E272CA0004573F1 /* FMDatabaseAdditions.m in Sources */,
 				57CAC2771E02E85A005A3F7E /* LAContextManager.m in Sources */,
 				574AD53E1E49894B00BF099E /* EMTextView.m in Sources */,
