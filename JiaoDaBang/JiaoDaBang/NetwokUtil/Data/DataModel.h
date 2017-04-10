@@ -23,5 +23,6 @@
 #import "WalletData.h"
 #import "LocalPointListData.h"
 #import "OrderTypeListData.h"
+#import "BillData.h"
 
 #endif /* DataModel_h */

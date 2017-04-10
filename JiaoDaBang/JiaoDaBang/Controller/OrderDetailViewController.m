@@ -9,25 +9,75 @@
 #import "OrderDetailViewController.h"
 
 
-#define LABEL_INITIAL_HEIGHT 40
-#define FIRST_LABEL_X 10
-#define FIRST_LABEL_HEIGHT 60
+#define LABEL_INITIAL_HEIGHT 35
+#define FIRST_LABEL_X 20
+#define FIRST_LABEL_HEIGHT 90
 
 @interface OrderDetailViewController ()
+
+@property (nonatomic, strong) OrderData *orderData;
 
 @end
 
 @implementation OrderDetailViewController
 
+- (instancetype)initWithOrderData:(OrderData *)orderData {
+
+    self = [super init];
+    if (self) {
+        self.orderData = orderData;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"订单详情";
     self.view.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
     [self setUI];
     // Do any additional setup after loading the view.
 }
 
 - (void)setUI {
+    
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 280)];
+    backView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:backView];
+    
+    UIImageView *avatarView = [[UIImageView alloc] init];
+    avatarView.backgroundColor = [UIColor randomColor];
+    avatarView.userInteractionEnabled = YES;
+    avatarView.layer.cornerRadius = 30;
+    avatarView.layer.masksToBounds = YES;
+    [backView addSubview:avatarView];
+    [avatarView sd_setImageWithURL:[NSURL URLWithString:self.orderData.releaseAvatar]];
+    [avatarView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(@15);
+        make.left.equalTo(@10);
+        make.size.mas_equalTo(CGSizeMake(60, 60));
+    }];
+
+    UIImageView *sexView = [[UIImageView alloc] init];
+    sexView.backgroundColor = [UIColor randomColor];
+    sexView.userInteractionEnabled = YES;
+    [backView addSubview:sexView];
+    [sexView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(avatarView.mas_top).offset(10);
+        make.left.equalTo(avatarView.mas_right).offset(20);
+        make.size.mas_equalTo(CGSizeMake(12, 12));
+    }];
+    
+    UILabel *nicknameLabel = [[UILabel alloc] init];
+    nicknameLabel.font = [UIFont systemFontOfSize:16];
+    NSString *nameString = self.orderData.releaseNickName ? self.orderData.releaseNickName : self.orderData.releaseUserName;
+    nicknameLabel.text = nameString;
+    nicknameLabel.textColor = [UIColor blackColor];
+    [backView addSubview:nicknameLabel];
+    [nicknameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(sexView.mas_centerY);
+        make.left.equalTo(sexView.mas_right).offset(10);
+    }];
     
     UILabel *profileLabel = [[UILabel alloc] initWithFrame:CGRectMake(FIRST_LABEL_X, FIRST_LABEL_HEIGHT, SCREEN_WIDTH/4, LABEL_INITIAL_HEIGHT)];
     profileLabel.backgroundColor = [UIColor whiteColor];
@@ -64,18 +114,22 @@
     memoContent.backgroundColor = [UIColor whiteColor];
     memoContent.text = @"备注内容";
     
-    [self.view addSubview:profileLabel];
-    [self.view addSubview:profileLabelContent];
-    [self.view addSubview:location];
-    [self.view addSubview:locationContent];
-    [self.view addSubview:address];
-    [self.view addSubview:addressContent];
-    [self.view addSubview:money];
-    [self.view addSubview:moneyContent];
-    [self.view addSubview:memo];
-    [self.view addSubview:memoContent];
-
+    [backView addSubview:profileLabel];
+    [backView addSubview:profileLabelContent];
+    [backView addSubview:location];
+    [backView addSubview:locationContent];
+    [backView addSubview:address];
+    [backView addSubview:addressContent];
+    [backView addSubview:money];
+    [backView addSubview:moneyContent];
+    [backView addSubview:memo];
+    [backView addSubview:memoContent];
     
+    profileLabelContent.text = self.orderData.orderTypeName;
+    locationContent.text = [NSString stringWithFormat:@"%@%@",self.orderData.srcName,self.orderData.srcDetail];
+    addressContent.text = [NSString stringWithFormat:@"%@%@",self.orderData.desName,self.orderData.desDetail];
+    moneyContent.text = [NSString stringWithFormat:@"%@元" , self.orderData.money];
+    memoContent.text = self.orderData.remark;
 }
 
 - (void)didReceiveMemoryWarning {

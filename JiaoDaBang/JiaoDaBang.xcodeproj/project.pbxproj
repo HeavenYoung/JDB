@@ -520,6 +520,10 @@
 		57702A021E02E7C300FA9E95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57702A001E02E7C300FA9E95 /* LaunchScreen.storyboard */; };
 		57702A0D1E02E7C300FA9E95 /* JiaoDaBangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57702A0C1E02E7C300FA9E95 /* JiaoDaBangTests.m */; };
 		57702A181E02E7C300FA9E95 /* JiaoDaBangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57702A171E02E7C300FA9E95 /* JiaoDaBangUITests.m */; };
+		5791A9251E98D75700DF59F8 /* PublishInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791A9241E98D75700DF59F8 /* PublishInfoView.m */; };
+		5791A9281E98DA9600DF59F8 /* ProcessingOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791A9271E98DA9600DF59F8 /* ProcessingOrderView.m */; };
+		5791A92B1E98DAAA00DF59F8 /* CompletedOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791A92A1E98DAAA00DF59F8 /* CompletedOrderView.m */; };
+		5791A92E1E98DCE900DF59F8 /* ProcessingOrderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5791A92D1E98DCE900DF59F8 /* ProcessingOrderViewCell.m */; };
 		579E9D711E1B998000AAAD79 /* help_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D691E1B998000AAAD79 /* help_selected@2x.png */; };
 		579E9D721E1B998000AAAD79 /* help@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D6A1E1B998000AAAD79 /* help@2x.png */; };
 		579E9D731E1B998000AAAD79 /* home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 579E9D6B1E1B998000AAAD79 /* home_selected@2x.png */; };
@@ -644,6 +648,17 @@
 		BAA629CB1E988B140078F60D /* WithdrawRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629CA1E988B140078F60D /* WithdrawRequest.m */; };
 		BAA629CE1E98902D0078F60D /* BillResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629CD1E98902D0078F60D /* BillResponse.m */; };
 		BAA629D11E98904B0078F60D /* BillRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629D01E98904B0078F60D /* BillRequest.m */; };
+		BAA631881E98BCCF0078F60D /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA631871E98BCCF0078F60D /* AccountViewController.m */; };
+		BAA6318B1E98C6160078F60D /* ChangeUserPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */; };
+		BAA6318E1E98C6320078F60D /* ChangePayPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */; };
+		BADDF4C91E9A1D5900B37460 /* BillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4C81E9A1D5900B37460 /* BillTableViewCell.m */; };
+		BADDF4CC1E9A212C00B37460 /* BillData.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4CB1E9A212C00B37460 /* BillData.m */; };
+		BADDF4CF1E9A337E00B37460 /* CompletedOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4CE1E9A337E00B37460 /* CompletedOrderTableViewCell.m */; };
+		BADDF4F71E9BB02E00B37460 /* OrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4F61E9BB02E00B37460 /* OrderListViewController.m */; };
+		BADDF4FB1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4FA1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m */; };
+		BADDF4FE1E9BB21800B37460 /* AcceptOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4FD1E9BB21800B37460 /* AcceptOrderTableViewCell.m */; };
+		BADDF5011E9BB33400B37460 /* ReleaseOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF5001E9BB33400B37460 /* ReleaseOrderViewController.m */; };
+		BADDF5041E9BB35100B37460 /* AcceptOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF5031E9BB35100B37460 /* AcceptOrderViewController.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED68E2B81E989650003221A9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED68E2B71E989650003221A9 /* WebViewController.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
@@ -1576,6 +1591,14 @@
 		57702A131E02E7C300FA9E95 /* JiaoDaBangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaoDaBangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57702A171E02E7C300FA9E95 /* JiaoDaBangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiaoDaBangUITests.m; sourceTree = "<group>"; };
 		57702A191E02E7C300FA9E95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5791A9231E98D75700DF59F8 /* PublishInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishInfoView.h; sourceTree = "<group>"; };
+		5791A9241E98D75700DF59F8 /* PublishInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishInfoView.m; sourceTree = "<group>"; };
+		5791A9261E98DA9600DF59F8 /* ProcessingOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingOrderView.h; sourceTree = "<group>"; };
+		5791A9271E98DA9600DF59F8 /* ProcessingOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingOrderView.m; sourceTree = "<group>"; };
+		5791A9291E98DAAA00DF59F8 /* CompletedOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedOrderView.h; sourceTree = "<group>"; };
+		5791A92A1E98DAAA00DF59F8 /* CompletedOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedOrderView.m; sourceTree = "<group>"; };
+		5791A92C1E98DCE900DF59F8 /* ProcessingOrderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingOrderViewCell.h; sourceTree = "<group>"; };
+		5791A92D1E98DCE900DF59F8 /* ProcessingOrderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingOrderViewCell.m; sourceTree = "<group>"; };
 		579E9D691E1B998000AAAD79 /* help_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help_selected@2x.png"; sourceTree = "<group>"; };
 		579E9D6A1E1B998000AAAD79 /* help@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help@2x.png"; sourceTree = "<group>"; };
 		579E9D6B1E1B998000AAAD79 /* home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_selected@2x.png"; sourceTree = "<group>"; };
@@ -1823,6 +1846,28 @@
 		BAA629CD1E98902D0078F60D /* BillResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillResponse.m; sourceTree = "<group>"; };
 		BAA629CF1E98904B0078F60D /* BillRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillRequest.h; sourceTree = "<group>"; };
 		BAA629D01E98904B0078F60D /* BillRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillRequest.m; sourceTree = "<group>"; };
+		BAA631861E98BCCF0078F60D /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		BAA631871E98BCCF0078F60D /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		BAA631891E98C6160078F60D /* ChangeUserPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeUserPasswordViewController.h; sourceTree = "<group>"; };
+		BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeUserPasswordViewController.m; sourceTree = "<group>"; };
+		BAA6318C1E98C6320078F60D /* ChangePayPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePayPasswordViewController.h; sourceTree = "<group>"; };
+		BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePayPasswordViewController.m; sourceTree = "<group>"; };
+		BADDF4C71E9A1D5900B37460 /* BillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillTableViewCell.h; sourceTree = "<group>"; };
+		BADDF4C81E9A1D5900B37460 /* BillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillTableViewCell.m; sourceTree = "<group>"; };
+		BADDF4CA1E9A212C00B37460 /* BillData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillData.h; sourceTree = "<group>"; };
+		BADDF4CB1E9A212C00B37460 /* BillData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillData.m; sourceTree = "<group>"; };
+		BADDF4CD1E9A337E00B37460 /* CompletedOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedOrderTableViewCell.h; sourceTree = "<group>"; };
+		BADDF4CE1E9A337E00B37460 /* CompletedOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedOrderTableViewCell.m; sourceTree = "<group>"; };
+		BADDF4F51E9BB02E00B37460 /* OrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListViewController.h; sourceTree = "<group>"; };
+		BADDF4F61E9BB02E00B37460 /* OrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListViewController.m; sourceTree = "<group>"; };
+		BADDF4F91E9BB0E100B37460 /* ReleaseOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseOrderTableViewCell.h; sourceTree = "<group>"; };
+		BADDF4FA1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseOrderTableViewCell.m; sourceTree = "<group>"; };
+		BADDF4FC1E9BB21800B37460 /* AcceptOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptOrderTableViewCell.h; sourceTree = "<group>"; };
+		BADDF4FD1E9BB21800B37460 /* AcceptOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptOrderTableViewCell.m; sourceTree = "<group>"; };
+		BADDF4FF1E9BB33400B37460 /* ReleaseOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseOrderViewController.h; sourceTree = "<group>"; };
+		BADDF5001E9BB33400B37460 /* ReleaseOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseOrderViewController.m; sourceTree = "<group>"; };
+		BADDF5021E9BB35100B37460 /* AcceptOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptOrderViewController.h; sourceTree = "<group>"; };
+		BADDF5031E9BB35100B37460 /* AcceptOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptOrderViewController.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED68E2B61E989650003221A9 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -3958,6 +4003,23 @@
 			path = JiaoDaBangUITests;
 			sourceTree = "<group>";
 		};
+		5791A9221E98D73B00DF59F8 /* Seek */ = {
+			isa = PBXGroup;
+			children = (
+				5791A9231E98D75700DF59F8 /* PublishInfoView.h */,
+				5791A9241E98D75700DF59F8 /* PublishInfoView.m */,
+				5791A9261E98DA9600DF59F8 /* ProcessingOrderView.h */,
+				5791A9271E98DA9600DF59F8 /* ProcessingOrderView.m */,
+				5791A92C1E98DCE900DF59F8 /* ProcessingOrderViewCell.h */,
+				5791A92D1E98DCE900DF59F8 /* ProcessingOrderViewCell.m */,
+				5791A9291E98DAAA00DF59F8 /* CompletedOrderView.h */,
+				5791A92A1E98DAAA00DF59F8 /* CompletedOrderView.m */,
+				BADDF4CD1E9A337E00B37460 /* CompletedOrderTableViewCell.h */,
+				BADDF4CE1E9A337E00B37460 /* CompletedOrderTableViewCell.m */,
+			);
+			path = Seek;
+			sourceTree = "<group>";
+		};
 		579E9D611E1B983400AAAD79 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -3992,6 +4054,8 @@
 			children = (
 				57BFC79C1E4B4C52001690E4 /* WalletData.h */,
 				57BFC79D1E4B4C52001690E4 /* WalletData.m */,
+				BADDF4CA1E9A212C00B37460 /* BillData.h */,
+				BADDF4CB1E9A212C00B37460 /* BillData.m */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -4061,6 +4125,18 @@
 				BAA629BC1E97BDDA0078F60D /* BillViewController.m */,
 				ED885F141E97CE4600442DA4 /* OrderDetailViewController.h */,
 				ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */,
+				BAA631861E98BCCF0078F60D /* AccountViewController.h */,
+				BAA631871E98BCCF0078F60D /* AccountViewController.m */,
+				BAA631891E98C6160078F60D /* ChangeUserPasswordViewController.h */,
+				BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */,
+				BAA6318C1E98C6320078F60D /* ChangePayPasswordViewController.h */,
+				BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */,
+				BADDF4F51E9BB02E00B37460 /* OrderListViewController.h */,
+				BADDF4F61E9BB02E00B37460 /* OrderListViewController.m */,
+				BADDF4FF1E9BB33400B37460 /* ReleaseOrderViewController.h */,
+				BADDF5001E9BB33400B37460 /* ReleaseOrderViewController.m */,
+				BADDF5021E9BB35100B37460 /* AcceptOrderViewController.h */,
+				BADDF5031E9BB35100B37460 /* AcceptOrderViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4213,6 +4289,9 @@
 		57CAC2681E02E85A005A3F7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BADDF4F81E9BB07200B37460 /* Order */,
+				BADDF4C61E9A1D2700B37460 /* Bill */,
+				5791A9221E98D73B00DF59F8 /* Seek */,
 				BAE45D101E97352A00133161 /* Setting */,
 				BA29BB1A1E95208C000D3A90 /* Common */,
 				571D20911E52AECE00BF3334 /* User */,
@@ -4446,6 +4525,26 @@
 				BAA629CD1E98902D0078F60D /* BillResponse.m */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		BADDF4C61E9A1D2700B37460 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF4C71E9A1D5900B37460 /* BillTableViewCell.h */,
+				BADDF4C81E9A1D5900B37460 /* BillTableViewCell.m */,
+			);
+			path = Bill;
+			sourceTree = "<group>";
+		};
+		BADDF4F81E9BB07200B37460 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF4F91E9BB0E100B37460 /* ReleaseOrderTableViewCell.h */,
+				BADDF4FA1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m */,
+				BADDF4FC1E9BB21800B37460 /* AcceptOrderTableViewCell.h */,
+				BADDF4FD1E9BB21800B37460 /* AcceptOrderTableViewCell.m */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 		BAE45D101E97352A00133161 /* Setting */ = {
@@ -4798,6 +4897,7 @@
 				574077FD1E66A9330008DFA4 /* WXApiResponseHandler.m in Sources */,
 				57CAC2901E02E920005A3F7E /* MainViewController.m in Sources */,
 				574AD4A71E49894A00BF099E /* PSTCollectionViewFlowLayout.m in Sources */,
+				5791A9281E98DA9600DF59F8 /* ProcessingOrderView.m in Sources */,
 				574AD5281E49894B00BF099E /* ContactView.m in Sources */,
 				574AD48F1E49894A00BF099E /* MWTapDetectingView.m in Sources */,
 				574AD4A81E49894A00BF099E /* PSTCollectionViewItemKey.m in Sources */,
@@ -4854,12 +4954,14 @@
 				574AD4D11E49894A00BF099E /* EaseBubbleView+Video.m in Sources */,
 				57BFC7901E4B46FF001690E4 /* ExpressInfoData.m in Sources */,
 				57403FD21E1B9192007CF092 /* AFNetworkReachabilityManager.m in Sources */,
+				BADDF4C91E9A1D5900B37460 /* BillTableViewCell.m in Sources */,
 				574AD53A1E49894B00BF099E /* InvitationManager.m in Sources */,
 				57CAC29F1E02EADD005A3F7E /* ProfileViewController.m in Sources */,
 				574AD4BC1E49894A00BF099E /* EaseEmoji.m in Sources */,
 				187257E41E750E2C007085C1 /* IQUIView+Hierarchy.m in Sources */,
 				57BFC78A1E4B4588001690E4 /* UserInfoData.m in Sources */,
 				574AD52B1E49894B00BF099E /* GroupListViewController.m in Sources */,
+				BAA6318E1E98C6320078F60D /* ChangePayPasswordViewController.m in Sources */,
 				57EE76081E272CA0004573F1 /* UIImage+GIF.m in Sources */,
 				574AD4671E49894A00BF099E /* AppDelegate+EaseMob.m in Sources */,
 				574AD4C01E49894A00BF099E /* FixFopen.c in Sources */,
@@ -4867,6 +4969,7 @@
 				187257971E750DF4007085C1 /* ModifyPhoneNumberViewController.m in Sources */,
 				574AD5351E49894B00BF099E /* AddFriendCell.m in Sources */,
 				574AD4731E49894A00BF099E /* EMVoiceConverter.mm in Sources */,
+				BADDF4FE1E9BB21800B37460 /* AcceptOrderTableViewCell.m in Sources */,
 				5705F9E61E82A8E2002F9FB7 /* AppraiseResponse.m in Sources */,
 				57EE75F81E272CA0004573F1 /* RefreshStateNormalHeader.m in Sources */,
 				574AD4CE1E49894A00BF099E /* EaseBubbleView+Image.m in Sources */,
@@ -4888,6 +4991,7 @@
 				574AD5441E49894B00BF099E /* XHMessageTextView.m in Sources */,
 				187257EB1E750E2C007085C1 /* IQPreviousNextView.m in Sources */,
 				574AD46C1E49894A00BF099E /* EMCDDeviceManager+Media.m in Sources */,
+				BADDF5011E9BB33400B37460 /* ReleaseOrderViewController.m in Sources */,
 				18D8962F1E8365B1004DFC14 /* JDHomeViewController.m in Sources */,
 				574AD5301E49894B00BF099E /* ChatroomDetailViewController.m in Sources */,
 				574AD5291E49894B00BF099E /* CreateGroupViewController.m in Sources */,
@@ -4899,6 +5003,7 @@
 				187257EA1E750E2C007085C1 /* IQBarButtonItem.m in Sources */,
 				574078041E66AA1E0008DFA4 /* AliOrderPayData.m in Sources */,
 				574AD4951E49894A00BF099E /* EMSDWebImageDownloader.m in Sources */,
+				BADDF4CC1E9A212C00B37460 /* BillData.m in Sources */,
 				574AD4BB1E49894A00BF099E /* EaseMessageReadManager.m in Sources */,
 				57CAC27A1E02E85A005A3F7E /* MASCompositeConstraint.m in Sources */,
 				18D896231E836590004DFC14 /* SDCycleScrollView.m in Sources */,
@@ -4928,6 +5033,7 @@
 				57189A321E7F7EF300F6E621 /* RaiseLabelListResponse.m in Sources */,
 				574AD4961E49894A00BF099E /* EMSDWebImageDownloaderOperation.m in Sources */,
 				187257961E750DF4007085C1 /* ModifyNicknameViewController.m in Sources */,
+				5791A9251E98D75700DF59F8 /* PublishInfoView.m in Sources */,
 				187257E71E750E2C007085C1 /* IQKeyboardManager.m in Sources */,
 				574AD5B71E49894B00BF099E /* EMRotbotChatViewCell.m in Sources */,
 				57CAC27B1E02E85A005A3F7E /* MASConstraint.m in Sources */,
@@ -4949,12 +5055,14 @@
 				BAA629BA1E97BD9C0078F60D /* WithdrawViewController.m in Sources */,
 				57F44E561E4CABCF00F62B16 /* UserRegisterRequest.m in Sources */,
 				574AD4B31E49894A00BF099E /* EaseUserModel.m in Sources */,
+				BAA6318B1E98C6160078F60D /* ChangeUserPasswordViewController.m in Sources */,
 				574AD4901E49894A00BF099E /* MWZoomingScrollView.m in Sources */,
 				57EE760B1E272CA0004573F1 /* UIImageView+HighlightedWebCache.m in Sources */,
 				574AD5B81E49894B00BF099E /* RobotChatViewController.m in Sources */,
 				57EE75ED1E272CA0004573F1 /* FMDatabaseQueue.m in Sources */,
 				574AD5271E49894B00BF099E /* ContactSelectionViewController.m in Sources */,
 				574AD4AB1E49894A00BF099E /* PSTGridLayoutInfo.m in Sources */,
+				BADDF4CF1E9A337E00B37460 /* CompletedOrderTableViewCell.m in Sources */,
 				57EE75EB1E272CA0004573F1 /* FMDatabaseAdditions.m in Sources */,
 				57CAC2771E02E85A005A3F7E /* LAContextManager.m in Sources */,
 				574AD53E1E49894B00BF099E /* EMTextView.m in Sources */,
@@ -5022,6 +5130,7 @@
 				571D20941E52AECE00BF3334 /* InfoInputView.m in Sources */,
 				187257981E750DF4007085C1 /* NewPhoneNumberViewController.m in Sources */,
 				57EE76061E272CA0004573F1 /* SDWebImagePrefetcher.m in Sources */,
+				BADDF4FB1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m in Sources */,
 				577029F71E02E7C300FA9E95 /* AppDelegate.m in Sources */,
 				5705F9E91E82AC80002F9FB7 /* AppraiseRequest.m in Sources */,
 				57CAC2851E02E85A005A3F7E /* MJFoundation.m in Sources */,
@@ -5037,6 +5146,7 @@
 				57F44E6A1E4CB6F100F62B16 /* OrderTypeRequest.m in Sources */,
 				187257F21E750E2C007085C1 /* NSString+Helper.m in Sources */,
 				BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */,
+				BAA631881E98BCCF0078F60D /* AccountViewController.m in Sources */,
 				574AD4BA1E49894A00BF099E /* EaseConvertToCommonEmoticonsHelper.m in Sources */,
 				574AD5BC1E49894B00BF099E /* DebugViewController.m in Sources */,
 				57EE75FD1E272CA0004573F1 /* RefreshConst.m in Sources */,
@@ -5045,6 +5155,7 @@
 				57CAC27F1E02E85A005A3F7E /* MASViewConstraint.m in Sources */,
 				570A06D01E951420006E2089 /* SettingViewController.m in Sources */,
 				1872579C1E750DF4007085C1 /* WalletTableViewController.m in Sources */,
+				BADDF4F71E9BB02E00B37460 /* OrderListViewController.m in Sources */,
 				187257EC1E750E2C007085C1 /* IQTitleBarButtonItem.m in Sources */,
 				574AD4D91E49894A00BF099E /* EaseFacialView.m in Sources */,
 				18D896221E836590004DFC14 /* SDCollectionViewCell.m in Sources */,
@@ -5084,6 +5195,7 @@
 				574AD5331E49894B00BF099E /* ContactListSelectViewController.m in Sources */,
 				574AD5BA1E49894B00BF099E /* RobotManager.m in Sources */,
 				5705F9F21E82BEE8002F9FB7 /* UserUpdatePasswordResponse.m in Sources */,
+				5791A92E1E98DCE900DF59F8 /* ProcessingOrderViewCell.m in Sources */,
 				57EE76041E272CA0004573F1 /* SDWebImageDownloaderOperation.m in Sources */,
 				574AD4991E49894A00BF099E /* MKAnnotationView+EMWebCache.m in Sources */,
 				57EE758C1E272B05004573F1 /* LoginViewController.m in Sources */,
@@ -5098,6 +5210,7 @@
 				5740781E1E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m in Sources */,
 				187257F61E750E2C007085C1 /* YCXMenuItem.m in Sources */,
 				18D896241E836590004DFC14 /* UIView+SDExtension.m in Sources */,
+				BADDF5041E9BB35100B37460 /* AcceptOrderViewController.m in Sources */,
 				574AD5BF1E49894B00BF099E /* SettingsViewController.m in Sources */,
 				57EE75F21E272CA0004573F1 /* RefreshFooter.m in Sources */,
 				57EE76031E272CA0004573F1 /* SDWebImageDownloader.m in Sources */,
@@ -5177,6 +5290,7 @@
 				57EE760D1E272CA0004573F1 /* UIView+WebCacheOperation.m in Sources */,
 				57EE75FC1E272CA0004573F1 /* UIView+YTFrame.m in Sources */,
 				57EE76071E272CA0004573F1 /* UIButton+WebCache.m in Sources */,
+				5791A92B1E98DAAA00DF59F8 /* CompletedOrderView.m in Sources */,
 				18D8961E1E836590004DFC14 /* TAAbstractDotView.m in Sources */,
 				574AD4811E49894A00BF099E /* MJRefreshGifHeader.m in Sources */,
 				574AD5311E49894B00BF099E /* ChatroomListViewController.m in Sources */,

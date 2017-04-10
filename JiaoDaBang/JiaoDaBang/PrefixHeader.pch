@@ -20,7 +20,7 @@
 
 #import "MacroInfo.h"
 #import "NetWorkHeader.h"
-
+#import "Refresh.h"
 #import "Masonry.h"
 #import "GlobalManager.h"
 #import "MBProgressHUD.h"

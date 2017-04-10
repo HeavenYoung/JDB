@@ -127,12 +127,47 @@
         make.right.equalTo(self.view.mas_right);
         make.height.equalTo(@60);
     }];
+    
+    if ([Tools iSNull:[GlobalManager sharedManager].userInfoData.userPayPwd]) {
+
+        UIAlertController *payController =
+        [UIAlertController alertControllerWithTitle:@"提示"
+                                            message:@"您还没有设置支付密码，请设置完成后再进行余额支付。"
+                                     preferredStyle:UIAlertControllerStyleAlert ];
+        
+        //添加取消到UIAlertController中
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil];
+        [payController addAction:cancelAction];
+        
+        //添加确定到UIAlertController中
+        UIAlertAction *OKAction = [UIAlertAction actionWithTitle:@"设置支付密码" style:UIAlertActionStyleDefault handler:nil];
+        [payController addAction:OKAction];
+        
+        [self presentViewController:payController animated:YES completion:nil];
+    }
 }
 
 - (void)withDrawBtnDidClicked {
+    if (![Tools iSNull:[GlobalManager sharedManager].userInfoData.userAliAccount]) {
+        WithdrawViewController *withdrawVC = [[WithdrawViewController alloc] initWithBalanceString:self.balanceLabel.text];
+        [self.navigationController pushViewController:withdrawVC animated:YES];
 
-    WithdrawViewController *withdrawVC = [[WithdrawViewController alloc] initWithBalanceString:self.balanceLabel.text];
-    [self.navigationController pushViewController:withdrawVC animated:YES];
+    }else {
+        UIAlertController *alertController =
+        [UIAlertController alertControllerWithTitle:@"提示"
+                    message:@"您还未实名认证，为了资金安全，请实名认证后再进行提现操作"
+                    preferredStyle:UIAlertControllerStyleAlert ];
+        
+        //添加取消到UIAlertController中
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:cancelAction];
+        
+        //添加确定到UIAlertController中
+        UIAlertAction *OKAction = [UIAlertAction actionWithTitle:@"认证" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:OKAction];
+        
+        [self presentViewController:alertController animated:YES completion:nil];
+    }
 }
 
 - (void)billBtnDidClicked {

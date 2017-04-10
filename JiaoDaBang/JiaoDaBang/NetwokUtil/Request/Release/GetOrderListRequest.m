@@ -43,7 +43,7 @@
     NSMutableDictionary *mDic = [NSMutableDictionary dictionaryWithCapacity:20];
     
     [mDic setObject:[Tools encryptWithPlainText:self.userId] forKey:@"releaseuserid"];
-    [mDic setObject:[Tools encryptWithPlainText:self.acceptUserId] forKey:@"acceptuserid"];
+//    [mDic setObject:[Tools encryptWithPlainText:self.acceptUserId] forKey:@"acceptuserid"];
     [mDic setObject:[Tools encryptWithPlainText:self.page] forKey:@"page"];
     [mDic setObject:[Tools encryptWithPlainText:self.action] forKey:@"action"];
     

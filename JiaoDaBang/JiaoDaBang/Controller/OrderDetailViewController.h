@@ -10,4 +10,6 @@
 
 @interface OrderDetailViewController : UIViewController
 
+- (instancetype)initWithOrderData:(OrderData *)orderData;
+
 @end
