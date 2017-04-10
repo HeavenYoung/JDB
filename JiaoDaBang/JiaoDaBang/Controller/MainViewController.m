@@ -24,7 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [UITabBar appearance].barTintColor = RGBACOLOR(171, 204, 34, 1);
+    [UITabBar appearance].barTintColor = CustomGreen;
     [UITabBar appearance].tintColor = [UIColor whiteColor];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logoutOperation) name:NOTIFCATION_USER_SETTINGLOGOUT object:nil];

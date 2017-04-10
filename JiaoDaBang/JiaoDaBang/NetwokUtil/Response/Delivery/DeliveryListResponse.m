@@ -27,7 +27,7 @@
             
             [dataArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 
-                DeliveryInfoData *infoData = [[BannerInfoData alloc] init];
+                DeliveryInfoData *infoData = [[DeliveryInfoData alloc] init];
                 infoData.deliveryid = [obj objectForKey:@"deliveryid"];
                 infoData.deliverytype = [obj objectForKey:@"deliverytype"];
                 infoData.phoneNum = [obj objectForKey:@"phone_num"];

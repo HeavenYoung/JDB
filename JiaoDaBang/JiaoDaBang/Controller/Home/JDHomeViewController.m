@@ -12,6 +12,8 @@
 #import "SDCycleScrollView.h"
 #import "LXSegmentScrollView.h"
 #import "SendTableViewCell.h"
+#import "ExpressListViewController.h"
+
 // 自定义按钮 上下
 #import "RightButtonNew.h"
 #import "SDCycleScrollView.h"
@@ -384,6 +386,8 @@ CGFloat const kScrollAspectRatio = 1 / 1.8; // 轮播图高宽比
 // 更多点击事件
 - (void)moreButtonClick:(UIButton *)sender {
     NSLog(@"更多··············");
+    ExpressListViewController *expressVC = [[ExpressListViewController alloc] init];
+    [self.navigationController pushViewController:expressVC animated:YES];
 }
 
 /*-------求助-------*/

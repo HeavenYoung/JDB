@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WXApiManager.h"
-
+// com.jiaodabang.xueshengbang.www-
 @interface AppDelegate ()
 
 @end
