@@ -10,11 +10,14 @@
 #import "AboutViewController.h"
 #import "SettingInfoView.h"
 #import "SettingInfoViewController.h"
+#import "YTNavigationController.h"
+#import "EditAvatarViewController.h"
+#import "UIImageView+WebCache.h"
 
 @interface IndividualProfileViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *profileTableView;
-
+@property (nonatomic, strong) UIImageView *avatarView;
 @property (nonatomic, strong) SettingInfoView *nickName;
 @property (nonatomic, strong) SettingInfoView *phoneNumber;
 @property (nonatomic, strong) SettingInfoView *gender;
@@ -28,7 +31,14 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshUserhead) name:NOTIFCATION_USERHEAD_INFOCHANGE object:nil];
+
     [self setupUI];
+}
+
+- (void)refreshUserhead {
+    
+    [self.avatarView sd_setImageWithURL:[GlobalManager sharedManager].userInfoData.userAvatar placeholderImage:[UIImage imageNamed:@""] options:SDWebImageRefreshCached];
 }
 
 - (void)setupUI{
@@ -56,12 +66,13 @@
     avatarView.layer.cornerRadius = 30;
     avatarView.layer.masksToBounds = YES;
     [backView addSubview:avatarView];
-    [avatarView sd_setImageWithURL:[NSURL URLWithString:[GlobalManager sharedManager].userInfoData.userAvatar]];
+    [avatarView sd_setImageWithURL:[GlobalManager sharedManager].userInfoData.userAvatar placeholderImage:[UIImage imageNamed:@""] options:SDWebImageRefreshCached];
     [avatarView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(backView.mas_centerY);
         make.right.equalTo(backView.mas_right).offset(-20);
         make.size.mas_equalTo(CGSizeMake(60, 60));
     }];
+    self.avatarView = avatarView;
     
     __weak typeof(self) weakSelf = self;
     
@@ -190,7 +201,13 @@
 
 - (void)avtarImage {
 
+    EditAvatarViewController *editAvatarViewController = [[EditAvatarViewController alloc] init];
+    [editAvatarViewController showImagePicker];
+    YTNavigationController *navAvatar = [[YTNavigationController alloc] initWithRootViewController:editAvatarViewController];
+    navAvatar.modalPresentationStyle = UIModalPresentationOverFullScreen;
     
+    [self presentViewController:navAvatar animated:YES completion:nil];
+
 }
 
 /*

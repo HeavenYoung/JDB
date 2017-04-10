@@ -659,6 +659,12 @@
 		BADDF4FE1E9BB21800B37460 /* AcceptOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4FD1E9BB21800B37460 /* AcceptOrderTableViewCell.m */; };
 		BADDF5011E9BB33400B37460 /* ReleaseOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF5001E9BB33400B37460 /* ReleaseOrderViewController.m */; };
 		BADDF5041E9BB35100B37460 /* AcceptOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF5031E9BB35100B37460 /* AcceptOrderViewController.m */; };
+		BADDF5141E9BC73900B37460 /* bg_piccrop.png in Resources */ = {isa = PBXBuildFile; fileRef = BADDF50B1E9BC73800B37460 /* bg_piccrop.png */; };
+		BADDF5151E9BC73900B37460 /* CutPictureTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF50D1E9BC73800B37460 /* CutPictureTools.m */; };
+		BADDF5161E9BC73900B37460 /* PhotoAlbumOrCameraHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF50F1E9BC73800B37460 /* PhotoAlbumOrCameraHandler.m */; };
+		BADDF5171E9BC73900B37460 /* UpLoadHeadImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF5111E9BC73800B37460 /* UpLoadHeadImageHandler.m */; };
+		BADDF5181E9BC73900B37460 /* VPImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF5131E9BC73800B37460 /* VPImageCropperViewController.m */; };
+		BADDF51B1E9BC7BF00B37460 /* EditAvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF51A1E9BC7BF00B37460 /* EditAvatarViewController.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED68E2B81E989650003221A9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED68E2B71E989650003221A9 /* WebViewController.m */; };
 		ED885F101E97B57100442DA4 /* IndividualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* IndividualProfileViewController.m */; };
@@ -1868,6 +1874,17 @@
 		BADDF5001E9BB33400B37460 /* ReleaseOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseOrderViewController.m; sourceTree = "<group>"; };
 		BADDF5021E9BB35100B37460 /* AcceptOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptOrderViewController.h; sourceTree = "<group>"; };
 		BADDF5031E9BB35100B37460 /* AcceptOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptOrderViewController.m; sourceTree = "<group>"; };
+		BADDF50B1E9BC73800B37460 /* bg_piccrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_piccrop.png; sourceTree = "<group>"; };
+		BADDF50C1E9BC73800B37460 /* CutPictureTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CutPictureTools.h; sourceTree = "<group>"; };
+		BADDF50D1E9BC73800B37460 /* CutPictureTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CutPictureTools.m; sourceTree = "<group>"; };
+		BADDF50E1E9BC73800B37460 /* PhotoAlbumOrCameraHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumOrCameraHandler.h; sourceTree = "<group>"; };
+		BADDF50F1E9BC73800B37460 /* PhotoAlbumOrCameraHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumOrCameraHandler.m; sourceTree = "<group>"; };
+		BADDF5101E9BC73800B37460 /* UpLoadHeadImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpLoadHeadImageHandler.h; sourceTree = "<group>"; };
+		BADDF5111E9BC73800B37460 /* UpLoadHeadImageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpLoadHeadImageHandler.m; sourceTree = "<group>"; };
+		BADDF5121E9BC73800B37460 /* VPImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPImageCropperViewController.h; sourceTree = "<group>"; };
+		BADDF5131E9BC73800B37460 /* VPImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPImageCropperViewController.m; sourceTree = "<group>"; };
+		BADDF5191E9BC7BF00B37460 /* EditAvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditAvatarViewController.h; sourceTree = "<group>"; };
+		BADDF51A1E9BC7BF00B37460 /* EditAvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditAvatarViewController.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED68E2B61E989650003221A9 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -4113,6 +4130,8 @@
 				57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */,
 				ED885F0E1E97B57100442DA4 /* IndividualProfileViewController.h */,
 				ED885F0F1E97B57100442DA4 /* IndividualProfileViewController.m */,
+				BADDF5191E9BC7BF00B37460 /* EditAvatarViewController.h */,
+				BADDF51A1E9BC7BF00B37460 /* EditAvatarViewController.m */,
 				57A090F81E97D54A00793D4A /* SettingInfoViewController.h */,
 				57A090F91E97D54A00793D4A /* SettingInfoViewController.m */,
 				BAA629B51E97BD410078F60D /* WalletViewController.h */,
@@ -4289,6 +4308,7 @@
 		57CAC2681E02E85A005A3F7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BADDF50A1E9BC73800B37460 /* ProfileHeadImage */,
 				BADDF4F81E9BB07200B37460 /* Order */,
 				BADDF4C61E9A1D2700B37460 /* Bill */,
 				5791A9221E98D73B00DF59F8 /* Seek */,
@@ -4547,6 +4567,22 @@
 			path = Order;
 			sourceTree = "<group>";
 		};
+		BADDF50A1E9BC73800B37460 /* ProfileHeadImage */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF50B1E9BC73800B37460 /* bg_piccrop.png */,
+				BADDF50C1E9BC73800B37460 /* CutPictureTools.h */,
+				BADDF50D1E9BC73800B37460 /* CutPictureTools.m */,
+				BADDF50E1E9BC73800B37460 /* PhotoAlbumOrCameraHandler.h */,
+				BADDF50F1E9BC73800B37460 /* PhotoAlbumOrCameraHandler.m */,
+				BADDF5101E9BC73800B37460 /* UpLoadHeadImageHandler.h */,
+				BADDF5111E9BC73800B37460 /* UpLoadHeadImageHandler.m */,
+				BADDF5121E9BC73800B37460 /* VPImageCropperViewController.h */,
+				BADDF5131E9BC73800B37460 /* VPImageCropperViewController.m */,
+			);
+			path = ProfileHeadImage;
+			sourceTree = "<group>";
+		};
 		BAE45D101E97352A00133161 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -4724,6 +4760,7 @@
 				574AD4FB1E49894A00BF099E /* faceDelete@2x.png in Resources */,
 				574AD57B1E49894B00BF099E /* icon_013_cover.png in Resources */,
 				574AD5A01E49894B00BF099E /* group_participant_add@2x.png in Resources */,
+				BADDF5141E9BC73900B37460 /* bg_piccrop.png in Resources */,
 				574AD4EB1E49894A00BF099E /* chatBar_colorMore_photo@2x.png in Resources */,
 				574AD55F1E49894B00BF099E /* chat_location_preview@2x.png in Resources */,
 				574AD5A61E49894B00BF099E /* tabbar_chats.png in Resources */,
@@ -4897,6 +4934,7 @@
 				574077FD1E66A9330008DFA4 /* WXApiResponseHandler.m in Sources */,
 				57CAC2901E02E920005A3F7E /* MainViewController.m in Sources */,
 				574AD4A71E49894A00BF099E /* PSTCollectionViewFlowLayout.m in Sources */,
+				BADDF5161E9BC73900B37460 /* PhotoAlbumOrCameraHandler.m in Sources */,
 				5791A9281E98DA9600DF59F8 /* ProcessingOrderView.m in Sources */,
 				574AD5281E49894B00BF099E /* ContactView.m in Sources */,
 				574AD48F1E49894A00BF099E /* MWTapDetectingView.m in Sources */,
@@ -5002,6 +5040,7 @@
 				187257E81E750E2C007085C1 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				187257EA1E750E2C007085C1 /* IQBarButtonItem.m in Sources */,
 				574078041E66AA1E0008DFA4 /* AliOrderPayData.m in Sources */,
+				BADDF5171E9BC73900B37460 /* UpLoadHeadImageHandler.m in Sources */,
 				574AD4951E49894A00BF099E /* EMSDWebImageDownloader.m in Sources */,
 				BADDF4CC1E9A212C00B37460 /* BillData.m in Sources */,
 				574AD4BB1E49894A00BF099E /* EaseMessageReadManager.m in Sources */,
@@ -5091,7 +5130,9 @@
 				574AD51C1E49894A00BF099E /* SRRefreshView.m in Sources */,
 				574077F51E66A9330008DFA4 /* PayObjc.m in Sources */,
 				574077F71E66A9330008DFA4 /* PayResultViewController.m in Sources */,
+				BADDF5151E9BC73900B37460 /* CutPictureTools.m in Sources */,
 				574AD4AD1E49894A00BF099E /* PSTGridLayoutRow.m in Sources */,
+				BADDF5181E9BC73900B37460 /* VPImageCropperViewController.m in Sources */,
 				57CAC28C1E02E85A005A3F7E /* NSObject+MJProperty.m in Sources */,
 				187257A51E750DF4007085C1 /* SettingTableViewController.m in Sources */,
 				574AD52D1E49894B00BF099E /* GroupSubjectChangingViewController.m in Sources */,
@@ -5223,6 +5264,7 @@
 				57189A4D1E7F8DA000F6E621 /* GetOrderByIdResponse.m in Sources */,
 				57189A471E7F8D7100F6E621 /* GetOrderByIdRequest.m in Sources */,
 				187257E11E750E2C007085C1 /* IQNSArray+Sort.m in Sources */,
+				BADDF51B1E9BC7BF00B37460 /* EditAvatarViewController.m in Sources */,
 				57CAC26D1E02E85A005A3F7E /* NSArray+Log.m in Sources */,
 				574AD4DA1E49894A00BF099E /* EaseChatBarMoreView.m in Sources */,
 				574AD53F1E49894B00BF099E /* EMRemarkImageView.m in Sources */,

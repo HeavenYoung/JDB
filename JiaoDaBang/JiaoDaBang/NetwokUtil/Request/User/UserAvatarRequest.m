@@ -23,7 +23,7 @@
     self = [super init];
     if (self) {
         self.URLString = @"setavatar";
-        self.httpMethod = @"POST";
+        self.httpMethod = @"POST-UPLOAD";
     }
     return self;
 }
