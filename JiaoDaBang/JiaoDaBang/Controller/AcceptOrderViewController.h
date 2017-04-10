@@ -10,4 +10,7 @@
 
 @interface AcceptOrderViewController : ViewController
 
+- (instancetype)initWithOrderType:(NSString *)orderType;
+
+
 @end

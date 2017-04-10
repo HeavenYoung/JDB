@@ -10,4 +10,7 @@
 
 @interface ReleaseOrderViewController : ViewController
 
+- (instancetype)initWithOrderType:(NSString *)orderType;
+
+
 @end

@@ -101,7 +101,7 @@
         
         [self.dataListArray addObjectsFromArray:listData.listDataArray];
         
-        if (self.dataListArray.count == listData.orderCount) {
+        if (self.dataListArray.count >= listData.orderCount.integerValue || listData.listDataArray.count == 0) {
             
             [self.tableView.footer endRefreshingWithNoMoreData];
         } else {
