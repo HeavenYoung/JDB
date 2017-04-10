@@ -654,6 +654,11 @@
 		BADDF4C91E9A1D5900B37460 /* BillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4C81E9A1D5900B37460 /* BillTableViewCell.m */; };
 		BADDF4CC1E9A212C00B37460 /* BillData.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4CB1E9A212C00B37460 /* BillData.m */; };
 		BADDF4CF1E9A337E00B37460 /* CompletedOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4CE1E9A337E00B37460 /* CompletedOrderTableViewCell.m */; };
+		BADDF4F71E9BB02E00B37460 /* OrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4F61E9BB02E00B37460 /* OrderListViewController.m */; };
+		BADDF4FB1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4FA1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m */; };
+		BADDF4FE1E9BB21800B37460 /* AcceptOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF4FD1E9BB21800B37460 /* AcceptOrderTableViewCell.m */; };
+		BADDF5011E9BB33400B37460 /* ReleaseOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF5001E9BB33400B37460 /* ReleaseOrderViewController.m */; };
+		BADDF5041E9BB35100B37460 /* AcceptOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BADDF5031E9BB35100B37460 /* AcceptOrderViewController.m */; };
 		BAE45D131E97355400133161 /* SettingCommonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE45D121E97355400133161 /* SettingCommonCell.m */; };
 		ED68E2B81E989650003221A9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED68E2B71E989650003221A9 /* WebViewController.m */; };
 		ED885F101E97B57100442DA4 /* individualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* individualProfileViewController.m */; };
@@ -1853,6 +1858,16 @@
 		BADDF4CB1E9A212C00B37460 /* BillData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillData.m; sourceTree = "<group>"; };
 		BADDF4CD1E9A337E00B37460 /* CompletedOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedOrderTableViewCell.h; sourceTree = "<group>"; };
 		BADDF4CE1E9A337E00B37460 /* CompletedOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedOrderTableViewCell.m; sourceTree = "<group>"; };
+		BADDF4F51E9BB02E00B37460 /* OrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListViewController.h; sourceTree = "<group>"; };
+		BADDF4F61E9BB02E00B37460 /* OrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListViewController.m; sourceTree = "<group>"; };
+		BADDF4F91E9BB0E100B37460 /* ReleaseOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseOrderTableViewCell.h; sourceTree = "<group>"; };
+		BADDF4FA1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseOrderTableViewCell.m; sourceTree = "<group>"; };
+		BADDF4FC1E9BB21800B37460 /* AcceptOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptOrderTableViewCell.h; sourceTree = "<group>"; };
+		BADDF4FD1E9BB21800B37460 /* AcceptOrderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptOrderTableViewCell.m; sourceTree = "<group>"; };
+		BADDF4FF1E9BB33400B37460 /* ReleaseOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseOrderViewController.h; sourceTree = "<group>"; };
+		BADDF5001E9BB33400B37460 /* ReleaseOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseOrderViewController.m; sourceTree = "<group>"; };
+		BADDF5021E9BB35100B37460 /* AcceptOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcceptOrderViewController.h; sourceTree = "<group>"; };
+		BADDF5031E9BB35100B37460 /* AcceptOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcceptOrderViewController.m; sourceTree = "<group>"; };
 		BAE45D111E97355400133161 /* SettingCommonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCommonCell.h; sourceTree = "<group>"; };
 		BAE45D121E97355400133161 /* SettingCommonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCommonCell.m; sourceTree = "<group>"; };
 		ED68E2B61E989650003221A9 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -4116,6 +4131,12 @@
 				BAA6318A1E98C6160078F60D /* ChangeUserPasswordViewController.m */,
 				BAA6318C1E98C6320078F60D /* ChangePayPasswordViewController.h */,
 				BAA6318D1E98C6320078F60D /* ChangePayPasswordViewController.m */,
+				BADDF4F51E9BB02E00B37460 /* OrderListViewController.h */,
+				BADDF4F61E9BB02E00B37460 /* OrderListViewController.m */,
+				BADDF4FF1E9BB33400B37460 /* ReleaseOrderViewController.h */,
+				BADDF5001E9BB33400B37460 /* ReleaseOrderViewController.m */,
+				BADDF5021E9BB35100B37460 /* AcceptOrderViewController.h */,
+				BADDF5031E9BB35100B37460 /* AcceptOrderViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4268,6 +4289,7 @@
 		57CAC2681E02E85A005A3F7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BADDF4F81E9BB07200B37460 /* Order */,
 				BADDF4C61E9A1D2700B37460 /* Bill */,
 				5791A9221E98D73B00DF59F8 /* Seek */,
 				BAE45D101E97352A00133161 /* Setting */,
@@ -4512,6 +4534,17 @@
 				BADDF4C81E9A1D5900B37460 /* BillTableViewCell.m */,
 			);
 			path = Bill;
+			sourceTree = "<group>";
+		};
+		BADDF4F81E9BB07200B37460 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				BADDF4F91E9BB0E100B37460 /* ReleaseOrderTableViewCell.h */,
+				BADDF4FA1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m */,
+				BADDF4FC1E9BB21800B37460 /* AcceptOrderTableViewCell.h */,
+				BADDF4FD1E9BB21800B37460 /* AcceptOrderTableViewCell.m */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 		BAE45D101E97352A00133161 /* Setting */ = {
@@ -4936,6 +4969,7 @@
 				187257971E750DF4007085C1 /* ModifyPhoneNumberViewController.m in Sources */,
 				574AD5351E49894B00BF099E /* AddFriendCell.m in Sources */,
 				574AD4731E49894A00BF099E /* EMVoiceConverter.mm in Sources */,
+				BADDF4FE1E9BB21800B37460 /* AcceptOrderTableViewCell.m in Sources */,
 				5705F9E61E82A8E2002F9FB7 /* AppraiseResponse.m in Sources */,
 				57EE75F81E272CA0004573F1 /* RefreshStateNormalHeader.m in Sources */,
 				574AD4CE1E49894A00BF099E /* EaseBubbleView+Image.m in Sources */,
@@ -4957,6 +4991,7 @@
 				574AD5441E49894B00BF099E /* XHMessageTextView.m in Sources */,
 				187257EB1E750E2C007085C1 /* IQPreviousNextView.m in Sources */,
 				574AD46C1E49894A00BF099E /* EMCDDeviceManager+Media.m in Sources */,
+				BADDF5011E9BB33400B37460 /* ReleaseOrderViewController.m in Sources */,
 				18D8962F1E8365B1004DFC14 /* JDHomeViewController.m in Sources */,
 				574AD5301E49894B00BF099E /* ChatroomDetailViewController.m in Sources */,
 				574AD5291E49894B00BF099E /* CreateGroupViewController.m in Sources */,
@@ -5095,6 +5130,7 @@
 				571D20941E52AECE00BF3334 /* InfoInputView.m in Sources */,
 				187257981E750DF4007085C1 /* NewPhoneNumberViewController.m in Sources */,
 				57EE76061E272CA0004573F1 /* SDWebImagePrefetcher.m in Sources */,
+				BADDF4FB1E9BB0E100B37460 /* ReleaseOrderTableViewCell.m in Sources */,
 				577029F71E02E7C300FA9E95 /* AppDelegate.m in Sources */,
 				5705F9E91E82AC80002F9FB7 /* AppraiseRequest.m in Sources */,
 				57CAC2851E02E85A005A3F7E /* MJFoundation.m in Sources */,
@@ -5119,6 +5155,7 @@
 				57CAC27F1E02E85A005A3F7E /* MASViewConstraint.m in Sources */,
 				570A06D01E951420006E2089 /* SettingViewController.m in Sources */,
 				1872579C1E750DF4007085C1 /* WalletTableViewController.m in Sources */,
+				BADDF4F71E9BB02E00B37460 /* OrderListViewController.m in Sources */,
 				187257EC1E750E2C007085C1 /* IQTitleBarButtonItem.m in Sources */,
 				574AD4D91E49894A00BF099E /* EaseFacialView.m in Sources */,
 				18D896221E836590004DFC14 /* SDCollectionViewCell.m in Sources */,
@@ -5173,6 +5210,7 @@
 				5740781E1E66AA8D0008DFA4 /* ServiceOrderPayResRequest.m in Sources */,
 				187257F61E750E2C007085C1 /* YCXMenuItem.m in Sources */,
 				18D896241E836590004DFC14 /* UIView+SDExtension.m in Sources */,
+				BADDF5041E9BB35100B37460 /* AcceptOrderViewController.m in Sources */,
 				574AD5BF1E49894B00BF099E /* SettingsViewController.m in Sources */,
 				57EE75F21E272CA0004573F1 /* RefreshFooter.m in Sources */,
 				57EE76031E272CA0004573F1 /* SDWebImageDownloader.m in Sources */,
