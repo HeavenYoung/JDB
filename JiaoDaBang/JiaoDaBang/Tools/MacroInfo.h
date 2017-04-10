@@ -42,10 +42,12 @@
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 
 /** 网络参数*/
-#define kBaseServerURL        @"http://59.110.62.75/think/"
+#define kBaseServerURL        @"http://59.110.62.75/test/"
+
+//#define kBaseServerURL        @"http://59.110.62.75/think/"
 
 /** 加密 */
-#define EncryptoKey          @"56A0741C0955CBC9"
+#define EncryptoKey          @"56A0741C0955CBC1"
 
 /**  */
 
