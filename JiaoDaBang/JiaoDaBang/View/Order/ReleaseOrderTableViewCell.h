@@ -8,7 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+
+@protocol ReleaseOrderTableViewCellDelegate <NSObject>
+
+- (void)confirmOrder:(OrderData *)orderData;
+
+
+@end
+
 @interface ReleaseOrderTableViewCell : UITableViewCell
+
+@property (nonatomic, weak) id <ReleaseOrderTableViewCellDelegate> delegate;
 
 @property (nonatomic, strong) OrderData *orderData;
 
