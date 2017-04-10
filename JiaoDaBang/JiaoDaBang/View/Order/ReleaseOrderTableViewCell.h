@@ -10,4 +10,6 @@
 
 @interface ReleaseOrderTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) OrderData *orderData;
+
 @end

@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol AcceptOrderTableViewCellDelegate <NSObject>
+
+- (void)confirmOrder:(OrderData *)orderData;
+
+@end
+
 @interface AcceptOrderTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) OrderData *orderData;
+
+@property (nonatomic, weak) id <AcceptOrderTableViewCellDelegate> delegate;
 
 @end
