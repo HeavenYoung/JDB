@@ -44,7 +44,6 @@
 @property (nonatomic, copy, readonly) NSString *token;
 @property (nonatomic, copy, readonly) NSString *username;
 @property (nonatomic, assign, readonly) NSString *userId;
-@property (nonatomic, copy, readonly) NSURL *avatarUrl;
 @property (nonatomic, strong) UIImage *localAvatarImage;
 @property (nonatomic, copy) NSString *deviceId;
 @property (nonatomic, copy, readonly) NSString *hxUserId;

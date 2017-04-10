@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface individualProfileViewController : UIViewController
+@interface IndividualProfileViewController : UIViewController
 
 @end

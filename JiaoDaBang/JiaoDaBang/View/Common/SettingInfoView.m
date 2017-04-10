@@ -37,6 +37,10 @@
 
 - (void)placeSubviews {
 
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(12, 0, SCREEN_WIDTH, 0.3)];
+    backView.backgroundColor = [UIColor lightGrayColor];
+    [self addSubview:backView];
+
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.textColor = [UIColor blackColor];
     titleLabel.text = self.titleString;

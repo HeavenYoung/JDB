@@ -10,7 +10,7 @@
 #import "AboutViewController.h"
 #import "SDImageCache.h"
 
-#import "individualProfileViewController.h"
+#import "IndividualProfileViewController.h"
 #import "OrderDetailViewController.h"
 #import "AccountViewController.h"
 
@@ -94,7 +94,7 @@
         
     } else if (indexPath.row == 1) {
 
-        AccountViewController *accountVC = [[AccountViewController alloc] init];
+        IndividualProfileViewController *accountVC = [[IndividualProfileViewController alloc] init];
         [self.navigationController pushViewController:accountVC animated:YES];
     } else if (indexPath.row == 2) {
     

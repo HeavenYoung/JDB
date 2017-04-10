@@ -59,7 +59,7 @@
         
         [self.dataListArray addObjectsFromArray:billListData.billDataArray];
         
-        if (self.dataListArray.count == billListData.count) {
+        if (self.dataListArray.count >= billListData.count || billListData.billDataArray.count == 0) {
             [self.tableView.footer endRefreshingWithNoMoreData];
         } else {
         
