@@ -7,6 +7,7 @@
 //
 
 #import "EditAvatarViewController.h"
+#import "UIImageView+WebCache.h"
 
 #import "CutPictureTools.h"
 #import "PhotoAlbumOrCameraHandler.h"

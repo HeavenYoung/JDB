@@ -7,6 +7,7 @@
 //
 
 #import "AcceptOrderTableViewCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface AcceptOrderTableViewCell()
 

@@ -9,10 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MainViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, EMChatManagerDelegate>
-{
-    EMConnectionState _connectionState;
-}
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) MainViewController *MainViewController;

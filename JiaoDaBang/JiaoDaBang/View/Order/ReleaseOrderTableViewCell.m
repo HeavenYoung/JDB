@@ -7,6 +7,7 @@
 //
 
 #import "ReleaseOrderTableViewCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface ReleaseOrderTableViewCell()
 

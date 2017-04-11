@@ -25,14 +25,6 @@
 #import "GlobalManager.h"
 #import "MBProgressHUD.h"
 #import "SVProgressHUD.h"
-#import "TTGlobalUICommon.h"
-
-#import "EMAlertView.h"
-#import "EMSDKFull.h"
-#import "EaseUI.h"
-
-#import "MessageUserProfileUtil.h"
-#import "MessageUtil.h"
 
 // 宏定义
 #define RGB(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
