@@ -26,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = RGBACOLOR(171, 204, 34, 1);;
+    self.view.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
 
     self.title = @"注册";
 
@@ -39,7 +39,7 @@
     __weak typeof(self) weakSelf = self;
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.backgroundColor = RGBACOLOR(171, 204, 34, 1);;
+    scrollView.backgroundColor = [UIColor colorWithHexString:@"#fafafa"];
     scrollView.delegate = self;
     scrollView.contentSize = CGSizeMake(0, SCREEN_HEIGHT - 44);
     [self.view addSubview:scrollView];
@@ -48,61 +48,62 @@
     }];
     self.scrollView = scrollView;
     
+    UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
+    backView.backgroundColor = [UIColor whiteColor];
+    [self.scrollView addSubview:backView];
+    
     // 电话号码
-    InfoInputView *phoneNumber = [[InfoInputView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50) placeHolder:@"电话号码:" secureType:0 keyboardType:UIKeyboardTypePhonePad];
+    InfoInputView *phoneNumber = [[InfoInputView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 50) placeHolder:@"手机号码:" secureType:0 keyboardType:UIKeyboardTypePhonePad];
     phoneNumber.delegate = self;
     phoneNumber.backgroundColor = [UIColor clearColor];
     phoneNumber.tag = 101;
     self.phoneNumber = phoneNumber;
-    [self.scrollView addSubview:phoneNumber];
+    [backView addSubview:phoneNumber];
     
     // 验证码
     InfoInputView *messageCode = [[InfoInputView alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH - 90, 50) placeHolder:@"验证码:" secureType:0 keyboardType:UIKeyboardTypePhonePad];
     messageCode.delegate = self;
-    messageCode.backgroundColor = [UIColor clearColor];
     messageCode.tag = 102;
     self.messageCode = messageCode;
-    [self.scrollView addSubview:messageCode];
+    [backView addSubview:messageCode];
     
     UIButton *messageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [messageBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
-    [messageBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [messageBtn setTitleColor:CustomGreen forState:UIControlStateNormal];
     messageBtn.backgroundColor = [UIColor clearColor];
-    messageBtn.layer.borderColor = [[UIColor whiteColor] CGColor];
+    messageBtn.layer.borderColor = CustomGreen.CGColor;
     messageBtn.layer.borderWidth = 1.0;
     messageBtn.layer.cornerRadius = 5;
     messageBtn.layer.masksToBounds = YES;
     messageBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [messageBtn addTarget:self action:@selector(messageBtnDidClicked:) forControlEvents:UIControlEventTouchUpInside];
     messageBtn.frame = CGRectMake(SCREEN_WIDTH - 90, 60, 80, 30);
-    [self.scrollView addSubview:messageBtn];
+    [backView addSubview:messageBtn];
 
     // 密码
     InfoInputView *passWord = [[InfoInputView alloc] initWithFrame:CGRectMake(0, 100, SCREEN_WIDTH, 50) placeHolder:@"登录密码:" secureType:1 keyboardType:0];
-    passWord.backgroundColor = [UIColor clearColor];
     passWord.delegate = self;
     passWord.tag = 104;
     self.passWord = passWord;
-    [self.scrollView addSubview:passWord];
+    [backView addSubview:passWord];
     
     // 重复密码
     InfoInputView *repassWord = [[InfoInputView alloc] initWithFrame:CGRectMake(0, 150, SCREEN_WIDTH, 50) placeHolder:@"确认密码:" secureType:1 keyboardType:0];
-    repassWord.backgroundColor = [UIColor clearColor];
     repassWord.delegate = self;
     repassWord.tag = 105;
     self.repassWord = repassWord;
-    [self.scrollView addSubview:repassWord];
+    [backView addSubview:repassWord];
     
     UIButton *registerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     registerBtn.frame = CGRectMake(10, repassWord.yt_bottom+20, SCREEN_WIDTH - 20, 40);
     registerBtn.backgroundColor = [UIColor whiteColor];
-    [registerBtn setTitleColor:RGBACOLOR(171, 204, 34, 1) forState:UIControlStateNormal];
+    [registerBtn setTitleColor:CustomGreen forState:UIControlStateNormal];
     registerBtn.titleLabel.font = [UIFont systemFontOfSize:16.0];
     registerBtn.layer.cornerRadius = 20.0;
     registerBtn.layer.masksToBounds = YES;
     [registerBtn setTitle:@"立即注册" forState:UIControlStateNormal];
     [registerBtn addTarget:self action:@selector(registerBtnDidClicked) forControlEvents:UIControlEventTouchUpInside];
-    [self.scrollView addSubview:registerBtn];
+    [backView addSubview:registerBtn];
 
 }
 

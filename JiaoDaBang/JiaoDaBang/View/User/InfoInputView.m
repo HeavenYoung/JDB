@@ -31,6 +31,7 @@
         self.placeHolder = placeHolder;
         self.shouldInput = shouldInput;
         [self placeSubviewsWithType:secureType keyboardType:keyboardType];
+        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -57,7 +58,7 @@
     }];
     
     UIView *lineView = [[UIView alloc] init];
-    lineView.backgroundColor = [UIColor whiteColor];
+    lineView.backgroundColor = [UIColor lightGrayColor];
     [self addSubview:lineView];
     [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(@(SCREEN_WIDTH-10));

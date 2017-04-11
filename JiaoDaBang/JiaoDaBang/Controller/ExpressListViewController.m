@@ -10,7 +10,7 @@
 #import "ExpressTableViewCell.h"
 
 
-@interface ExpressListViewController () <UITableViewDelegate , UITableViewDataSource>
+@interface ExpressListViewController () <UITableViewDelegate , UITableViewDataSource, ExpressTableViewCellDelegate>
 
 @property (nonatomic , weak) UITableView *tableView;
 @property (nonatomic , strong) NSMutableArray *dataListArray;
@@ -87,6 +87,11 @@
     cell.deliveryInfoData = deliveryInfoData;
     
     return cell;
+}
+
+- (void)sendExpress:(DeliveryInfoData *)deliveryInfoData {
+
+    
 }
 
 - (NSMutableArray *)dataListArray {

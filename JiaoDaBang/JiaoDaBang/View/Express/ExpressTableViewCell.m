@@ -48,10 +48,15 @@
         make.left.equalTo(@16);
     }];
     
-    UIButton *stateBtn = [[UIButton alloc] init];
-    stateBtn.font = [UIFont systemFontOfSize:16];
-    stateBtn.backgroundColor = CustomGreen;
-    stateBtn.titleLabel.textColor = [UIColor whiteColor];
+    UIButton *stateBtn = [UIButton buttonWithTitle:@"免费派送"
+                                       normalColor:CustomGreen
+                                  highlightedColor:CustomGreen
+                                         titleFont:[UIFont systemFontOfSize:14]
+                                         imageName:nil
+                                     backImageName:nil
+                                            target:self
+                                            action:@selector(sendExpress)];
+    stateBtn.titleEdgeInsets = UIEdgeInsetsMake(0, 5, 0, 5);
     [self.contentView addSubview:stateBtn];
     self.stateBtn = stateBtn;
     [stateBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -74,7 +79,24 @@
     _deliveryInfoData = deliveryInfoData;
     self.typeLablel.text = deliveryInfoData.deliverytype;
     self.noLablel.text = deliveryInfoData.deliveryid;
-    self.stateBtn.titleLabel.text = deliveryInfoData.state;
+    
+    
+    if([deliveryInfoData.stateid isEqualToString:@"0"]){
+        [self.stateBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        self.stateBtn.backgroundColor = CustomGreen;
+        self.stateBtn.titleLabel.text = @"免费派送";
+    }else{
+        [self.stateBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        self.stateBtn.titleLabel.text = deliveryInfoData.state;
+        self.stateBtn.backgroundColor = [UIColor whiteColor];
+    }
+}
+
+- (void)sendExpress{
+    
+    if ([self.delegate respondsToSelector:@selector(sendExpress:)]) {
+        [self.delegate sendExpress:self.deliveryInfoData];
+    }
 }
 
 - (void)awakeFromNib {

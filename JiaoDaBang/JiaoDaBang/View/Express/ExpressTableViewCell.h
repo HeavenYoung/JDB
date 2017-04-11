@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ExpressTableViewCellDelegate <NSObject>
+
+- (void)sendExpress:(DeliveryInfoData *)deliveryInfoData;
+
+
+@end
+
 @interface ExpressTableViewCell : UITableViewCell
 
-@property (nonatomic , strong) DeliveryInfoData *deliveryInfoData;
+@property (nonatomic, strong) DeliveryInfoData *deliveryInfoData;
+
+@property (nonatomic, weak) id <ExpressTableViewCellDelegate> delegate;
 
 @end
