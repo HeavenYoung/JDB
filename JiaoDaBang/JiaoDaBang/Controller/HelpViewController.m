@@ -12,6 +12,8 @@
 
 @interface HelpViewController ()
 
+@property (nonatomic , weak) MAMapView *mapView;
+
 @end
 
 @implementation HelpViewController
@@ -21,11 +23,31 @@
     // Do any additional setup after loading the view.
     
     [AMapServices sharedServices].enableHTTPS = YES;
+    
+    [self initMap];
+    [self getPosNumList];
+}
 
+- (void)initMap{
+    
     MAMapView *mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-49)];
+    
+    [mapView setZoomLevel:17.5 animated:YES];
+    [mapView setCenterCoordinate:CLLocationCoordinate2DMake(39.952272, 116.342779) animated:YES];
     mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-
+    self.mapView = mapView;
     [self.view addSubview:mapView];
+}
+
+- (void)getPosNumList{
+    PosNumRequest *posNumRequest = [[PosNumRequest alloc] init];
+    [posNumRequest setSuccessBlock:^(id object, id responseObject) {
+        DLog("---地图点成功---");
+    }];
+    [posNumRequest setFailureBlock:^(NSInteger errorCode, id responseObject) {
+        DLog("---地图点失败---");
+    }];
+    [posNumRequest sendRequest];
 }
 
 - (void)didReceiveMemoryWarning {

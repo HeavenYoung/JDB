@@ -24,5 +24,6 @@
 #import "LocalPointListData.h"
 #import "OrderTypeListData.h"
 #import "BillData.h"
+#import "PosNumData.h"
 
 #endif /* DataModel_h */

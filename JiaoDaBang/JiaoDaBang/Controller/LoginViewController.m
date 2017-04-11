@@ -88,11 +88,11 @@
 
     phoneTextField.tag = 200001;
     phoneTextField.backgroundColor = [UIColor clearColor];
-    phoneTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入您的电话号码" attributes:@{NSForegroundColorAttributeName:PlaceTextColor ,NSFontAttributeName:PlaceTextFont}];
+    phoneTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入您的电话号码" attributes:@{NSForegroundColorAttributeName:CustomGreen ,NSFontAttributeName:PlaceTextFont}];
     phoneTextField.keyboardType = UIKeyboardTypePhonePad;
     phoneTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     phoneTextField.returnKeyType = UIReturnKeyNext;
-    phoneTextField.textColor = [UIColor lightGrayColor];
+    phoneTextField.textColor = CustomGreen;
     phoneTextField.delegate = self;
     [self.view addSubview:phoneTextField];
     self.phoneTextField = phoneTextField;
@@ -107,11 +107,11 @@
     UITextField *passwordTextField = [[UITextField alloc] initWithFrame:CGRectMake(10, phoneTextField.yt_bottom+20, SCREEN_WIDTH-20, 40)];
     passwordTextField.tag = 200002;
     passwordTextField.backgroundColor = [UIColor clearColor];
-    passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入您的密码" attributes:@{NSForegroundColorAttributeName:PlaceTextColor ,NSFontAttributeName:PlaceTextFont}];
+    passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"请输入您的密码" attributes:@{NSForegroundColorAttributeName:CustomGreen ,NSFontAttributeName:PlaceTextFont}];
     passwordTextField.secureTextEntry = YES;
     passwordTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
     passwordTextField.returnKeyType = UIReturnKeyGo;
-    passwordTextField.textColor = [UIColor lightGrayColor];
+    passwordTextField.textColor = CustomGreen;
     passwordTextField.delegate = self;
     [self.view addSubview:passwordTextField];
     self.passwordTextField = passwordTextField;
@@ -125,7 +125,7 @@
     UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     loginBtn.frame = CGRectMake(10, passwordTextField.yt_bottom+20, SCREEN_WIDTH - 20, 40);
     loginBtn.backgroundColor = [UIColor whiteColor];
-    [loginBtn setTitleColor:RGBACOLOR(171, 204, 34, 1) forState:UIControlStateNormal];
+    [loginBtn setTitleColor:CustomGreen forState:UIControlStateNormal];
     loginBtn.titleLabel.font = [UIFont systemFontOfSize:16.0];
     loginBtn.layer.cornerRadius = 20.0;
     loginBtn.layer.masksToBounds = YES;
@@ -135,7 +135,7 @@
     
     // 分割线
     UIView *breakView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 12)];
-    breakView.backgroundColor = [UIColor lightGrayColor];
+    breakView.backgroundColor = CustomGreen;
     breakView.yt_top = loginBtn.yt_bottom +20;
     breakView.yt_centerX = loginBtn.yt_centerX;
     [self.view addSubview:breakView];
@@ -143,7 +143,7 @@
     // 注册
     UIButton *registerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [registerBtn addTarget:self action:@selector(registerBtnDidClicked) forControlEvents:UIControlEventTouchUpInside];
-    [registerBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [registerBtn setTitleColor:CustomGreen forState:UIControlStateNormal];
     [registerBtn setTitle:@"用户注册" forState:UIControlStateNormal];
     registerBtn.titleLabel.font = [UIFont systemFontOfSize:12.0];
     [self.view addSubview:registerBtn];
@@ -155,7 +155,7 @@
     // 忘记密码
     UIButton *forgetPassBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [forgetPassBtn addTarget:self action:@selector(forgetPassBtnDidClicked) forControlEvents:UIControlEventTouchUpInside];
-    [forgetPassBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [forgetPassBtn setTitleColor:CustomGreen forState:UIControlStateNormal];
     [forgetPassBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
     forgetPassBtn.titleLabel.font = [UIFont systemFontOfSize:12.0];
     [self.view addSubview:forgetPassBtn];
