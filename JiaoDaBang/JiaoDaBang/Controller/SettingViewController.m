@@ -94,7 +94,7 @@
         
     } else if (indexPath.row == 1) {
 
-        IndividualProfileViewController *accountVC = [[IndividualProfileViewController alloc] init];
+        AccountViewController *accountVC = [[AccountViewController alloc] init];
         [self.navigationController pushViewController:accountVC animated:YES];
     } else if (indexPath.row == 2) {
     
