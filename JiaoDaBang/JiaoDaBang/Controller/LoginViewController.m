@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import "ForgetPassViewController.h"
 
 @interface LoginViewController () <UITextFieldDelegate, UIScrollViewDelegate>
 
@@ -233,8 +234,8 @@
 
 // 忘记密码
 - (void)forgetPassBtnDidClicked {
-    RegisterViewController *registerVC = [[RegisterViewController alloc] init];
-    [self.navigationController pushViewController:registerVC animated:YES];
+     ForgetPassViewController *forgetVC = [[ForgetPassViewController alloc] init];
+    [self.navigationController pushViewController:forgetVC animated:YES];
 }
 
 // 关闭页面
