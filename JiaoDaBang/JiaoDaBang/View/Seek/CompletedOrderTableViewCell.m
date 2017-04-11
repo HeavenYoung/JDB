@@ -7,6 +7,8 @@
 //
 
 #import "CompletedOrderTableViewCell.h"
+#import "UIImageView+WebCache.h"
+
 
 @interface CompletedOrderTableViewCell()
 

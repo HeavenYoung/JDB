@@ -9,21 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UITabBarController
-{
-    EMConnectionState _connectionState;
-}
 
-@property (strong, nonatomic) ConversationListController *chatListVC;
 
 - (void)setupUnreadMessageCount;
 
-- (void)networkChanged:(EMConnectionState)connectionState;
 
 - (void)didReceiveLocalNotification:(UILocalNotification *)notification;
 
 - (void)playSoundAndVibration;
-
-- (void)showNotificationWithMessage:(EMMessage *)message;
 
 - (void)payResultHandler:(BOOL)isSuccess;
 

@@ -60,6 +60,8 @@
 #define kUserAccount        @"useraccount"
 #define kUserPassword       @"userpassword"
 
+/** MAP */
+#define kMapKey             @"b83756553a23adc3d101f9d9595842f6"
 
 /********* 微信 BEGIN *********/
 

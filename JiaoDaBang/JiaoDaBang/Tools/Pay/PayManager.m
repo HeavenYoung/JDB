@@ -64,7 +64,7 @@ static PayManager *instance;
     NSString *strDate = [dateFormatter stringFromDate:[NSDate date]];
     NSLog(@"%@", strDate);
     
-    NSString *orderTitle = @"觅糖订单提醒";
+    NSString *orderTitle = @"订单提醒";
     NSString *orderId = self.payObjc.orderId;
     NSString *orderDetail = self.payObjc.orderName;
     NSString *orderTime = strDate;
@@ -89,8 +89,6 @@ static PayManager *instance;
     if (!sellerId) {
         return;
     }
-    
-    [[MessageUtil shareMessageManage] asynSendOrderMessage:orderId ImageUrl:[NSURL URLWithString:orderImageUrl] withContent:extDic andChatter:sellerId];
 }
 
 - (void)orderPayUsePayType:(PayType)mPayType orderInfo:(PayObjc *)payObjc {

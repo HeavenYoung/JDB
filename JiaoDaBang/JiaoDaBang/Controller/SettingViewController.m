@@ -148,8 +148,6 @@
     
     [self.navigationController popViewControllerAnimated:YES];
    
-    [[MessageUtil shareMessageManage] userlogoutWithName:nil password:@"123456"];
-
     [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFCATION_USER_SETTINGLOGOUT object:nil];
     
 }

@@ -7,6 +7,7 @@
 //
 
 #import "ProcessingOrderViewCell.h"
+#import "UIImageView+WebCache.h"
 
 @interface ProcessingOrderViewCell ()
 

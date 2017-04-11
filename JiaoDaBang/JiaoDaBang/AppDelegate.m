@@ -8,7 +8,10 @@
 
 #import "AppDelegate.h"
 #import "WXApiManager.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
 // com.jiaodabang.xueshengbang.www-
+
 @interface AppDelegate ()
 
 @end
@@ -19,6 +22,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    [AMapServices sharedServices].apiKey = kMapKey;
+
     self.window.rootViewController = [[MainViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     

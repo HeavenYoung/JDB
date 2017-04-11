@@ -7,6 +7,7 @@
 //
 
 #import "OrderDetailViewController.h"
+#import "UIImageView+WebCache.h"
 
 
 #define LABEL_INITIAL_HEIGHT 35
