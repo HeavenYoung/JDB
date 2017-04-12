@@ -334,6 +334,7 @@
 		ED68E2B81E989650003221A9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED68E2B71E989650003221A9 /* WebViewController.m */; };
 		ED885F101E97B57100442DA4 /* IndividualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* IndividualProfileViewController.m */; };
 		ED885F161E97CE4600442DA4 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */; };
+		EDE668931E9E526F0039BF78 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE668921E9E526F0039BF78 /* PaymentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -993,6 +994,8 @@
 		ED885F0F1E97B57100442DA4 /* IndividualProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndividualProfileViewController.m; sourceTree = "<group>"; };
 		ED885F141E97CE4600442DA4 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
 		ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		EDE668911E9E526F0039BF78 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		EDE668921E9E526F0039BF78 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1961,6 +1964,8 @@
 				BA29BB201E952E29000D3A90 /* FeedBackViewController.m */,
 				57A9898B1E966A180092AAF7 /* UserVerifyViewController.h */,
 				57A9898C1E966A180092AAF7 /* UserVerifyViewController.m */,
+				EDE668911E9E526F0039BF78 /* PaymentViewController.h */,
+				EDE668921E9E526F0039BF78 /* PaymentViewController.m */,
 				57A9898E1E967C580092AAF7 /* PaymentVerifyViewController.h */,
 				57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */,
 				ED885F0E1E97B57100442DA4 /* IndividualProfileViewController.h */,
@@ -2814,6 +2819,7 @@
 				57EE75FA1E272CA0004573F1 /* UIScrollView+Refresh.m in Sources */,
 				57EE75F61E272CA0004573F1 /* RefreshGifHeader.m in Sources */,
 				18D896201E836590004DFC14 /* TADotView.m in Sources */,
+				EDE668931E9E526F0039BF78 /* PaymentViewController.m in Sources */,
 				57BFC7A51E4B4E0C001690E4 /* OrderTypeListData.m in Sources */,
 				57189A4D1E7F8DA000F6E621 /* GetOrderByIdResponse.m in Sources */,
 				57189A471E7F8D7100F6E621 /* GetOrderByIdRequest.m in Sources */,
