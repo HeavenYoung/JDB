@@ -38,7 +38,7 @@
 
 - (void)refreshUserhead {
     
-    [self.avatarView sd_setImageWithURL:[GlobalManager sharedManager].userInfoData.userAvatar placeholderImage:[UIImage imageNamed:@""] options:SDWebImageRefreshCached];
+    [self.avatarView sd_setImageWithURL:[NSURL URLWithString:[GlobalManager sharedManager].userInfoData.userAvatar] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageRefreshCached];
 }
 
 - (void)setupUI{
@@ -66,7 +66,7 @@
     avatarView.layer.cornerRadius = 30;
     avatarView.layer.masksToBounds = YES;
     [backView addSubview:avatarView];
-    [avatarView sd_setImageWithURL:[GlobalManager sharedManager].userInfoData.userAvatar placeholderImage:[UIImage imageNamed:@""] options:SDWebImageRefreshCached];
+    [avatarView sd_setImageWithURL:[NSURL URLWithString:[GlobalManager sharedManager].userInfoData.userAvatar] placeholderImage:[UIImage imageNamed:@""] options:SDWebImageRefreshCached];
     [avatarView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(backView.mas_centerY);
         make.right.equalTo(backView.mas_right).offset(-20);

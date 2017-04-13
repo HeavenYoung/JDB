@@ -49,7 +49,7 @@
     avatarView.layer.borderColor = [[UIColor grayColor] CGColor];
     avatarView.layer.borderWidth = 1;
     UIImage *avatarImage = [GlobalManager sharedManager].localAvatarImage?[GlobalManager sharedManager].localAvatarImage:[UIImage imageNamed:@"iconfont-lluseraavatar"];
-    [avatarView sd_setImageWithURL:[[[GlobalManager sharedManager] userInfoData] userAvatar] placeholderImage:avatarImage];
+    [avatarView sd_setImageWithURL:[NSURL URLWithString:[[[GlobalManager sharedManager] userInfoData] userAvatar]] placeholderImage:avatarImage];
     avatarView.userInteractionEnabled = YES;
     [self.view addSubview:avatarView];
     self.avatarView = avatarView;

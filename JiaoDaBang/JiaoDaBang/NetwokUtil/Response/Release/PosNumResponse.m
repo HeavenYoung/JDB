@@ -20,7 +20,7 @@
         
         PosNumListData *listData = [[PosNumListData alloc] init];
         
-        listData.count = [jsonObject objectForKeySafe:@"count"];
+        listData.count = [jsonObject integerForKeySafe:@"count"];
         listData.info = [jsonObject objectForKeySafe:@"info"];
         NSArray *dataArray = [jsonObject objectForKeySafe:@"data"];
         if ([dataArray isKindOfClass:[NSArray class]]) {

@@ -292,6 +292,9 @@
 		BA4DB3331E9D3DE8001B877A /* PosNumData.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DB3321E9D3DE8001B877A /* PosNumData.m */; };
 		BA4DB3361E9D3F03001B877A /* PosNumRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DB3351E9D3F03001B877A /* PosNumRequest.m */; };
 		BA4DB3391E9D3F4E001B877A /* PosNumResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DB3381E9D3F4E001B877A /* PosNumResponse.m */; };
+		BAA5F1891E9E74000078E313 /* map_bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAA5F1881E9E74000078E313 /* map_bubble@2x.png */; };
+		BAA5F18F1E9F1F2D0078E313 /* CustomMAPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5F18E1E9F1F2D0078E313 /* CustomMAPointAnnotation.m */; };
+		BAA5F1921E9F3E5C0078E313 /* CustomMAAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA5F1911E9F3E5C0078E313 /* CustomMAAnnotationView.m */; };
 		BAA629B71E97BD410078F60D /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629B61E97BD410078F60D /* WalletViewController.m */; };
 		BAA629BA1E97BD9C0078F60D /* WithdrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629B91E97BD9C0078F60D /* WithdrawViewController.m */; };
 		BAA629BD1E97BDDA0078F60D /* BillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA629BC1E97BDDA0078F60D /* BillViewController.m */; };
@@ -896,6 +899,11 @@
 		BA4DB3351E9D3F03001B877A /* PosNumRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosNumRequest.m; sourceTree = "<group>"; };
 		BA4DB3371E9D3F4E001B877A /* PosNumResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosNumResponse.h; sourceTree = "<group>"; };
 		BA4DB3381E9D3F4E001B877A /* PosNumResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosNumResponse.m; sourceTree = "<group>"; };
+		BAA5F1881E9E74000078E313 /* map_bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map_bubble@2x.png"; sourceTree = "<group>"; };
+		BAA5F18D1E9F1F2D0078E313 /* CustomMAPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMAPointAnnotation.h; sourceTree = "<group>"; };
+		BAA5F18E1E9F1F2D0078E313 /* CustomMAPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMAPointAnnotation.m; sourceTree = "<group>"; };
+		BAA5F1901E9F3E5C0078E313 /* CustomMAAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMAAnnotationView.h; sourceTree = "<group>"; };
+		BAA5F1911E9F3E5C0078E313 /* CustomMAAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMAAnnotationView.m; sourceTree = "<group>"; };
 		BAA629B51E97BD410078F60D /* WalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
 		BAA629B61E97BD410078F60D /* WalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
 		BAA629B81E97BD9C0078F60D /* WithdrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawViewController.h; sourceTree = "<group>"; };
@@ -1764,6 +1772,7 @@
 		579E9D611E1B983400AAAD79 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BAA5F1881E9E74000078E313 /* map_bubble@2x.png */,
 				57ED2CEE1E558E0400066FB1 /* NavigationBarBack@2x.png */,
 				57EE77B91E2738FE004573F1 /* btn_close@2x.png */,
 				57EE77BA1E2738FE004573F1 /* btn_close@3x.png */,
@@ -2253,6 +2262,10 @@
 				BA0E13DE1E9D13F600DC7FCE /* AMapFoundationKit.framework */,
 				BA0E13DF1E9D13F600DC7FCE /* AMapSearchKit.framework */,
 				BA0E13E01E9D13F600DC7FCE /* MAMapKit.framework */,
+				BAA5F18D1E9F1F2D0078E313 /* CustomMAPointAnnotation.h */,
+				BAA5F18E1E9F1F2D0078E313 /* CustomMAPointAnnotation.m */,
+				BAA5F1901E9F3E5C0078E313 /* CustomMAAnnotationView.h */,
+				BAA5F1911E9F3E5C0078E313 /* CustomMAAnnotationView.m */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -2456,6 +2469,7 @@
 				BA4DAF301E9D2452001B877A /* AMap.bundle in Resources */,
 				579E9D761E1B998000AAAD79 /* profile@2x.png in Resources */,
 				57702A021E02E7C300FA9E95 /* LaunchScreen.storyboard in Resources */,
+				BAA5F1891E9E74000078E313 /* map_bubble@2x.png in Resources */,
 				BADDF5141E9BC73900B37460 /* bg_piccrop.png in Resources */,
 				1872579E1E750DF4007085C1 /* WithdrawalViewController.xib in Resources */,
 				577029FF1E02E7C300FA9E95 /* Assets.xcassets in Resources */,
@@ -2569,6 +2583,7 @@
 				575F0BB91E7D650B0056589A /* UserInfoResponse.m in Sources */,
 				ED885F101E97B57100442DA4 /* IndividualProfileViewController.m in Sources */,
 				57322CF51E82668400B491B0 /* ConfirmOrderResponse.m in Sources */,
+				BAA5F1921E9F3E5C0078E313 /* CustomMAAnnotationView.m in Sources */,
 				57189A321E7F7EF300F6E621 /* RaiseLabelListResponse.m in Sources */,
 				187257961E750DF4007085C1 /* ModifyNicknameViewController.m in Sources */,
 				5791A9251E98D75700DF59F8 /* PublishInfoView.m in Sources */,
@@ -2581,6 +2596,7 @@
 				57BFC78D1E4B465B001690E4 /* NewsInfoData.m in Sources */,
 				57403FD11E1B9192007CF092 /* AFHTTPSessionManager.m in Sources */,
 				1872579A1E750DF4007085C1 /* DeliveryTableViewController.m in Sources */,
+				BAA5F18F1E9F1F2D0078E313 /* CustomMAPointAnnotation.m in Sources */,
 				57322CFF1E827BFC00B491B0 /* DeliveryInfoData.m in Sources */,
 				57CAC2761E02E85A005A3F7E /* GlobalManager.m in Sources */,
 				BAA629BA1E97BD9C0078F60D /* WithdrawViewController.m in Sources */,
