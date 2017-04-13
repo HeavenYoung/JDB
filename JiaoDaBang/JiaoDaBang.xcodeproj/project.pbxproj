@@ -325,6 +325,12 @@
 		ED68E2B81E989650003221A9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED68E2B71E989650003221A9 /* WebViewController.m */; };
 		ED885F101E97B57100442DA4 /* IndividualProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F0F1E97B57100442DA4 /* IndividualProfileViewController.m */; };
 		ED885F161E97CE4600442DA4 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */; };
+		EDE668931E9E526F0039BF78 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE668921E9E526F0039BF78 /* PaymentViewController.m */; };
+		EDE668A81E9E617F0039BF78 /* check_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE668A21E9E617F0039BF78 /* check_icon.png */; };
+		EDE668A91E9E617F0039BF78 /* check_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE668A31E9E617F0039BF78 /* check_icon@2x.png */; };
+		EDE668AA1E9E617F0039BF78 /* QCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE668A51E9E617F0039BF78 /* QCheckBox.m */; };
+		EDE668AB1E9E617F0039BF78 /* uncheck_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE668A61E9E617F0039BF78 /* uncheck_icon.png */; };
+		EDE668AC1E9E617F0039BF78 /* uncheck_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE668A71E9E617F0039BF78 /* uncheck_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -963,6 +969,14 @@
 		ED885F0F1E97B57100442DA4 /* IndividualProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndividualProfileViewController.m; sourceTree = "<group>"; };
 		ED885F141E97CE4600442DA4 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
 		ED885F151E97CE4600442DA4 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		EDE668911E9E526F0039BF78 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		EDE668921E9E526F0039BF78 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		EDE668A21E9E617F0039BF78 /* check_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_icon.png; sourceTree = "<group>"; };
+		EDE668A31E9E617F0039BF78 /* check_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_icon@2x.png"; sourceTree = "<group>"; };
+		EDE668A41E9E617F0039BF78 /* QCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCheckBox.h; sourceTree = "<group>"; };
+		EDE668A51E9E617F0039BF78 /* QCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCheckBox.m; sourceTree = "<group>"; };
+		EDE668A61E9E617F0039BF78 /* uncheck_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck_icon.png; sourceTree = "<group>"; };
+		EDE668A71E9E617F0039BF78 /* uncheck_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uncheck_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1859,6 +1873,8 @@
 				BA29BB201E952E29000D3A90 /* FeedBackViewController.m */,
 				57A9898B1E966A180092AAF7 /* UserVerifyViewController.h */,
 				57A9898C1E966A180092AAF7 /* UserVerifyViewController.m */,
+				EDE668911E9E526F0039BF78 /* PaymentViewController.h */,
+				EDE668921E9E526F0039BF78 /* PaymentViewController.m */,
 				57A9898E1E967C580092AAF7 /* PaymentVerifyViewController.h */,
 				57A9898F1E967C580092AAF7 /* PaymentVerifyViewController.m */,
 				ED885F0E1E97B57100442DA4 /* IndividualProfileViewController.h */,
@@ -1962,6 +1978,7 @@
 		57CAC2361E02E85A005A3F7E /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				EDE668A11E9E617F0039BF78 /* checkbox */,
 				18D896071E836590004DFC14 /* RightButton */,
 				18D8960C1E836590004DFC14 /* SDCycleScrollView */,
 				187257D01E750E2C007085C1 /* JCAlertView */,
@@ -2350,6 +2367,19 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		EDE668A11E9E617F0039BF78 /* checkbox */ = {
+			isa = PBXGroup;
+			children = (
+				EDE668A21E9E617F0039BF78 /* check_icon.png */,
+				EDE668A31E9E617F0039BF78 /* check_icon@2x.png */,
+				EDE668A41E9E617F0039BF78 /* QCheckBox.h */,
+				EDE668A51E9E617F0039BF78 /* QCheckBox.m */,
+				EDE668A61E9E617F0039BF78 /* uncheck_icon.png */,
+				EDE668A71E9E617F0039BF78 /* uncheck_icon@2x.png */,
+			);
+			path = checkbox;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2463,6 +2493,7 @@
 				57EE75EF1E272CA0004573F1 /* Info.plist in Resources */,
 				187257A71E750DF4007085C1 /* CertificationViewController.xib in Resources */,
 				57EE76101E272CA0004573F1 /* SVProgressHUD.bundle in Resources */,
+				EDE668AC1E9E617F0039BF78 /* uncheck_icon@2x.png in Resources */,
 				57CAC2791E02E85A005A3F7E /* Info.plist in Resources */,
 				579E9D711E1B998000AAAD79 /* help_selected@2x.png in Resources */,
 				579E9D781E1B998000AAAD79 /* seek@2x.png in Resources */,
@@ -2477,13 +2508,16 @@
 				57EE77BB1E2738FE004573F1 /* btn_close@2x.png in Resources */,
 				579E9D731E1B998000AAAD79 /* home_selected@2x.png in Resources */,
 				579E9D751E1B998000AAAD79 /* profile_selected@2x.png in Resources */,
+				EDE668AB1E9E617F0039BF78 /* uncheck_icon.png in Resources */,
 				579E9D771E1B998000AAAD79 /* seek_selected@2x.png in Resources */,
 				57EE77BC1E2738FE004573F1 /* btn_close@3x.png in Resources */,
 				579E9D721E1B998000AAAD79 /* help@2x.png in Resources */,
 				57EE75F91E272CA0004573F1 /* arrow@2x.png in Resources */,
+				EDE668A91E9E617F0039BF78 /* check_icon@2x.png in Resources */,
 				57ED2CEF1E558E0400066FB1 /* NavigationBarBack@2x.png in Resources */,
 				579E9D741E1B998000AAAD79 /* home@2x.png in Resources */,
 				187257F01E750E2C007085C1 /* JCAlertView.bundle in Resources */,
+				EDE668A81E9E617F0039BF78 /* check_icon.png in Resources */,
 				187257A01E750DF4007085C1 /* PayPageViewController.xib in Resources */,
 				574077F21E66A9330008DFA4 /* AlipaySDK.bundle in Resources */,
 			);
@@ -2643,6 +2677,7 @@
 				574078051E66AA1E0008DFA4 /* WXOrderPayData.m in Sources */,
 				187257991E750DF4007085C1 /* ResetPasswordViewController.m in Sources */,
 				187257A81E750DF4007085C1 /* EvaluateTableViewCell.m in Sources */,
+				EDE668AA1E9E617F0039BF78 /* QCheckBox.m in Sources */,
 				571D20941E52AECE00BF3334 /* InfoInputView.m in Sources */,
 				187257981E750DF4007085C1 /* NewPhoneNumberViewController.m in Sources */,
 				57EE76061E272CA0004573F1 /* SDWebImagePrefetcher.m in Sources */,
@@ -2707,6 +2742,7 @@
 				57EE75FA1E272CA0004573F1 /* UIScrollView+Refresh.m in Sources */,
 				57EE75F61E272CA0004573F1 /* RefreshGifHeader.m in Sources */,
 				18D896201E836590004DFC14 /* TADotView.m in Sources */,
+				EDE668931E9E526F0039BF78 /* PaymentViewController.m in Sources */,
 				57BFC7A51E4B4E0C001690E4 /* OrderTypeListData.m in Sources */,
 				57189A4D1E7F8DA000F6E621 /* GetOrderByIdResponse.m in Sources */,
 				57189A471E7F8D7100F6E621 /* GetOrderByIdRequest.m in Sources */,
