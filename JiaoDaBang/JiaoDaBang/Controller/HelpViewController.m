@@ -47,7 +47,8 @@
     [self.view addSubview:mapView];
     
     UIButton *submitBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    submitBtn.backgroundColor = [UIColor redColor];
+    [submitBtn setImage:[UIImage imageNamed:@"local@2x"] forState:UIControlStateNormal];
+    submitBtn.backgroundColor = [UIColor clearColor];
     [submitBtn addTarget:self action:@selector(location)forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:submitBtn];
 

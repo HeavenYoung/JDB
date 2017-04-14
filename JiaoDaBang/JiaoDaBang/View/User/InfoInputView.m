@@ -44,7 +44,7 @@
     textField.returnKeyType = UIReturnKeyDone;
     textField.enablesReturnKeyAutomatically = YES;
 //    textField.placeholder = self.placeHolder;
-    textField.textColor = [UIColor whiteColor];
+    textField.textColor = CustomGreen;
     textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeHolder attributes:@{NSForegroundColorAttributeName:[UIColor grayColor] ,NSFontAttributeName:PlaceTextFont}];
 
     textField.delegate = self;
