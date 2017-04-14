@@ -986,8 +986,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5732EB951E2385DC003C56B5 /* ImageIO.framework in Frameworks */,
+				5732EB931E2385C7003C56B5 /* MobileCoreServices.framework in Frameworks */,
+				5732EB8F1E2385AC003C56B5 /* AudioToolbox.framework in Frameworks */,
+				5732EB911E2385B8003C56B5 /* AVFoundation.framework in Frameworks */,
+				5732EB8D1E238589003C56B5 /* CoreMedia.framework in Frameworks */,
 				BA4DAF2E1E9D2209001B877A /* GLKit.framework in Frameworks */,
-				5732EB991E238602003C56B5 /* libz.tbd in Frameworks */,
 				BA0E13F31E9D161C00DC7FCE /* JavaScriptCore.framework in Frameworks */,
 				BA0E13F11E9D160900DC7FCE /* AdSupport.framework in Frameworks */,
 				BA0E13EF1E9D15FB00DC7FCE /* Security.framework in Frameworks */,
@@ -1003,17 +1007,13 @@
 				574078251E66AB6F0008DFA4 /* CoreGraphics.framework in Frameworks */,
 				574078231E66AB640008DFA4 /* CoreText.framework in Frameworks */,
 				BA0E13E11E9D13F600DC7FCE /* AMapFoundationKit.framework in Frameworks */,
+				BA0E13E31E9D13F600DC7FCE /* MAMapKit.framework in Frameworks */,
+				574077F31E66A9330008DFA4 /* AlipaySDK.framework in Frameworks */,
+				5732EB991E238602003C56B5 /* libz.tbd in Frameworks */,
+				5732EB971E2385F1003C56B5 /* libc++.tbd in Frameworks */,
+				5732EB9B1E238613003C56B5 /* libstdc++.6.0.9.tbd in Frameworks */,
 				5732EBA11E238639003C56B5 /* libsqlite3.tbd in Frameworks */,
 				5732EB9F1E23862C003C56B5 /* libiconv.tbd in Frameworks */,
-				5732EB9B1E238613003C56B5 /* libstdc++.6.0.9.tbd in Frameworks */,
-				BA0E13E31E9D13F600DC7FCE /* MAMapKit.framework in Frameworks */,
-				5732EB971E2385F1003C56B5 /* libc++.tbd in Frameworks */,
-				5732EB951E2385DC003C56B5 /* ImageIO.framework in Frameworks */,
-				574077F31E66A9330008DFA4 /* AlipaySDK.framework in Frameworks */,
-				5732EB931E2385C7003C56B5 /* MobileCoreServices.framework in Frameworks */,
-				5732EB911E2385B8003C56B5 /* AVFoundation.framework in Frameworks */,
-				5732EB8F1E2385AC003C56B5 /* AudioToolbox.framework in Frameworks */,
-				5732EB8D1E238589003C56B5 /* CoreMedia.framework in Frameworks */,
 				574077F91E66A9330008DFA4 /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1930,7 +1930,6 @@
 				57CAC2301E02E85A005A3F7E /* GlobalManager.m */,
 				57CAC2341E02E85A005A3F7E /* LanguageManager.h */,
 				57CAC2351E02E85A005A3F7E /* LanguageManager.m */,
-				BA9042041E9F5D7A004DE633 /* Message */,
 				BA0E13DD1E9D13F600DC7FCE /* Map */,
 				574078281E66AC630008DFA4 /* Share */,
 				574077D01E66A9330008DFA4 /* Pay */,
@@ -2298,13 +2297,6 @@
 				BA23786B1E97963200430F09 /* SettingInfoView.m */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		BA9042041E9F5D7A004DE633 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Message;
 			sourceTree = "<group>";
 		};
 		BAA629BE1E97D2060078F60D /* Profile */ = {
@@ -2974,6 +2966,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Pay/AliPay/alipaySdk",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Map",
+					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/HyphenateSDK",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JiaoDaBang/PrefixHeader.pch";
 				INFOPLIST_FILE = JiaoDaBang/Info.plist;
@@ -3009,6 +3002,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Pay/AliPay/alipaySdk",
 					"$(PROJECT_DIR)/JiaoDaBang/Tools/Map",
+					"$(PROJECT_DIR)/JiaoDaBang/Tools/Message/HyphenateSDK",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JiaoDaBang/PrefixHeader.pch";
 				INFOPLIST_FILE = JiaoDaBang/Info.plist;
